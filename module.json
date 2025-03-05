@@ -1,8 +1,8 @@
 {
+  "id": "dcc-crawl-classes"
   "title": "DCC Crawl! Sheets",
   "description": "Crawl! Sheets for Dungeon Crawl Classics in FoundryVTT!",
   "version": "0.0.23",
-  "minimumCoreVersion": "12",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -47,6 +47,5 @@
   "url": "https://github.com/algnc/dcc-crawl-classes",
   "manifest": "https://raw.githubusercontent.com/algnc/dcc-crawl-classes/main/module.json",
   "download": "https://github.com/algnc/dcc-crawl-classes/archive/refs/heads/main.zip",
-  "license": "LICENSE.txt",
-  "id": "dcc-crawl-classes"
+  "license": "LICENSE.txt"
 }
