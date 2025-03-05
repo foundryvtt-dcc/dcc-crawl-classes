@@ -2,7 +2,7 @@
   "id": "dcc-crawl-classes"
   "title": "DCC Crawl! Sheets",
   "description": "Crawl! Sheets for Dungeon Crawl Classics in FoundryVTT!",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
