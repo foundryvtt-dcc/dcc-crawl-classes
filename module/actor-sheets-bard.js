@@ -9,28 +9,39 @@ import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
  * @extends {DCCActorSheet}
  */
 class ActorSheetBard extends DCCActorSheet {
-    static height = 635
+    /** @inheritDoc */
+    static DEFAULT_OPTIONS = {
+        position: {
+            height: 635
+        }
+    }
+
+    /** @inheritDoc */
+    static PARTS = {
+        body: {
+            template: 'modules/dcc-crawl-classes/templates/actor-sheet-bard.html'
+        }
+    }
 
     /** @override */
-    async getData(options) {
-        const data = await super.getData(options)
-        this.options.template = 'modules/dcc-crawl-classes/templates/actor-sheet-bard.html'
-        if (data.system.details.sheetClass !== 'Bard') {
-            this.actor.update({
+    async _prepareContext(options) {
+        const context = await super._prepareContext(options)
+        if (this.actor.system.details.sheetClass !== 'Bard') {
+            await this.actor.update({
                 'system.class.className': game.i18n.localize('Bard.Bard')
             })
         }
 
         // Add in Bard specific data if missing
-        if (!data.system.skills.talentDie) {
-            this.actor.update({
+        if (!this.actor.system.skills.talentDie) {
+            await this.actor.update({
                 'system.skills.talentDie': {
                     label: 'Bard.TalentDie',
                     die: '1d14'
                 }
             })
         }
-        return data
+        return context
     }
 }
 

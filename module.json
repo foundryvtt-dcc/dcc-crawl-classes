@@ -4,8 +4,8 @@
   "description": "Crawl! Sheets for Dungeon Crawl Classics in FoundryVTT!",
   "version": "0.0.24",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
+    "minimum": "13",
+    "verified": "13"
   },
   "authors": [
     {
@@ -34,7 +34,14 @@
     }
   },
   "styles": [
-    "styles/crawl.css"
+    {
+      "src": "styles/variables.css",
+      "layer": "variables"
+    },
+    {
+      "src": "styles/crawl.css",
+      "layer": "system"
+    }
   ],
   "languages": [
     {

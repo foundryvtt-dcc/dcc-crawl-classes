@@ -9,40 +9,51 @@ import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
  * @extends {DCCActorSheet}
  */
 class ActorSheetDwarvenPriest extends DCCActorSheet {
-    static height = 635
+    /** @inheritDoc */
+    static DEFAULT_OPTIONS = {
+        position: {
+            height: 635
+        }
+    }
+
+    /** @inheritDoc */
+    static PARTS = {
+        body: {
+            template: 'modules/dcc-crawl-classes/templates/actor-sheet-dwarven-priest.html'
+        }
+    }
 
 
     /** @override */
-    async getData(options) {
-        const data = await super.getData(options)
-        this.options.template = 'modules/dcc-crawl-classes/templates/actor-sheet-dwarven-priest.html'
-        if (data.system.details.sheetClass !== 'Dwarven-Priest') {
-            this.actor.update({
+    async _prepareContext(options) {
+        const context = await super._prepareContext(options)
+        if (this.actor.system.details.sheetClass !== 'Dwarven-Priest') {
+            await this.actor.update({
                 'system.class.className': game.i18n.localize('DwarvenPriest.DwarvenPriest')
             })
         }
         // Add in DwarvenPriest specific data if missing
-        if (!data.system.skills.deedDie) {
-            this.actor.update({
+        if (!this.actor.system.skills.deedDie) {
+            await this.actor.update({
                 'system.skills.deedDie': {
                     label: 'DwarvenPriest.DeedDie',
                     die: ''
                 }
             })
         }
-        if (data.system.details.sheetClass !== 'DwarvenPriest') {
-            this.actor.update({
+        if (this.actor.system.details.sheetClass !== 'DwarvenPriest') {
+            await this.actor.update({
                 'system.details.sheetClass': 'Dwarven Priest',
                 'system.class.spellCheckAbility': 'per',
                 'system.details.critRange': 20
             })
         }
-        if (data.system.details.sheetClass !== 'DwarvenPriest') {
-            this.actor.update({
+        if (this.actor.system.details.sheetClass !== 'DwarvenPriest') {
+            await this.actor.update({
                 'system.config.attackBonusMode': 'manual',
             })
         }
-        return data
+        return context
     }
 }
 

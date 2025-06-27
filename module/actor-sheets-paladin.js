@@ -9,49 +9,60 @@ import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
  * @extends {DCCActorSheet}
  */
 class ActorSheetPaladin extends DCCActorSheet {
-    static height = 635
+    /** @inheritDoc */
+    static DEFAULT_OPTIONS = {
+        position: {
+            height: 635
+        }
+    }
+
+    /** @inheritDoc */
+    static PARTS = {
+        body: {
+            template: 'modules/dcc-crawl-classes/templates/actor-sheet-paladin.html'
+        }
+    }
 
     /** @override */
-    async getData(options) {
-        const data = await super.getData(options)
-        this.options.template = 'modules/dcc-crawl-classes/templates/actor-sheet-paladin.html'
-        if (data.system.details.sheetClass !== 'Paladin') {
-            this.actor.update({
+    async _prepareContext(options) {
+        const context = await super._prepareContext(options)
+        if (this.actor.system.details.sheetClass !== 'Paladin') {
+            await this.actor.update({
                 'system.class.className': game.i18n.localize('paladin.Paladin')
             })
         }
 
 
         // Add in Paladin specific data if missing
-        if (!data.system.skills.smiteDie) {
-            this.actor.update({
+        if (!this.actor.system.skills.smiteDie) {
+            await this.actor.update({
                 'system.skills.smiteDie': {
                     label: 'Paladin.SmiteDie',
                     die: '1d3'
                 }
             })
         }
-        if (!data.system.skills.holyDeeds) {
-            this.actor.update({
+        if (!this.actor.system.skills.holyDeeds) {
+            await this.actor.update({
                 'system.skills.holyDeeds': {
                     label: 'Paladin.HolyDeeds',
                     value: '+1'
                 }
             })
         }
-        if (data.system.details.sheetClass !== 'Paladin') {
-            this.actor.update({
+        if (this.actor.system.details.sheetClass !== 'Paladin') {
+            await this.actor.update({
                 'system.details.sheetClass': 'Paladin',
                 'system.class.spellCheckAbility': 'per',
                 'system.details.critRange': 20
             })
         }
-        if (data.system.details.sheetClass !== 'Paladin') {
-            this.actor.update({
+        if (this.actor.system.details.sheetClass !== 'Paladin') {
+            await this.actor.update({
                 'system.config.rollAttackBonus': 'True',
             })
         }
-        return data
+        return context
     }
 }
 

@@ -5,21 +5,21 @@ div.classTable {
 }
 
 .divTable.classTable .divTableCell, .divTable.classTable .divTableHead {
-  border: 1px solid #AAAAAA;
-  padding: 3px 2px;
+  border: 1px solid var(--dcc-crawl-table-border);
+  padding: var(--dcc-crawl-table-cell-padding);
 }
 
 .divTable.classTable .divTableRow:nth-child(even) {
-  background: #f2e8d5;
+  background: var(--dcc-crawl-table-row-even-bg);
 }
 
 .divTable.classTable .divTableHeading {
-  border-bottom: 2px solid #444444;
+  border-bottom: 2px solid var(--dcc-crawl-table-header-border);
 }
 
 .divTable.classTable .divTableHeading .divTableHead {
   font-weight: bold;
-  color: #000000;
+  color: var(--dcc-crawl-table-header-text);
   text-align: center;
 }
 

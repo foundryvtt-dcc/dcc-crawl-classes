@@ -9,19 +9,30 @@ import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
  * @extends {DCCActorSheet}
  */
 class ActorSheetElvenRogue extends DCCActorSheet {
-    static height = 635
+    /** @inheritDoc */
+    static DEFAULT_OPTIONS = {
+        position: {
+            height: 635
+        }
+    }
+
+    /** @inheritDoc */
+    static PARTS = {
+        body: {
+            template: 'modules/dcc-crawl-classes/templates/actor-sheet-elven-rogue.html'
+        }
+    }
 
     /** @override */
-    async getData(options) {
-        const data = await super.getData(options)
-        this.options.template = 'modules/dcc-crawl-classes/templates/actor-sheet-elven-rogue.html'
-        if (data.system.details.sheetClass !== 'Elven-Rogue') {
-            this.actor.update({
+    async _prepareContext(options) {
+        const context = await super._prepareContext(options)
+        if (this.actor.system.details.sheetClass !== 'Elven-Rogue') {
+            await this.actor.update({
                 'system.class.className': game.i18n.localize('ElvenRogue.ElvenRogue')
             })
         }
 
-        return data
+        return context
     }
 }
 
