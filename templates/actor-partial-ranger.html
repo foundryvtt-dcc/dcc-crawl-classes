@@ -1,72 +1,48 @@
-<form class="{{cssClass}}" autocomplete="off">
-
-  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
-  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Ranger"
-         data-dtype="String"/>
-  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
-
-
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a data-tab="character">{{localize "DCC.Character"}}</a>
-    <a data-tab="equipment">{{localize "DCC.Equipment"}}</a>
-    <a data-tab="ranger">{{localize "Ranger.Ranger"}}</a>
-    {{#if system.config.showSpells}}
-    <a data-tab="spells">{{localize "DCC.Spells"}}</a>
-    {{/if}}
-    {{#if system.config.showSkills}}
-    <a data-tab="skills">{{localize "DCC.Skills"}}</a>
-    {{/if}}
-    <a data-tab="notes">{{localize "DCC.Notes"}}</a>
-  </nav>
-
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-
-    {{!-- Character Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-common.html }}
-
-    {{!-- Equipment Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-equipment.html }}
-
-    {{!-- Spells Tab --}}
-    {{> systems/dcc/templates/actor-partial-cleric-spells.html }}
-
-    {{!-- Skills Tab --}}
-    {{> systems/dcc/templates/actor-partial-skills.html }}
-
-    {{!-- Notes Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-notes.html }}
-
-    {{!-- Class Tab --}}
-    <div class="tab" data-group="primary" data-tab="ranger">
+{{!-- Ranger Class Tab --}}
+    <section class="tab {{tabs.ranger.id}} {{tabs.ranger.cssClass}}" data-tab="{{tabs.ranger.id}}" data-group="{{tabs.ranger.group}}">
       <div class="grid-container">
         <div class="grid-col-span-12 dark-border">
-          <div class="dark-title">{{localize "Ranger.RangerAbilities"}}</div>
+          <div class="box-title">{{localize "Ranger.RangerAbilities"}}</div>
           <div class="grid-tpl-two grid-row-gap-8 p-5">
             <div class="grid-tpl-max-25" data-skill="climb">
-              <label class="skill-check rollable" for="system.skills.climb.value">
+              <label class="skill-check rollable" for="system.skills.climb.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
                 {{localize "Ranger.Climb"}}
               </label>
               <input type="text" id="system.skills.climb.value" name="system.skills.climb.value"
                      value="{{system.skills.climb.value}}" data-dtype="String"/>
             </div>
             <div class="grid-tpl-max-25" data-skill="sneak">
-              <label class="skill-check rollable" for="system.skills.sneak.value">
+              <label class="skill-check rollable" for="system.skills.sneak.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
                 {{localize "Ranger.Sneak"}}
               </label>
               <input type="text" id="system.skills.sneak.value" name="system.skills.sneak.value"
                      value="{{system.skills.sneak.value}}" data-dtype="String"/>
             </div>
             <div class="grid-tpl-max-25" data-skill="strider">
-              <label class="skill-check rollable" for="system.skills.strider.value">
+              <label class="skill-check rollable" for="system.skills.strider.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
                 {{localize "Ranger.Strider"}}
               </label>
               <input type="text" id="system.skills.strider.value" name="system.skills.strider.value"
                      value="{{system.skills.strider.value}}" data-dtype="String"/>
             </div>
             <div class="grid-tpl-max-25" data-skill="survival">
-              <label class="skill-check rollable" for="system.skills.survival.value">
+              <label class="skill-check rollable" for="system.skills.survival.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
                 {{localize "Ranger.Survival"}}
               </label>
               <input type="text" id="system.skills.survival.value" name="system.skills.survival.value"
@@ -74,7 +50,11 @@
             </div>
 
             <div class="grid-tpl-max-25" data-skill="findTrap">
-              <label class="skill-check rollable" for="system.skills.findTrap.value">
+              <label class="skill-check rollable" for="system.skills.findTrap.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
                 {{localize "Ranger.FindTrap"}}
               </label>
               <input type="text" id="system.skills.findTrap.value" name="system.skills.findTrap.value"
@@ -107,7 +87,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</form>
-
+  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
+  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Ranger" data-dtype="String"/>
+  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
+</section>

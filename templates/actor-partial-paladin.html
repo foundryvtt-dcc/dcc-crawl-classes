@@ -1,63 +1,36 @@
-<form class="{{cssClass}}" autocomplete="off">
-
-  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
-  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Paladin"
-         data-dtype="String"/>
-  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
-
-
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a data-tab="character">{{localize "DCC.Character"}}</a>
-    <a data-tab="equipment">{{localize "DCC.Equipment"}}</a>
-    <a data-tab="paladin">{{localize "Paladin.Paladin"}}</a>
-    <a data-tab="spells">{{localize "DCC.Spells"}}</a>
-    {{#if system.config.showSkills}}
-    <a data-tab="skills">{{localize "DCC.Skills"}}</a>
-    {{/if}}
-    <a data-tab="notes">{{localize "DCC.Notes"}}</a>
-  </nav>
-
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-
-    {{!-- Character Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-common.html }}
-
-    {{!-- Equipment Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-equipment.html }}
-
-    {{!-- Spells Tab --}}
-    {{> systems/dcc/templates/actor-partial-cleric-spells.html }}
-
-    {{!-- Skills Tab --}}
-    {{> systems/dcc/templates/actor-partial-skills.html }}
-
-    {{!-- Notes Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-notes.html }}
-
-    {{!-- Class Tab --}}
-    <div class="tab" data-group="primary" data-tab="paladin">
-      <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="per">
+{{!-- Paladin Class Tab --}}
+    <section class="tab {{tabs.paladin.id}} {{tabs.paladin.cssClass}}" data-tab="{{tabs.paladin.id}}" data-group="{{tabs.paladin.group}}">
       <div class="grid-container">
         <div class="grid-col-span-12 dark-border">
-          <div class="dark-title">{{localize "Paladin.PaladinAbilities"}}</div>
+          <div class="box-title">{{localize "Paladin.PaladinAbilities"}}</div>
           <div class="grid-tpl-two grid-row-gap-8 p-5">
             <div class="grid-tpl-max-25" data-skill="smiteDie">
-              <label class="skill-check rollable" for="system.skills.smiteDie.die">{{localize
+              <label class="skill-check rollable" for="system.skills.smiteDie.die"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">{{localize
                 "Paladin.SmiteDie"}}</label>
               <input type="text" id="system.skills.smiteDie.die" name="system.skills.smiteDie.die"
                      value="{{system.skills.smiteDie.die}}" data-dtype="String"/>
             </div>
             <div class="grid-tpl-max-25" data-ability="per">
-              <label class="spell-check rollable" for="system.class.spellCheck">{{localize
+              <label class="spell-check rollable" for="system.class.spellCheck"
+                     data-action="rollSpellCheck" 
+                     data-drag="true" 
+                     data-drag-action="spellCheck"
+                     title="{{localize 'DCC.RollSpellCheckHint'}}">{{localize
                 "DCC.SpellCheck"}}</label>
               <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
                      value="{{numberFormat system.class.spellCheck decimals=0 sign=true}}"
                      data-dtype="String"/>
             </div>
             <div class="grid-tpl-max-25" data-skill="holyDeeds">
-              <label class="skill-check rollable" for="system.skills.holyDeeds.value">{{localize
+              <label class="skill-check rollable" for="system.skills.holyDeeds.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">{{localize
                 "Paladin.HolyDeedsText"}}</label>
               <input type="text" id="system.skills.holyDeeds.value" name="system.skills.holyDeeds.value"
                      value="{{system.skills.holyDeeds.value}}" data-dtype="String"/>
@@ -96,7 +69,7 @@
         </div>
         <div class="grid-col-span-12 cleric-table">
           <table class="dark-border">
-            <thead class="dark-title">
+            <thead class="box-title">
             <tr>
               <th>Lay On Hands (alignment step)</th>
               <th>12</th>
@@ -132,7 +105,7 @@
         </div>
         <div class="grid-col-span-12 cleric-table">
           <table class="dark-border">
-            <thead class="dark-title">
+            <thead class="box-title">
             <tr>
               <th>Condition</th>
               <th>Dice</th>
@@ -167,7 +140,8 @@
           </table>
         </div>
       </div>
-    </div>
-  </section>
-</form>
-
+  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
+  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Paladin" data-dtype="String"/>
+  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
+  <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="per">
+</section>

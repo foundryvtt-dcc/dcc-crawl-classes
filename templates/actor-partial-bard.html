@@ -1,0 +1,89 @@
+{{!-- Bard Class Tab --}}
+<section class="tab {{tabs.bard.id}} {{tabs.bard.cssClass}}" data-tab="{{tabs.bard.id}}" data-group="{{tabs.bard.group}}">
+  
+  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
+  <input type="hidden" id="data.details.sheetClass" name="data.details.sheetClass" value="Bard" data-dtype="String"/>
+  <input type="hidden" id="data.details.critRange" name="data.details.critRange" value="20" data-dtype="Number"/>
+  <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="int">
+
+  <div class="grid-container">
+    <div class="grid-col-span-12 dark-border">
+      <div class="box-title">{{localize "Bard.BardAbilities"}}</div>
+      <div class="grid-tpl-two grid-row-gap-8 p-5">
+        <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="talentDie">
+          <label class="skill-check rollable" for="system.skills.talentDie.die"
+                 data-action="rollSkillCheck" 
+                 data-drag="true" 
+                 data-drag-action="skill"
+                 title="{{localize 'DCC.RollSkillCheckHint'}}">
+            {{localize "Bard.TalentDie"}}
+          </label>
+          <input type="text" id="system.skills.talentDie.die" name="system.skills.talentDie.die"
+                 value="{{system.skills.talentDie.die}}" data-dtype="String"/>
+        </div>
+        <div class="grid-tpl-max-25" data-ability="int">
+          <label class="spell-check rollable" for="system.class.spellCheck"
+                 data-action="rollSpellCheck" 
+                 data-drag="true" 
+                 data-drag-action="spellCheck"
+                 title="{{localize 'DCC.RollSpellCheck'}}">
+            {{localize "DCC.SpellCheck"}}
+          </label>
+          <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
+                 value="{{numberFormat system.class.spellCheck decimals=0 sign=true}}"
+                 data-dtype="String"/>
+        </div>
+        <div></div>
+        <div class="grid-col-span-12 grid-tpl-max">
+          <div class="grid-col-span-12 box-title" style="">{{localize "DCC.Corruptions"}}</div>
+          {{#if editable}}
+            <prose-mirror
+              name="system.class.corruption"
+              button="true"
+              editable="{{editable}}"
+              toggled="false"
+              value="{{system.class.corruption}}">
+              {{{corruptionHTML}}}
+            </prose-mirror>
+          {{else}}
+            {{{corruptionHTML}}}
+          {{/if}}
+        </div>
+        <ul class="grid-col-span-12 class-note">
+          <li>
+            {{localize "Bard.BardicTalents"}}
+            <ul>
+              <li>{{localize "Bard.BardicTalentsDesc"}}</li>
+              <li>
+                <ul>
+                  <li>{{localize "Bard.CallToArms"}}
+                    <ul>
+                      <li>{{localize "Bard.CallToArmsDesc"}}</li>
+                    </ul>
+                  </li>
+                  <li>{{localize "Bard.Challenge"}}
+                    <ul>
+                      <li>{{localize "Bard.ChallengeDesc"}}</li>
+                    </ul>
+                  </li>
+                  <li>{{localize "Bard.Calm"}}
+                    <ul>
+                      <li>{{localize "Bard.CalmDesc"}}</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            {{localize "Bard.Lore"}}
+            <ul>
+              <li>{{localize "Bard.LoreDesc"}}</li>
+            </ul>
+          </li>
+          <li>{{localize "Bard.Luck"}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

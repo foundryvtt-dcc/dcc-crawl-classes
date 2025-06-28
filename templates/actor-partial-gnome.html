@@ -1,66 +1,44 @@
-<form class="{{cssClass}}" autocomplete="off">
-
-  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
-  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Gnome"
-         data-dtype="String"/>
-  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
-
-
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a data-tab="character">{{localize "DCC.Character"}}</a>
-    <a data-tab="equipment">{{localize "DCC.Equipment"}}</a>
-    <a data-tab="gnome">{{localize "Gnome.Gnome"}}</a>
-    <a data-tab="spells">{{localize "DCC.Spells"}}</a>
-    {{#if system.config.showSkills}}
-    <a data-tab="skills">{{localize "DCC.Skills"}}</a>
-    {{/if}}
-    <a data-tab="notes">{{localize "DCC.Notes"}}</a>
-  </nav>
-
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-
-    {{!-- Character Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-common.html }}
-
-    {{!-- Equipment Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-equipment.html }}
-
-    {{!-- Spells Tab --}}
-    {{> systems/dcc/templates/actor-partial-wizard-spells.html }}
-
-    {{!-- Skills Tab --}}
-    {{> systems/dcc/templates/actor-partial-skills.html }}
-
-    {{!-- Notes Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-notes.html }}
-
-    {{!-- Class Tab --}}
-    <div class="tab" data-group="primary" data-tab="gnome">
+{{!-- Gnome Class Tab --}}
+    <section class="tab {{tabs.gnome.id}} {{tabs.gnome.cssClass}}" data-tab="{{tabs.gnome.id}}" data-group="{{tabs.gnome.group}}">
       <div class="grid-container">
-        <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="int">
-
         <div class="grid-col-span-12 dark-border">
-          <div class="dark-title">{{localize "Gnome.GnomeAbilities"}}</div>
+          <div class="box-title">{{localize "Gnome.GnomeAbilities"}}</div>
           <div class="grid-tpl-two grid-row-gap-8 p-5">
             <div class="grid-tpl-max-25" data-ability="int">
-              <label class="spell-check rollable" for="system.class.spellCheck">
+              <label class="spell-check rollable" for="system.class.spellCheck"
+                     data-action="rollSpellCheck" 
+                     data-drag="true" 
+                     data-drag-action="spellCheck"
+                     title="{{localize 'DCC.RollSpellCheckHint'}}">
                 {{localize "DCC.SpellCheck"}}</label>
               <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
                      value="{{numberFormat system.class.spellCheck decimals=0 sign=true}}"
                      data-dtype="String"/>
             </div>
             <div class="grid-tpl-max-25" data-skill="trickDie">
-              <label class="skill-check rollable" for="system.skills.trickDie.die">{{localize
+              <label class="skill-check rollable" for="system.skills.trickDie.die"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">{{localize
                 "Gnome.TrickDie"}}</label>
               <input type="text" id="system.skills.trickDie.die" name="system.skills.trickDie.die"
                      value="{{system.skills.trickDie.die}}" data-dtype="String"/>
             </div>
             <div class="grid-col-span-2 grid-tpl-max short-editor">
-              <div class="grid-col-span-2 dark-title">{{localize "DCC.Corruptions"}}</div>
-              {{editor corruptionHTML target="system.class.corruption" engine="prosemirror" button=true
-              editable=editable}}
+              <div class="grid-col-span-2 box-title">{{localize "DCC.Corruptions"}}</div>
+              {{#if editable}}
+            <prose-mirror
+              name="system.class.corruption"
+              button="true"
+              editable="{{editable}}"
+              toggled="false"
+              value="{{system.class.corruption}}">
+              {{{corruptionHTML}}}
+            </prose-mirror>
+          {{else}}
+            {{{corruptionHTML}}}
+          {{/if}}
             </div>
             <ul class="class-note grid-col-span-2 data-font">
               <li>
@@ -99,7 +77,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</form>
-
+  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
+  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Gnome" data-dtype="String"/>
+  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
+  <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="per">
+</section>

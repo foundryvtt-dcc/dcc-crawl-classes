@@ -1,51 +1,22 @@
-<form class="{{cssClass}}" autocomplete="off">
-
+{{!-- Dwarven Priest Class Tab --}}
+<section class="tab {{tabs.dwarven-priest.id}} {{tabs.dwarven-priest.cssClass}}" data-tab="{{tabs.dwarven-priest.id}}" data-group="{{tabs.dwarven-priest.group}}">
+  
   {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
-  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Dwarven Priest"
-         data-dtype="String"/>
+  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="DwarvenPriest" data-dtype="String"/>
   <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
+  <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="per">
 
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a data-tab="character" title="{{localize 'DCC.CharacterTabHint'}}">{{localize "DCC.Character"}}</a>
-    <a data-tab="equipment" title="{{localize 'DCC.EquipmentTabHint'}}">{{localize "DCC.Equipment"}}</a>
-    <a data-tab="dwarven-priest" title="{{localize 'DCC.ClassTabHint'}}">{{localize
-      "DwarvenPriest.DwarvenPriest"}}</a>
-    <a data-tab="spells" title="{{localize 'DCC.SpellsTabHint'}}">{{localize "DCC.Spells"}}</a>
-    {{#if system.config.showSkills}}
-    <a data-tab="skills" title="{{localize 'DCC.SkillsTabHint'}}">{{localize "DCC.Skills"}}</a>
-    {{/if}}
-    <a data-tab="notes" title="{{localize 'DCC.NotesTabHint'}}">{{localize "DCC.Notes"}}</a>
-  </nav>
-
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-
-    {{!-- Character Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-common.html }}
-
-    {{!-- Equipment Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-equipment.html }}
-
-    {{!-- Spells Tab --}}
-    {{> systems/dcc/templates/actor-partial-cleric-spells.html }}
-
-    {{!-- Skills Tab --}}
-    {{> systems/dcc/templates/actor-partial-skills.html }}
-
-    {{!-- Notes Tab --}}
-    {{> systems/dcc/templates/actor-partial-pc-notes.html }}
-
-    {{!-- Class Tab --}}
-    <div class="tab" data-group="primary" data-tab="dwarven-priest">
-      <div class="grid-container">
-        <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="per">
+  <div class="grid-container">
 
         <div class="grid-col-span-12 dark-border">
-          <div class="dark-title">{{localize "DwarvenPriest.DwarvenPriestAbilities"}}</div>
+          <div class="box-title">{{localize "DwarvenPriest.DwarvenPriestAbilities"}}</div>
           <div class="grid-tpl-two grid-row-gap-8 p-5">
             <div class="grid-tpl-max-25" data-ability="per">
-              <label class="spell-check rollable" for="system.class.spellCheck">
+              <label class="spell-check rollable" for="system.class.spellCheck"
+                     data-action="rollSpellCheck" 
+                     data-drag="true" 
+                     data-drag-action="spellCheck"
+                     title="{{localize 'DCC.RollSpellCheckHint'}}">
                 {{localize "DCC.SpellCheck"}}
               </label>
               <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
@@ -53,7 +24,11 @@
                      data-dtype="String"/>
             </div>
             <div class="grid-tpl-max-auto">
-              <label class="disapproval-range rollable" for="system.class.disapproval">
+              <label class="disapproval-range rollable" for="system.class.disapproval"
+                     data-action="rollDisapproval" 
+                     data-drag="true" 
+                     data-drag-action="disapproval"
+                     title="{{localize 'DCC.RollDisapprovalHint'}}">
                 {{localize "DCC.DisapprovalRange"}}
               </label>
               <select class="number" name="system.class.disapproval" id="system.class.disapproval">
@@ -63,7 +38,11 @@
             </div>
             <div>&nbsp;</div>
             <div class="grid-tpl-max-auto">
-              <label class="disapproval-table rollable" for="system.class.disapprovalTable">
+              <label class="disapproval-table rollable" for="system.class.disapprovalTable"
+                     data-action="rollOnTable" 
+                     data-drag="true" 
+                     data-drag-action="table"
+                     title="{{localize 'DCC.RollOnTableHint'}}">
                 {{localize "DCC.DisapprovalTable"}}
               </label>
               <select id="system.class.disapprovalTable" name="system.class.disapprovalTable">
@@ -97,7 +76,7 @@
         </div>
         <div class="grid-col-span-12 cleric-table">
           <table class="dark-border">
-            <thead class="dark-title">
+            <thead class="box-title">
             <tr>
               <th>Lay On Hands (alignment step)</th>
               <th>12</th>
@@ -133,7 +112,7 @@
         </div>
         <div class="grid-col-span-12 cleric-table">
           <table class="dark-border">
-            <thead class="dark-title">
+            <thead class="box-title">
             <tr>
               <th>Condition</th>
               <th>Dice</th>
@@ -167,8 +146,5 @@
             </tbody>
           </table>
         </div>
-      </div>
-    </div>
-  </section>
-</form>
-
+  </div>
+</section>

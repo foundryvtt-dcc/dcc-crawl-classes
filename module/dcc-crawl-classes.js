@@ -1,4 +1,4 @@
-/* global Actors */
+/* global foundry */
 
 import * as BardSheets from './actor-sheets-bard.js'
 import * as GnomeSheets from './actor-sheets-gnome.js'
@@ -9,6 +9,8 @@ import * as ElvenRogueSheets from './actor-sheets-elven-rogue.js'
 import * as HalflingBurglarSheets from './actor-sheets-halfling-burglar.js'
 import * as HalflingChampionSheets from './actor-sheets-halfling-champion.js'
 import * as OrcSheets from './actor-sheets-orc.js'
+
+const { Actors } = foundry.documents.collections
 
 /* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
