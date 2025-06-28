@@ -3,6 +3,7 @@
  */
 
 import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
+const { TextEditor } = foundry.applications.ux
 
 /**
  * Extend the zero-level/NPC sheet for DwarvenPriest
@@ -12,7 +13,8 @@ class ActorSheetDwarvenPriest extends DCCActorSheet {
   /** @inheritDoc */
   static DEFAULT_OPTIONS = {
     position: {
-      height: 635
+      height: 635,
+      width: 625
     }
   }
 
@@ -23,7 +25,7 @@ class ActorSheetDwarvenPriest extends DCCActorSheet {
         { id: 'character', group: 'sheet', label: 'DCC.Character' },
         { id: 'equipment', group: 'sheet', label: 'DCC.Equipment' },
         { id: 'dwarven-priest', group: 'sheet', label: 'DwarvenPriest.DwarvenPriest' },
-        { id: 'spells', group: 'sheet', label: 'DCC.Spells' },
+        { id: 'clericSpells', group: 'sheet', label: 'DCC.Spells' },
         { id: 'skills', group: 'sheet', label: 'DCC.Skills' },
         { id: 'notes', group: 'sheet', label: 'DCC.Notes' }
       ],
@@ -48,6 +50,7 @@ class ActorSheetDwarvenPriest extends DCCActorSheet {
     if (this.actor.system.details.sheetClass !== 'Dwarven-Priest') {
       await this.actor.update({
         'system.class.className': game.i18n.localize('DwarvenPriest.DwarvenPriest'),
+        'system.class.mightyDeedsLink': await TextEditor.enrichHTML(game.i18n.localize('DCC.MightyDeedsLink')),
         'system.config.showSkills' : true
       })
     }

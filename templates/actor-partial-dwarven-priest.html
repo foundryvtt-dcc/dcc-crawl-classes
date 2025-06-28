@@ -1,150 +1,147 @@
 {{!-- Dwarven Priest Class Tab --}}
-<section class="tab {{tabs.dwarven-priest.id}} {{tabs.dwarven-priest.cssClass}}" data-tab="{{tabs.dwarven-priest.id}}" data-group="{{tabs.dwarven-priest.group}}">
-  
+<section class="tab {{tabs.dwarven-priest.id}} {{tabs.dwarven-priest.cssClass}}" data-tab="{{tabs.dwarven-priest.id}}"
+         data-group="{{tabs.dwarven-priest.group}}">
+  <div class="grid-container">
+    <div class="grid-col-span-12 dark-border">
+      <div class="box-title">{{localize "DwarvenPriest.DwarvenPriestAbilities"}}</div>
+      <div class="grid-tpl-two grid-row-gap-8 p-5">
+        <div class="grid-tpl-max-25" data-ability="per">
+          <label class="spell-check rollable" for="system.class.spellCheck"
+                 data-action="rollSpellCheck"
+                 data-drag="true"
+                 data-drag-action="spellCheck"
+                 title="{{localize 'DCC.RollSpellCheckHint'}}">
+            {{localize "DCC.SpellCheck"}}
+          </label>
+          <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
+                 value="{{numberFormat system.class.spellCheck decimals=0 sign=true}}"
+                 data-dtype="String"/>
+        </div>
+        <div class="grid-tpl-max-auto">
+          <label class="disapproval-range rollable" for="system.class.disapproval"
+                 data-action="rollDisapproval"
+                 data-drag="true"
+                 data-drag-action="disapproval"
+                 title="{{localize 'DCC.RollDisapprovalHint'}}">
+            {{localize "DCC.DisapprovalRange"}}
+          </label>
+          <select class="number" name="system.class.disapproval" id="system.class.disapproval">
+            {{selectOptions config.disapprovalRanges selected=system.class.disapproval localize=true}}
+          </select>
+        </div>
+        <div>&nbsp;</div>
+        <div class="grid-tpl-max-auto">
+          <label class="disapproval-table rollable" for="system.class.disapprovalTable"
+                 data-action="rollOnTable"
+                 data-drag="true"
+                 data-drag-action="table"
+                 title="{{localize 'DCC.RollOnTableHint'}}">
+            {{localize "DCC.DisapprovalTable"}}
+          </label>
+          <select id="system.class.disapprovalTable" name="system.class.disapprovalTable">
+            {{selectOptions config.disapprovalTables selected=system.class.disapprovalTable localize=true labelAttr="name"}}
+          </select>
+        </div>
+
+        <ul class="grid-col-span-2 data-font">
+          <li>{{localize "DCC.UndergroundSkills"}}</li>
+          <li>{{localize "DCC.MightyDeedsOfArms"}}</li>
+          <li>
+            <ul class="class-note">
+              {{#dccPackExists "dcc-core-book.dcc-core-journals"}}
+              <li>{{{system.class.mightyDeedsLink}}}</li>
+              {{/dccPackExists}}
+              <li>
+                <a class="external-link"
+                   href="https://github.com/foundryvtt-dcc/dcc/wiki/Mighty-Deeds">
+                  <i class="fas fa-link"></i> {{localize "DCC.MightyDeedsHowToLink"}}
+                </a>
+              </li>
+            </ul>
+          <li>{{localize "DCC.DivineAid"}}</li>
+          <li>
+            {{localize "DCC.Infravision"}}
+          </li>
+          <li> {{localize "DwarvenPriest.Slow"}}</li>
+          <li>{{localize "DwarvenPriest.Luck"}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-col-span-12 cleric-table">
+      <table class="dark-border">
+        <thead class="box-title">
+        <tr>
+          <th>Lay On Hands (alignment step)</th>
+          <th>12</th>
+          <th>14</th>
+          <th>20</th>
+          <th>22+</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>(same)</td>
+          <td>2 dice</td>
+          <td>3 dice</td>
+          <td>4 dice</td>
+          <td>5 dice</td>
+        </tr>
+        <tr>
+          <td>(adjacent)</td>
+          <td>1 die</td>
+          <td>2 dice</td>
+          <td>3 dice</td>
+          <td>4 dice</td>
+        </tr>
+        <tr>
+          <td>(opposed)</td>
+          <td>1 die</td>
+          <td>1 die</td>
+          <td>2 dice</td>
+          <td>3 dice</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid-col-span-12 cleric-table">
+      <table class="dark-border">
+        <thead class="box-title">
+        <tr>
+          <th>Condition</th>
+          <th>Dice</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Broken limbs</td>
+          <td>1 die</td>
+        </tr>
+        <tr>
+          <td>Organ damage</td>
+          <td>2 dice</td>
+        </tr>
+        <tr>
+          <td>Disease</td>
+          <td>2 dice</td>
+        </tr>
+        <tr>
+          <td>Paralysis</td>
+          <td>3 dice</td>
+        </tr>
+        <tr>
+          <td>Poison</td>
+          <td>4 dice</td>
+        </tr>
+        <tr>
+          <td>Blindness/Deafness</td>
+          <td>5 dice</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
   <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="DwarvenPriest" data-dtype="String"/>
   <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
   <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="per">
-
-  <div class="grid-container">
-
-        <div class="grid-col-span-12 dark-border">
-          <div class="box-title">{{localize "DwarvenPriest.DwarvenPriestAbilities"}}</div>
-          <div class="grid-tpl-two grid-row-gap-8 p-5">
-            <div class="grid-tpl-max-25" data-ability="per">
-              <label class="spell-check rollable" for="system.class.spellCheck"
-                     data-action="rollSpellCheck" 
-                     data-drag="true" 
-                     data-drag-action="spellCheck"
-                     title="{{localize 'DCC.RollSpellCheckHint'}}">
-                {{localize "DCC.SpellCheck"}}
-              </label>
-              <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
-                     value="{{numberFormat system.class.spellCheck decimals=0 sign=true}}"
-                     data-dtype="String"/>
-            </div>
-            <div class="grid-tpl-max-auto">
-              <label class="disapproval-range rollable" for="system.class.disapproval"
-                     data-action="rollDisapproval" 
-                     data-drag="true" 
-                     data-drag-action="disapproval"
-                     title="{{localize 'DCC.RollDisapprovalHint'}}">
-                {{localize "DCC.DisapprovalRange"}}
-              </label>
-              <select class="number" name="system.class.disapproval" id="system.class.disapproval">
-                {{selectOptions config.disapprovalRanges selected=system.class.disapproval
-                localize=true}}
-              </select>
-            </div>
-            <div>&nbsp;</div>
-            <div class="grid-tpl-max-auto">
-              <label class="disapproval-table rollable" for="system.class.disapprovalTable"
-                     data-action="rollOnTable" 
-                     data-drag="true" 
-                     data-drag-action="table"
-                     title="{{localize 'DCC.RollOnTableHint'}}">
-                {{localize "DCC.DisapprovalTable"}}
-              </label>
-              <select id="system.class.disapprovalTable" name="system.class.disapprovalTable">
-                {{selectOptions config.disapprovalTables selected=system.class.disapprovalTable localize=true labelAttr="name"}}
-              </select>
-            </div>
-
-            <ul class="grid-col-span-2 data-font">
-              <li>{{localize "DCC.UndergroundSkills"}}</li>
-              <li>{{localize "DCC.MightyDeedsOfArms"}}</li>
-              <li>
-                <ul class="class-note">
-                  {{#dccPackExists "dcc-core-book.dcc-core-journals"}}
-                  <li>{{{localize "DCC.MightyDeedsLink"}}}</li>
-                  {{/dccPackExists}}
-                  <li>
-                    <a class="external-link"
-                       href="https://github.com/foundryvtt-dcc/dcc/wiki/Mighty-Deeds">
-                      <i class="fas fa-link"></i> {{localize "DCC.MightyDeedsHowToLink"}}
-                    </a>
-                  </li>
-                </ul>
-              <li>{{localize "DCC.DivineAid"}}</li>
-              <li>
-                {{localize "DCC.Infravision"}}
-              </li>
-              <li> {{localize "DwarvenPriest.Slow"}}</li>
-              <li>{{localize "DwarvenPriest.Luck"}}</li>
-            </ul>
-          </div>
-        </div>
-        <div class="grid-col-span-12 cleric-table">
-          <table class="dark-border">
-            <thead class="box-title">
-            <tr>
-              <th>Lay On Hands (alignment step)</th>
-              <th>12</th>
-              <th>14</th>
-              <th>20</th>
-              <th>22+</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>(same)</td>
-              <td>2 dice</td>
-              <td>3 dice</td>
-              <td>4 dice</td>
-              <td>5 dice</td>
-            </tr>
-            <tr>
-              <td>(adjacent)</td>
-              <td>1 die</td>
-              <td>2 dice</td>
-              <td>3 dice</td>
-              <td>4 dice</td>
-            </tr>
-            <tr>
-              <td>(opposed)</td>
-              <td>1 die</td>
-              <td>1 die</td>
-              <td>2 dice</td>
-              <td>3 dice</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="grid-col-span-12 cleric-table">
-          <table class="dark-border">
-            <thead class="box-title">
-            <tr>
-              <th>Condition</th>
-              <th>Dice</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>Broken limbs</td>
-              <td>1 die</td>
-            </tr>
-            <tr>
-              <td>Organ damage</td>
-              <td>2 dice</td>
-            </tr>
-            <tr>
-              <td>Disease</td>
-              <td>2 dice</td>
-            </tr>
-            <tr>
-              <td>Paralysis</td>
-              <td>3 dice</td>
-            </tr>
-            <tr>
-              <td>Poison</td>
-              <td>4 dice</td>
-            </tr>
-            <tr>
-              <td>Blindness/Deafness</td>
-              <td>5 dice</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-  </div>
 </section>
