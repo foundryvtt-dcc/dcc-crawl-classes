@@ -14,7 +14,7 @@ class ActorSheetDwarvenPriest extends DCCActorSheet {
   static DEFAULT_OPTIONS = {
     position: {
       height: 635,
-      width: 625
+      width: 628
     }
   }
 

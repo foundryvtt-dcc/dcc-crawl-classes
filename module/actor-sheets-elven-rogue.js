@@ -13,7 +13,7 @@ class ActorSheetElvenRogue extends DCCActorSheet {
   static DEFAULT_OPTIONS = {
     position: {
       height: 635,
-      width: 595
+      width: 600
     }
   }
 

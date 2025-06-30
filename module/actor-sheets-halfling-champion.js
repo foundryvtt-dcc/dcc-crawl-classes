@@ -13,7 +13,7 @@ class ActorSheetHalflingChampion extends DCCActorSheet {
   static DEFAULT_OPTIONS = {
     position: {
       height: 635,
-      width: 642
+      width: 648
     }
   }
 
