@@ -21,7 +21,7 @@ class ActorSheetPaladin extends DCCActorSheet {
     sheet: {
       tabs: [
         { id: 'paladin', group: 'sheet', label: 'Paladin.Paladin' },
-        { id: 'spells', group: 'sheet', label: 'DCC.Spells' },
+        { id: 'clericSpells', group: 'sheet', label: 'DCC.Spells' },
         { id: 'skills', group: 'sheet', label: 'DCC.Skills' }
       ],
       initial: 'character'
