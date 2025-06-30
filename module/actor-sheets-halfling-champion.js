@@ -18,15 +18,12 @@ class ActorSheetHalflingChampion extends DCCActorSheet {
   }
 
   /** @inheritDoc */
-  static TABS = {
+  static CLASS_TABS = {
     sheet: {
       tabs: [
-        { id: 'character', group: 'sheet', label: 'DCC.Character' },
-        { id: 'equipment', group: 'sheet', label: 'DCC.Equipment' },
         { id: 'halfling-champion', group: 'sheet', label: 'HalflingChampion.HalflingChampion' },
         { id: 'clericSpells', group: 'sheet', label: 'DCC.Spells' },
-        { id: 'skills', group: 'sheet', label: 'DCC.Skills' },
-        { id: 'notes', group: 'sheet', label: 'DCC.Notes' }
+        { id: 'skills', group: 'sheet', label: 'DCC.Skills' }
       ],
       initial: 'character'
     }
@@ -46,7 +43,7 @@ class ActorSheetHalflingChampion extends DCCActorSheet {
     'halfling-champion': {
       template: 'modules/dcc-crawl-classes/templates/actor-partial-halfling-champion.html'
     },
-    spells: {
+    clericSpells: {
       template: 'systems/dcc/templates/actor-partial-cleric-spells.html'
     },
     skills: {

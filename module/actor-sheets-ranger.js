@@ -17,14 +17,11 @@ class ActorSheetRanger extends DCCActorSheet {
   }
 
   /** @inheritDoc */
-  static TABS = {
+  static CLASS_TABS = {
     sheet: {
       tabs: [
-        { id: 'character', group: 'sheet', label: 'DCC.Character' },
-        { id: 'equipment', group: 'sheet', label: 'DCC.Equipment' },
         { id: 'ranger', group: 'sheet', label: 'Ranger.Ranger' },
-        { id: 'skills', group: 'sheet', label: 'DCC.Skills' },
-        { id: 'notes', group: 'sheet', label: 'DCC.Notes' }
+        { id: 'skills', group: 'sheet', label: 'DCC.Skills' }
       ],
       initial: 'character'
     }

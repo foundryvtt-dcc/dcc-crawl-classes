@@ -17,15 +17,12 @@ class ActorSheetPaladin extends DCCActorSheet {
   }
 
   /** @inheritDoc */
-  static TABS = {
+  static CLASS_TABS = {
     sheet: {
       tabs: [
-        { id: 'character', group: 'sheet', label: 'DCC.Character' },
-        { id: 'equipment', group: 'sheet', label: 'DCC.Equipment' },
         { id: 'paladin', group: 'sheet', label: 'Paladin.Paladin' },
         { id: 'spells', group: 'sheet', label: 'DCC.Spells' },
-        { id: 'skills', group: 'sheet', label: 'DCC.Skills' },
-        { id: 'notes', group: 'sheet', label: 'DCC.Notes' }
+        { id: 'skills', group: 'sheet', label: 'DCC.Skills' }
       ],
       initial: 'character'
     }
@@ -37,7 +34,7 @@ class ActorSheetPaladin extends DCCActorSheet {
     character: { template: 'systems/dcc/templates/actor-partial-pc-common.html' },
     equipment: { template: 'systems/dcc/templates/actor-partial-pc-equipment.html' },
     paladin: { template: 'modules/dcc-crawl-classes/templates/actor-partial-paladin.html' },
-    spells: { template: 'systems/dcc/templates/actor-partial-cleric-spells.html' },
+    clericSpells: { template: 'systems/dcc/templates/actor-partial-cleric-spells.html' },
     skills: { template: 'systems/dcc/templates/actor-partial-skills.html' },
     notes: { template: 'systems/dcc/templates/actor-partial-pc-notes.html' }
   }
