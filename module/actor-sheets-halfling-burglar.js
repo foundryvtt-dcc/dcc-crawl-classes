@@ -12,7 +12,8 @@ class ActorSheetHalflingBurglar extends DCCActorSheet {
   /** @inheritDoc */
   static DEFAULT_OPTIONS = {
     position: {
-      height: 635
+      height: 635,
+      width: 648
     }
   }
 

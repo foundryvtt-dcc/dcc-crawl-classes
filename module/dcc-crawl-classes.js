@@ -1,4 +1,4 @@
-/* global foundry, game */
+/* global foundry, game, Hooks */
 
 import * as BardSheets from './actor-sheets-bard.js'
 import * as GnomeSheets from './actor-sheets-gnome.js'
@@ -21,6 +21,8 @@ Hooks.once('init', async function () {
 
   game.createCrawlClassItems = createClassItems
   game.createAllCrawlClassItems = createAllClassItems
+
+  Hooks.callAll('dcc.registerLevelDataPack', 'dcc-crawl-classes.crawl-class-level-data')
 
   console.log(`Loading DCC Crawl! Classes`)
 
