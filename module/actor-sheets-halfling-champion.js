@@ -22,7 +22,6 @@ class ActorSheetHalflingChampion extends DCCActorSheet {
     sheet: {
       tabs: [
         { id: 'halfling-champion', group: 'sheet', label: 'HalflingChampion.HalflingChampion' },
-        { id: 'clericSpells', group: 'sheet', label: 'DCC.Spells' },
         { id: 'skills', group: 'sheet', label: 'DCC.Skills' }
       ],
       initial: 'character'
@@ -42,9 +41,6 @@ class ActorSheetHalflingChampion extends DCCActorSheet {
     },
     'halfling-champion': {
       template: 'modules/dcc-crawl-classes/templates/actor-partial-halfling-champion.html'
-    },
-    clericSpells: {
-      template: 'systems/dcc/templates/actor-partial-cleric-spells.html'
     },
     skills: {
       template: 'systems/dcc/templates/actor-partial-skills.html'
