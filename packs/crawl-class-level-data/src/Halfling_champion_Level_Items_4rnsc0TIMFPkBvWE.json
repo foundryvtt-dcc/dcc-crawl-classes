@@ -1,0 +1,22 @@
+{
+  "name": "Halfling-champion Level Items",
+  "type": "Item",
+  "color": "#a9a9a9",
+  "folder": null,
+  "_id": "4rnsc0TIMFPkBvWE",
+  "description": "",
+  "sorting": "a",
+  "sort": 300000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.346",
+    "systemId": "dcc",
+    "systemVersion": "0.52.0",
+    "lastModifiedBy": "8RdFMYOeuR7CbiOl",
+    "modifiedTime": 1751401307009
+  },
+  "_key": "!folders!4rnsc0TIMFPkBvWE"
+}

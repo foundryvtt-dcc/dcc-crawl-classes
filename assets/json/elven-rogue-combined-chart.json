@@ -1,0 +1,622 @@
+{
+  "1": {
+    "level_info": {
+      "system.details.attackBonus": "+1",
+      "system.attributes.critical.die": "1d6",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.luckDie": "d3",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+1",
+      "system.class.knownSpells": 3,
+      "system.class.maxSpellLevel": 1
+    },
+    "skills": {
+      "lawful": {
+        "system.class.backstab": "+0",
+        "system.skills.sneakSilently.value": "+1",
+        "system.skills.hideInShadows.value": "+1",
+        "system.skills.pickPocket.value": "+1",
+        "system.skills.climbSheerSurfaces.value": "+3",
+        "system.skills.pickLock.value": "+0",
+        "system.skills.findTrap.value": "+1",
+        "system.skills.disableTrap.value": "+3",
+        "system.skills.forgeDocument.value": "+0",
+        "system.skills.disguiseSelf.value": "+0",
+        "system.skills.readLanguages.value": "+3",
+        "system.skills.handlePoison.value": "+0",
+        "system.skills.castSpellFromScroll.value": "d10"
+      },
+      "chaotic": {
+        "system.class.backstab": "+3",
+        "system.skills.sneakSilently.value": "+3",
+        "system.skills.hideInShadows.value": "+3",
+        "system.skills.pickPocket.value": "+0",
+        "system.skills.climbSheerSurfaces.value": "+1",
+        "system.skills.pickLock.value": "+1",
+        "system.skills.findTrap.value": "+0",
+        "system.skills.disableTrap.value": "+0",
+        "system.skills.forgeDocument.value": "+0",
+        "system.skills.disguiseSelf.value": "+1",
+        "system.skills.readLanguages.value": "+0",
+        "system.skills.handlePoison.value": "+1",
+        "system.skills.castSpellFromScroll.value": "d10"
+      },
+      "neutral": {
+        "system.class.backstab": "+0",
+        "system.skills.sneakSilently.value": "+1",
+        "system.skills.hideInShadows.value": "+1",
+        "system.skills.pickPocket.value": "+3",
+        "system.skills.climbSheerSurfaces.value": "+1",
+        "system.skills.pickLock.value": "+3",
+        "system.skills.findTrap.value": "+1",
+        "system.skills.disableTrap.value": "+3",
+        "system.skills.forgeDocument.value": "+0",
+        "system.skills.disguiseSelf.value": "+1",
+        "system.skills.readLanguages.value": "+0",
+        "system.skills.handlePoison.value": "+0",
+        "system.skills.castSpellFromScroll.value": "d12"
+      }
+    }
+  },
+  "2": {
+    "level_info": {
+      "system.details.attackBonus": "+1",
+      "system.attributes.critical.die": "1d8",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.luckDie": "d4",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+1",
+      "system.class.knownSpells": 4,
+      "system.class.maxSpellLevel": 1
+    },
+    "skills": {
+      "lawful": {
+        "system.class.backstab": "+0",
+        "system.skills.sneakSilently.value": "+3",
+        "system.skills.hideInShadows.value": "+3",
+        "system.skills.pickPocket.value": "+3",
+        "system.skills.climbSheerSurfaces.value": "+5",
+        "system.skills.pickLock.value": "+1",
+        "system.skills.findTrap.value": "+3",
+        "system.skills.disableTrap.value": "+5",
+        "system.skills.forgeDocument.value": "+0",
+        "system.skills.disguiseSelf.value": "+1",
+        "system.skills.readLanguages.value": "+5",
+        "system.skills.handlePoison.value": "+1",
+        "system.skills.castSpellFromScroll.value": "d10"
+      },
+      "chaotic": {
+        "system.class.backstab": "+5",
+        "system.skills.sneakSilently.value": "+5",
+        "system.skills.hideInShadows.value": "+5",
+        "system.skills.pickPocket.value": "+1",
+        "system.skills.climbSheerSurfaces.value": "+3",
+        "system.skills.pickLock.value": "+3",
+        "system.skills.findTrap.value": "+1",
+        "system.skills.disableTrap.value": "+1",
+        "system.skills.forgeDocument.value": "+0",
+        "system.skills.disguiseSelf.value": "+3",
+        "system.skills.readLanguages.value": "+0",
+        "system.skills.handlePoison.value": "+3",
+        "system.skills.castSpellFromScroll.value": "d10"
+      },
+      "neutral": {
+        "system.class.backstab": "+1",
+        "system.skills.sneakSilently.value": "+3",
+        "system.skills.hideInShadows.value": "+3",
+        "system.skills.pickPocket.value": "+5",
+        "system.skills.climbSheerSurfaces.value": "+3",
+        "system.skills.pickLock.value": "+5",
+        "system.skills.findTrap.value": "+3",
+        "system.skills.disableTrap.value": "+5",
+        "system.skills.forgeDocument.value": "+1",
+        "system.skills.disguiseSelf.value": "+3",
+        "system.skills.readLanguages.value": "+1",
+        "system.skills.handlePoison.value": "+0",
+        "system.skills.castSpellFromScroll.value": "d12"
+      }
+    }
+  },
+  "3": {
+    "level_info": {
+      "system.details.attackBonus": "+2",
+      "system.attributes.critical.die": "1d8",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.luckDie": "d5",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+2",
+      "system.class.knownSpells": 5,
+      "system.class.maxSpellLevel": 2
+    },
+    "skills": {
+      "lawful": {
+        "system.class.backstab": "+1",
+        "system.skills.sneakSilently.value": "+5",
+        "system.skills.hideInShadows.value": "+5",
+        "system.skills.pickPocket.value": "+5",
+        "system.skills.climbSheerSurfaces.value": "+7",
+        "system.skills.pickLock.value": "+2",
+        "system.skills.findTrap.value": "+5",
+        "system.skills.disableTrap.value": "+7",
+        "system.skills.forgeDocument.value": "+1",
+        "system.skills.disguiseSelf.value": "+2",
+        "system.skills.readLanguages.value": "+7",
+        "system.skills.handlePoison.value": "+2",
+        "system.skills.castSpellFromScroll.value": "d12"
+      },
+      "chaotic": {
+        "system.class.backstab": "+7",
+        "system.skills.sneakSilently.value": "+7",
+        "system.skills.hideInShadows.value": "+7",
+        "system.skills.pickPocket.value": "+2",
+        "system.skills.climbSheerSurfaces.value": "+5",
+        "system.skills.pickLock.value": "+5",
+        "system.skills.findTrap.value": "+2",
+        "system.skills.disableTrap.value": "+2",
+        "system.skills.forgeDocument.value": "+1",
+        "system.skills.disguiseSelf.value": "+5",
+        "system.skills.readLanguages.value": "+1",
+        "system.skills.handlePoison.value": "+5",
+        "system.skills.castSpellFromScroll.value": "d12"
+      },
+      "neutral": {
+        "system.class.backstab": "+2",
+        "system.skills.sneakSilently.value": "+5",
+        "system.skills.hideInShadows.value": "+5",
+        "system.skills.pickPocket.value": "+7",
+        "system.skills.climbSheerSurfaces.value": "+5",
+        "system.skills.pickLock.value": "+7",
+        "system.skills.findTrap.value": "+5",
+        "system.skills.disableTrap.value": "+7",
+        "system.skills.forgeDocument.value": "+2",
+        "system.skills.disguiseSelf.value": "+5",
+        "system.skills.readLanguages.value": "+2",
+        "system.skills.handlePoison.value": "+1",
+        "system.skills.castSpellFromScroll.value": "d14"
+      }
+    }
+  },
+  "4": {
+    "level_info": {
+      "system.details.attackBonus": "+2",
+      "system.attributes.critical.die": "1d10",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.luckDie": "d6",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+2",
+      "system.class.knownSpells": 6,
+      "system.class.maxSpellLevel": 2
+    },
+    "skills": {
+      "lawful": {
+        "system.class.backstab": "+2",
+        "system.skills.sneakSilently.value": "+7",
+        "system.skills.hideInShadows.value": "+7",
+        "system.skills.pickPocket.value": "+7",
+        "system.skills.climbSheerSurfaces.value": "+8",
+        "system.skills.pickLock.value": "+3",
+        "system.skills.findTrap.value": "+7",
+        "system.skills.disableTrap.value": "+8",
+        "system.skills.forgeDocument.value": "+2",
+        "system.skills.disguiseSelf.value": "+3",
+        "system.skills.readLanguages.value": "+8",
+        "system.skills.handlePoison.value": "+3",
+        "system.skills.castSpellFromScroll.value": "d12"
+      },
+      "chaotic": {
+        "system.class.backstab": "+8",
+        "system.skills.sneakSilently.value": "+8",
+        "system.skills.hideInShadows.value": "+8",
+        "system.skills.pickPocket.value": "+3",
+        "system.skills.climbSheerSurfaces.value": "+7",
+        "system.skills.pickLock.value": "+7",
+        "system.skills.findTrap.value": "+3",
+        "system.skills.disableTrap.value": "+3",
+        "system.skills.forgeDocument.value": "+2",
+        "system.skills.disguiseSelf.value": "+7",
+        "system.skills.readLanguages.value": "+2",
+        "system.skills.handlePoison.value": "+7",
+        "system.skills.castSpellFromScroll.value": "d12"
+      },
+      "neutral": {
+        "system.class.backstab": "+3",
+        "system.skills.sneakSilently.value": "+7",
+        "system.skills.hideInShadows.value": "+7",
+        "system.skills.pickPocket.value": "+8",
+        "system.skills.climbSheerSurfaces.value": "+7",
+        "system.skills.pickLock.value": "+8",
+        "system.skills.findTrap.value": "+7",
+        "system.skills.disableTrap.value": "+8",
+        "system.skills.forgeDocument.value": "+3",
+        "system.skills.disguiseSelf.value": "+7",
+        "system.skills.readLanguages.value": "+3",
+        "system.skills.handlePoison.value": "+2",
+        "system.skills.castSpellFromScroll.value": "d14"
+      }
+    }
+  },
+  "5": {
+    "level_info": {
+      "system.details.attackBonus": "+3",
+      "system.attributes.critical.die": "1d10",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d14",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.luckDie": "d7",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+3",
+      "system.class.knownSpells": 7,
+      "system.class.maxSpellLevel": 3
+    },
+    "skills": {
+      "lawful": {
+        "system.class.backstab": "+3",
+        "system.skills.sneakSilently.value": "+8",
+        "system.skills.hideInShadows.value": "+8",
+        "system.skills.pickPocket.value": "+8",
+        "system.skills.climbSheerSurfaces.value": "+9",
+        "system.skills.pickLock.value": "+4",
+        "system.skills.findTrap.value": "+8",
+        "system.skills.disableTrap.value": "+9",
+        "system.skills.forgeDocument.value": "+3",
+        "system.skills.disguiseSelf.value": "+4",
+        "system.skills.readLanguages.value": "+9",
+        "system.skills.handlePoison.value": "+4",
+        "system.skills.castSpellFromScroll.value": "d14"
+      },
+      "chaotic": {
+        "system.class.backstab": "+9",
+        "system.skills.sneakSilently.value": "+9",
+        "system.skills.hideInShadows.value": "+9",
+        "system.skills.pickPocket.value": "+4",
+        "system.skills.climbSheerSurfaces.value": "+8",
+        "system.skills.pickLock.value": "+8",
+        "system.skills.findTrap.value": "+4",
+        "system.skills.disableTrap.value": "+4",
+        "system.skills.forgeDocument.value": "+3",
+        "system.skills.disguiseSelf.value": "+8",
+        "system.skills.readLanguages.value": "+3",
+        "system.skills.handlePoison.value": "+8",
+        "system.skills.castSpellFromScroll.value": "d14"
+      },
+      "neutral": {
+        "system.class.backstab": "+4",
+        "system.skills.sneakSilently.value": "+8",
+        "system.skills.hideInShadows.value": "+8",
+        "system.skills.pickPocket.value": "+9",
+        "system.skills.climbSheerSurfaces.value": "+8",
+        "system.skills.pickLock.value": "+9",
+        "system.skills.findTrap.value": "+8",
+        "system.skills.disableTrap.value": "+9",
+        "system.skills.forgeDocument.value": "+4",
+        "system.skills.disguiseSelf.value": "+8",
+        "system.skills.readLanguages.value": "+4",
+        "system.skills.handlePoison.value": "+3",
+        "system.skills.castSpellFromScroll.value": "d16"
+      }
+    }
+  },
+  "6": {
+    "level_info": {
+      "system.details.attackBonus": "+3",
+      "system.attributes.critical.die": "1d12",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d16",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.luckDie": "d8",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+4",
+      "system.class.knownSpells": 8,
+      "system.class.maxSpellLevel": 3
+    },
+    "skills": {
+      "lawful": {
+        "system.class.backstab": "+4",
+        "system.skills.sneakSilently.value": "+9",
+        "system.skills.hideInShadows.value": "+9",
+        "system.skills.pickPocket.value": "+9",
+        "system.skills.climbSheerSurfaces.value": "+11",
+        "system.skills.pickLock.value": "+5",
+        "system.skills.findTrap.value": "+9",
+        "system.skills.disableTrap.value": "+11",
+        "system.skills.forgeDocument.value": "+4",
+        "system.skills.disguiseSelf.value": "+5",
+        "system.skills.readLanguages.value": "+11",
+        "system.skills.handlePoison.value": "+5",
+        "system.skills.castSpellFromScroll.value": "d14"
+      },
+      "chaotic": {
+        "system.class.backstab": "+11",
+        "system.skills.sneakSilently.value": "+11",
+        "system.skills.hideInShadows.value": "+11",
+        "system.skills.pickPocket.value": "+5",
+        "system.skills.climbSheerSurfaces.value": "+9",
+        "system.skills.pickLock.value": "+9",
+        "system.skills.findTrap.value": "+5",
+        "system.skills.disableTrap.value": "+5",
+        "system.skills.forgeDocument.value": "+4",
+        "system.skills.disguiseSelf.value": "+9",
+        "system.skills.readLanguages.value": "+4",
+        "system.skills.handlePoison.value": "+9",
+        "system.skills.castSpellFromScroll.value": "d14"
+      },
+      "neutral": {
+        "system.class.backstab": "+5",
+        "system.skills.sneakSilently.value": "+9",
+        "system.skills.hideInShadows.value": "+9",
+        "system.skills.pickPocket.value": "+11",
+        "system.skills.climbSheerSurfaces.value": "+9",
+        "system.skills.pickLock.value": "+11",
+        "system.skills.findTrap.value": "+9",
+        "system.skills.disableTrap.value": "+11",
+        "system.skills.forgeDocument.value": "+5",
+        "system.skills.disguiseSelf.value": "+9",
+        "system.skills.readLanguages.value": "+5",
+        "system.skills.handlePoison.value": "+4",
+        "system.skills.castSpellFromScroll.value": "d16"
+      }
+    }
+  },
+  "7": {
+    "level_info": {
+      "system.details.attackBonus": "+4",
+      "system.attributes.critical.die": "1d12",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.luckDie": "d10",
+      "system.saves.ref.classBonus": "+3",
+      "system.saves.frt.classBonus": "+3",
+      "system.saves.wil.classBonus": "+4",
+      "system.class.knownSpells": 9,
+      "system.class.maxSpellLevel": 4
+    },
+    "skills": {
+      "lawful": {
+        "system.class.backstab": "+5",
+        "system.skills.sneakSilently.value": "+10",
+        "system.skills.hideInShadows.value": "+10",
+        "system.skills.pickPocket.value": "+10",
+        "system.skills.climbSheerSurfaces.value": "+12",
+        "system.skills.pickLock.value": "+6",
+        "system.skills.findTrap.value": "+10",
+        "system.skills.disableTrap.value": "+12",
+        "system.skills.forgeDocument.value": "+5",
+        "system.skills.disguiseSelf.value": "+6",
+        "system.skills.readLanguages.value": "+12",
+        "system.skills.handlePoison.value": "+6",
+        "system.skills.castSpellFromScroll.value": "d16"
+      },
+      "chaotic": {
+        "system.class.backstab": "+12",
+        "system.skills.sneakSilently.value": "+12",
+        "system.skills.hideInShadows.value": "+12",
+        "system.skills.pickPocket.value": "+6",
+        "system.skills.climbSheerSurfaces.value": "+10",
+        "system.skills.pickLock.value": "+10",
+        "system.skills.findTrap.value": "+6",
+        "system.skills.disableTrap.value": "+6",
+        "system.skills.forgeDocument.value": "+5",
+        "system.skills.disguiseSelf.value": "+10",
+        "system.skills.readLanguages.value": "+5",
+        "system.skills.handlePoison.value": "+10",
+        "system.skills.castSpellFromScroll.value": "d16"
+      },
+      "neutral": {
+        "system.class.backstab": "+6",
+        "system.skills.sneakSilently.value": "+10",
+        "system.skills.hideInShadows.value": "+10",
+        "system.skills.pickPocket.value": "+12",
+        "system.skills.climbSheerSurfaces.value": "+10",
+        "system.skills.pickLock.value": "+12",
+        "system.skills.findTrap.value": "+10",
+        "system.skills.disableTrap.value": "+12",
+        "system.skills.forgeDocument.value": "+6",
+        "system.skills.disguiseSelf.value": "+10",
+        "system.skills.readLanguages.value": "+6",
+        "system.skills.handlePoison.value": "+5",
+        "system.skills.castSpellFromScroll.value": "d20"
+      }
+    }
+  },
+  "8": {
+    "level_info": {
+      "system.details.attackBonus": "+4",
+      "system.attributes.critical.die": "1d14",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.luckDie": "d12",
+      "system.saves.ref.classBonus": "+3",
+      "system.saves.frt.classBonus": "+3",
+      "system.saves.wil.classBonus": "+5",
+      "system.class.knownSpells": 10,
+      "system.class.maxSpellLevel": 4
+    },
+    "skills": {
+      "lawful": {
+        "system.class.backstab": "+6",
+        "system.skills.sneakSilently.value": "+11",
+        "system.skills.hideInShadows.value": "+11",
+        "system.skills.pickPocket.value": "+11",
+        "system.skills.climbSheerSurfaces.value": "+13",
+        "system.skills.pickLock.value": "+7",
+        "system.skills.findTrap.value": "+11",
+        "system.skills.disableTrap.value": "+13",
+        "system.skills.forgeDocument.value": "+6",
+        "system.skills.disguiseSelf.value": "+7",
+        "system.skills.readLanguages.value": "+13",
+        "system.skills.handlePoison.value": "+7",
+        "system.skills.castSpellFromScroll.value": "d16"
+      },
+      "chaotic": {
+        "system.class.backstab": "+13",
+        "system.skills.sneakSilently.value": "+13",
+        "system.skills.hideInShadows.value": "+13",
+        "system.skills.pickPocket.value": "+7",
+        "system.skills.climbSheerSurfaces.value": "+11",
+        "system.skills.pickLock.value": "+11",
+        "system.skills.findTrap.value": "+7",
+        "system.skills.disableTrap.value": "+7",
+        "system.skills.forgeDocument.value": "+6",
+        "system.skills.disguiseSelf.value": "+11",
+        "system.skills.readLanguages.value": "+6",
+        "system.skills.handlePoison.value": "+11",
+        "system.skills.castSpellFromScroll.value": "d16"
+      },
+      "neutral": {
+        "system.class.backstab": "+7",
+        "system.skills.sneakSilently.value": "+11",
+        "system.skills.hideInShadows.value": "+11",
+        "system.skills.pickPocket.value": "+13",
+        "system.skills.climbSheerSurfaces.value": "+11",
+        "system.skills.pickLock.value": "+13",
+        "system.skills.findTrap.value": "+11",
+        "system.skills.disableTrap.value": "+13",
+        "system.skills.forgeDocument.value": "+7",
+        "system.skills.disguiseSelf.value": "+11",
+        "system.skills.readLanguages.value": "+7",
+        "system.skills.handlePoison.value": "+6",
+        "system.skills.castSpellFromScroll.value": "d20"
+      }
+    }
+  },
+  "9": {
+    "level_info": {
+      "system.details.attackBonus": "+5",
+      "system.attributes.critical.die": "1d14",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.luckDie": "d14",
+      "system.saves.ref.classBonus": "+3",
+      "system.saves.frt.classBonus": "+3",
+      "system.saves.wil.classBonus": "+5",
+      "system.class.knownSpells": 12,
+      "system.class.maxSpellLevel": 5
+    },
+    "skills": {
+      "lawful": {
+        "system.class.backstab": "+7",
+        "system.skills.sneakSilently.value": "+12",
+        "system.skills.hideInShadows.value": "+12",
+        "system.skills.pickPocket.value": "+12",
+        "system.skills.climbSheerSurfaces.value": "+14",
+        "system.skills.pickLock.value": "+8",
+        "system.skills.findTrap.value": "+12",
+        "system.skills.disableTrap.value": "+14",
+        "system.skills.forgeDocument.value": "+7",
+        "system.skills.disguiseSelf.value": "+8",
+        "system.skills.readLanguages.value": "+14",
+        "system.skills.handlePoison.value": "+8",
+        "system.skills.castSpellFromScroll.value": "d20"
+      },
+      "chaotic": {
+        "system.class.backstab": "+14",
+        "system.skills.sneakSilently.value": "+14",
+        "system.skills.hideInShadows.value": "+14",
+        "system.skills.pickPocket.value": "+8",
+        "system.skills.climbSheerSurfaces.value": "+12",
+        "system.skills.pickLock.value": "+12",
+        "system.skills.findTrap.value": "+8",
+        "system.skills.disableTrap.value": "+8",
+        "system.skills.forgeDocument.value": "+7",
+        "system.skills.disguiseSelf.value": "+12",
+        "system.skills.readLanguages.value": "+7",
+        "system.skills.handlePoison.value": "+12",
+        "system.skills.castSpellFromScroll.value": "d20"
+      },
+      "neutral": {
+        "system.class.backstab": "+8",
+        "system.skills.sneakSilently.value": "+12",
+        "system.skills.hideInShadows.value": "+12",
+        "system.skills.pickPocket.value": "+14",
+        "system.skills.climbSheerSurfaces.value": "+12",
+        "system.skills.pickLock.value": "+14",
+        "system.skills.findTrap.value": "+12",
+        "system.skills.disableTrap.value": "+14",
+        "system.skills.forgeDocument.value": "+8",
+        "system.skills.disguiseSelf.value": "+12",
+        "system.skills.readLanguages.value": "+8",
+        "system.skills.handlePoison.value": "+7",
+        "system.skills.castSpellFromScroll.value": "d20"
+      }
+    }
+  },
+  "10": {
+    "level_info": {
+      "system.details.attackBonus": "+5",
+      "system.attributes.critical.die": "1d16",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d20,1d14",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.luckDie": "d16",
+      "system.saves.ref.classBonus": "+4",
+      "system.saves.frt.classBonus": "+4",
+      "system.saves.wil.classBonus": "+6",
+      "system.class.knownSpells": 14,
+      "system.class.maxSpellLevel": 5
+    },
+    "skills": {
+      "lawful": {
+        "system.class.backstab": "+8",
+        "system.skills.sneakSilently.value": "+13",
+        "system.skills.hideInShadows.value": "+13",
+        "system.skills.pickPocket.value": "+13",
+        "system.skills.climbSheerSurfaces.value": "+15",
+        "system.skills.pickLock.value": "+9",
+        "system.skills.findTrap.value": "+13",
+        "system.skills.disableTrap.value": "+15",
+        "system.skills.forgeDocument.value": "+8",
+        "system.skills.disguiseSelf.value": "+9",
+        "system.skills.readLanguages.value": "+15",
+        "system.skills.handlePoison.value": "+9",
+        "system.skills.castSpellFromScroll.value": "d20"
+      },
+      "chaotic": {
+        "system.class.backstab": "+15",
+        "system.skills.sneakSilently.value": "+15",
+        "system.skills.hideInShadows.value": "+15",
+        "system.skills.pickPocket.value": "+9",
+        "system.skills.climbSheerSurfaces.value": "+13",
+        "system.skills.pickLock.value": "+13",
+        "system.skills.findTrap.value": "+9",
+        "system.skills.disableTrap.value": "+9",
+        "system.skills.forgeDocument.value": "+8",
+        "system.skills.disguiseSelf.value": "+13",
+        "system.skills.readLanguages.value": "+8",
+        "system.skills.handlePoison.value": "+13",
+        "system.skills.castSpellFromScroll.value": "d20"
+      },
+      "neutral": {
+        "system.class.backstab": "+9",
+        "system.skills.sneakSilently.value": "+13",
+        "system.skills.hideInShadows.value": "+13",
+        "system.skills.pickPocket.value": "+15",
+        "system.skills.climbSheerSurfaces.value": "+13",
+        "system.skills.pickLock.value": "+15",
+        "system.skills.findTrap.value": "+13",
+        "system.skills.disableTrap.value": "+15",
+        "system.skills.forgeDocument.value": "+9",
+        "system.skills.disguiseSelf.value": "+13",
+        "system.skills.readLanguages.value": "+9",
+        "system.skills.handlePoison.value": "+8",
+        "system.skills.castSpellFromScroll.value": "d20"
+      }
+    }
+  }
+}

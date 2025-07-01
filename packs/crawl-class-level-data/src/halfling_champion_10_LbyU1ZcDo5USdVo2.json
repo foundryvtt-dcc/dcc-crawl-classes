@@ -1,0 +1,34 @@
+{
+  "img": "modules/dcc-core-book/assets/svg/game-icons-net/up-card.svg",
+  "system": {
+    "class": "halfling-champion",
+    "level": "10",
+    "levelData": "system.details.attackBonus=+1\nsystem.attributes.critical.die=2d20\nsystem.attributes.critical.table=V\nsystem.attributes.actionDice.value=1d20,1d20\nsystem.attributes.hitDice.value=1d8\nsystem.class.deedDie=d10+3\nsystem.saves.ref.classBonus=+6\nsystem.saves.frt.classBonus=+5\nsystem.saves.wil.classBonus=+4\n",
+    "levelDataLawful": "",
+    "levelDataNeutral": "",
+    "levelDataChaotic": ""
+  },
+  "name": "halfling-champion-10",
+  "type": "level",
+  "folder": "4rnsc0TIMFPkBvWE",
+  "_id": "LbyU1ZcDo5USdVo2",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "8RdFMYOeuR7CbiOl": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.346",
+    "systemId": "dcc",
+    "systemVersion": "0.52.0",
+    "createdTime": 1751401306994,
+    "modifiedTime": 1751401306994,
+    "lastModifiedBy": "8RdFMYOeuR7CbiOl"
+  },
+  "_key": "!items!LbyU1ZcDo5USdVo2"
+}

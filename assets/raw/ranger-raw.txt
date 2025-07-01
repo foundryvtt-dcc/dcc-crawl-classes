@@ -1,0 +1,21 @@
+Table R-1: Ranger
+Level Attack Crit Die/Table Action Dice Ref Fort Will
+(Deed Die)* Table
+1 +d3 d10/II 1d20 +1 +1 +0
+2 +d3 d12/II 1d20 +1 +1 +0
+3 +d4 d12/II 1d20 +1 +2 +1
+4 +d4 d12/II 1d20 +2 +2 +1
+5 +d5 D14/II 1d20+1d14 +2 +3 +1
+6 +d6 d14/II 1d20+1d16 +2 +4 +2
+7 +d7 d14/II 1d20+1d20 +3 +4 +2
+8 +d8 d16/II 1d20+1d20 +3 +5 +2
+9 +d10 d16/II 1d20+1d20 +3 +5 +3
+10 +d10+1 d20/II 1d20+1d20+1d14 +4 +6 +3
+
+Table R-2: Ranger Titles by Alignment
+Level Lawful Chaotic Neutral
+1 Frontiersman Hunter Runner
+2 Trailblazer Chaser Rover
+3 Vanguard Trailer Rambler
+4 Guide Tracker Wanderer
+5 Warden Raider Wayfarer

@@ -1,0 +1,147 @@
+{
+  "1": {
+    "level_info": {
+      "system.details.attackBonus": "+d3",
+      "system.attributes.critical.die": "1d10",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d8",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+0"
+    },
+    "titles": {
+      "lawful": "Frontiersman",
+      "chaotic": "Hunter",
+      "neutral": "Runner"
+    }
+  },
+  "2": {
+    "level_info": {
+      "system.details.attackBonus": "+d3",
+      "system.attributes.critical.die": "1d12",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d8",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+0"
+    },
+    "titles": {
+      "lawful": "Trailblazer",
+      "chaotic": "Chaser",
+      "neutral": "Rover"
+    }
+  },
+  "3": {
+    "level_info": {
+      "system.details.attackBonus": "+d4",
+      "system.attributes.critical.die": "1d12",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d8",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+1"
+    },
+    "titles": {
+      "lawful": "Vanguard",
+      "chaotic": "Trailer",
+      "neutral": "Rambler"
+    }
+  },
+  "4": {
+    "level_info": {
+      "system.details.attackBonus": "+d4",
+      "system.attributes.critical.die": "1d12",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d8",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+1"
+    },
+    "titles": {
+      "lawful": "Guide",
+      "chaotic": "Tracker",
+      "neutral": "Wanderer"
+    }
+  },
+  "5": {
+    "level_info": {
+      "system.details.attackBonus": "+d5",
+      "system.attributes.critical.die": "1d14",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d14",
+      "system.attributes.hitDice.value": "1d8",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+3",
+      "system.saves.wil.classBonus": "+1"
+    },
+    "titles": {
+      "lawful": "Warden",
+      "chaotic": "Raider",
+      "neutral": "Wayfarer"
+    }
+  },
+  "6": {
+    "level_info": {
+      "system.details.attackBonus": "+d6",
+      "system.attributes.critical.die": "1d14",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d16",
+      "system.attributes.hitDice.value": "1d8",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+4",
+      "system.saves.wil.classBonus": "+2"
+    }
+  },
+  "7": {
+    "level_info": {
+      "system.details.attackBonus": "+d7",
+      "system.attributes.critical.die": "1d14",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d8",
+      "system.saves.ref.classBonus": "+3",
+      "system.saves.frt.classBonus": "+4",
+      "system.saves.wil.classBonus": "+2"
+    }
+  },
+  "8": {
+    "level_info": {
+      "system.details.attackBonus": "+d8",
+      "system.attributes.critical.die": "1d16",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d8",
+      "system.saves.ref.classBonus": "+3",
+      "system.saves.frt.classBonus": "+5",
+      "system.saves.wil.classBonus": "+2"
+    }
+  },
+  "9": {
+    "level_info": {
+      "system.details.attackBonus": "+d10",
+      "system.attributes.critical.die": "1d16",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d8",
+      "system.saves.ref.classBonus": "+3",
+      "system.saves.frt.classBonus": "+5",
+      "system.saves.wil.classBonus": "+3"
+    }
+  },
+  "10": {
+    "level_info": {
+      "system.details.attackBonus": "+d10+1",
+      "system.attributes.critical.die": "1d20",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d20,1d14",
+      "system.attributes.hitDice.value": "1d8",
+      "system.saves.ref.classBonus": "+4",
+      "system.saves.frt.classBonus": "+6",
+      "system.saves.wil.classBonus": "+3"
+    }
+  }
+}

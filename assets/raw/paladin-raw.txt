@@ -1,0 +1,20 @@
+Table P-1: Paladin
+Level Attack Smite Die Crit Die/Table Action Dice Ref Fort Will Known Spells Max Spell Level
+1 +1 1d3 1d8/III 1d20 +1 +1 +1 0 0
+2 +1 1d4 1d8/III 1d20 +1 +1 +1 1 1
+3 +2 1d5 1d10/III 1d20 +1 +2 +1 1 1
+4 +2 1d6 1d10/III 1d20 +2 +2 +2 2 2
+5 +3 1d7 1d12/IV 1d20+1d14 +2 +3 +2 2 2
+6 +3 1d8 1d12/IV 1d20+1d16 +2 +4 +2 3 2
+7 +4 1d10 1d14/IV 1d20+1d20 +3 +4 +3 4 3
+8 +4 1d10+1 1d14/V 1d20+1d20 +3 +5 +3 4 3
+9 +5 1d10+2 1d16/V 1d20+1d20 +3 +5 +3 5 3
+10 +6 1d10+3 1d16/V 1d20+1d20+1d14 +4 +6 +4 6 4
+
+Table P-2: Paladin Titles by Alignment
+Level Lawful Chaotic Neutral
+1 Temple Guardian Dark Warrior Guardian
+2 Crusader Temple Enforcer Defender
+3 Temple Warrior Death Knight Redeemer
+4 Holy Champion Blackguard Liberator
+5 Temple Captain Chaos Champion Hero

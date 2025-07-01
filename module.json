@@ -30,7 +30,12 @@
   ],
   "flags": {
     "hotReload": {
-      "extensions": ["js", "css", "html", "json"]
+      "extensions": [
+        "js",
+        "css",
+        "html",
+        "json"
+      ]
     }
   },
   "styles": [
@@ -54,5 +59,14 @@
   "url": "https://github.com/algnc/dcc-crawl-classes",
   "manifest": "https://raw.githubusercontent.com/algnc/dcc-crawl-classes/main/module.json",
   "download": "https://github.com/algnc/dcc-crawl-classes/archive/refs/heads/main.zip",
-  "license": "LICENSE.txt"
+  "license": "LICENSE.txt",
+  "packs": [
+    {
+      "name": "crawl-class-level-data",
+      "label": "Crawl! Class Level Data",
+      "path": "packs/crawl-class-level-data",
+      "system": "dcc",
+      "type": "Item"
+    }
+  ]
 }

@@ -1,0 +1,21 @@
+Table: Orc
+Level Attack* Crit Die /Table Action Dice Ref Fort Will Rage Die
+1 +1 1d10/III 1d20 +1 +1 +0 1d3
+2 +1 1d12/III 1d20 +1 +1 +0 1d4
+3 +2 1d14/III 1d20 +1 +2 +1 1d5
+4 +2 1d16/IV 1d20 +2 +2 +1 1d6
+5 +3 1d20/IV 1d20+1d14 +2 +3 +1 1d7
+6 +3 1d24/V 1d20+1d16 +2 +4 +2 1d8
+7 +4 1d30/V 1d20+1d20 +3 +4 +2 1d10
+8 +4 1d30/V 1d20+1d20 +3 +5 +2 1d12
+9 +5 2d20/V 1d20+1d20 +3 +5 +3 1d14
+10 +5 2d20/V 1d20+1d20+1d14 +4 +6 +3 1d16
+
+Table: Orc Titles
+Level Title
+1 Bushwacker
+2 Axegrinder
+3 Skullcrusher
+4 Slayer
+5 Warmonger
+

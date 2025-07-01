@@ -1,0 +1,22 @@
+{
+  "name": "Bard Level Items",
+  "type": "Item",
+  "color": "#a9a9a9",
+  "folder": null,
+  "_id": "XTeF651Os0xC3quR",
+  "description": "",
+  "sorting": "a",
+  "sort": 400000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.346",
+    "systemId": "dcc",
+    "systemVersion": "0.52.0",
+    "lastModifiedBy": "8RdFMYOeuR7CbiOl",
+    "modifiedTime": 1751402972041
+  },
+  "_key": "!folders!XTeF651Os0xC3quR"
+}

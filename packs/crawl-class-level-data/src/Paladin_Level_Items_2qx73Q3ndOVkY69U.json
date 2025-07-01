@@ -1,0 +1,22 @@
+{
+  "name": "Paladin Level Items",
+  "type": "Item",
+  "color": "#a9a9a9",
+  "folder": null,
+  "_id": "2qx73Q3ndOVkY69U",
+  "description": "",
+  "sorting": "a",
+  "sort": 800000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.346",
+    "systemId": "dcc",
+    "systemVersion": "0.52.0",
+    "lastModifiedBy": "8RdFMYOeuR7CbiOl",
+    "modifiedTime": 1751402982159
+  },
+  "_key": "!folders!2qx73Q3ndOVkY69U"
+}

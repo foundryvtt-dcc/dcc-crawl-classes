@@ -1,0 +1,162 @@
+{
+  "1": {
+    "level_info": {
+      "system.details.attackBonus": "+1",
+      "system.attributes.critical.die": "1d8",
+      "system.attributes.critical.table": "III",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+1",
+      "system.skills.sneakAndHide.value": "+3"
+    },
+    "titles": {
+      "lawful": "Wanderer",
+      "chaotic": "Wanderer",
+      "neutral": "Wanderer"
+    }
+  },
+  "2": {
+    "level_info": {
+      "system.details.attackBonus": "+2",
+      "system.attributes.critical.die": "1d8",
+      "system.attributes.critical.table": "III",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+1",
+      "system.skills.sneakAndHide.value": "+5"
+    },
+    "titles": {
+      "lawful": "Explorer",
+      "chaotic": "Explorer",
+      "neutral": "Explorer"
+    }
+  },
+  "3": {
+    "level_info": {
+      "system.details.attackBonus": "+2",
+      "system.attributes.critical.die": "1d10",
+      "system.attributes.critical.table": "III",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+2",
+      "system.skills.sneakAndHide.value": "+7"
+    },
+    "titles": {
+      "lawful": "Collector",
+      "chaotic": "Collector",
+      "neutral": "Collector"
+    }
+  },
+  "4": {
+    "level_info": {
+      "system.details.attackBonus": "+3",
+      "system.attributes.critical.die": "1d10",
+      "system.attributes.critical.table": "III",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+2",
+      "system.skills.sneakAndHide.value": "+8"
+    },
+    "titles": {
+      "lawful": "Accumulator",
+      "chaotic": "Accumulator",
+      "neutral": "Accumulator"
+    }
+  },
+  "5": {
+    "level_info": {
+      "system.details.attackBonus": "+4",
+      "system.attributes.critical.die": "1d12",
+      "system.attributes.critical.table": "III",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.saves.ref.classBonus": "+3",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+3",
+      "system.skills.sneakAndHide.value": "+9"
+    },
+    "titles": {
+      "lawful": "Wise one",
+      "chaotic": "Wise one",
+      "neutral": "Wise one"
+    }
+  },
+  "6": {
+    "level_info": {
+      "system.details.attackBonus": "+5",
+      "system.attributes.critical.die": "1d12",
+      "system.attributes.critical.table": "III",
+      "system.attributes.actionDice.value": "1d20,1d14",
+      "system.attributes.hitDice.value": "1d6",
+      "system.saves.ref.classBonus": "+4",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+4",
+      "system.skills.sneakAndHide.value": "+11"
+    },
+    "titles": null
+  },
+  "7": {
+    "level_info": {
+      "system.details.attackBonus": "+5",
+      "system.attributes.critical.die": "1d14",
+      "system.attributes.critical.table": "III",
+      "system.attributes.actionDice.value": "1d20,1d16",
+      "system.attributes.hitDice.value": "1d6",
+      "system.saves.ref.classBonus": "+4",
+      "system.saves.frt.classBonus": "+3",
+      "system.saves.wil.classBonus": "+4",
+      "system.skills.sneakAndHide.value": "+12"
+    },
+    "titles": null
+  },
+  "8": {
+    "level_info": {
+      "system.details.attackBonus": "+6",
+      "system.attributes.critical.die": "1d14",
+      "system.attributes.critical.table": "III",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.saves.ref.classBonus": "+5",
+      "system.saves.frt.classBonus": "+3",
+      "system.saves.wil.classBonus": "+5",
+      "system.skills.sneakAndHide.value": "+13"
+    },
+    "titles": null
+  },
+  "9": {
+    "level_info": {
+      "system.details.attackBonus": "+7",
+      "system.attributes.critical.die": "1d16",
+      "system.attributes.critical.table": "III",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.saves.ref.classBonus": "+5",
+      "system.saves.frt.classBonus": "+3",
+      "system.saves.wil.classBonus": "+5",
+      "system.skills.sneakAndHide.value": "+14"
+    },
+    "titles": null
+  },
+  "10": {
+    "level_info": {
+      "system.details.attackBonus": "+8",
+      "system.attributes.critical.die": "1d16",
+      "system.attributes.critical.table": "III",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.saves.ref.classBonus": "+6",
+      "system.saves.frt.classBonus": "+4",
+      "system.saves.wil.classBonus": "+6",
+      "system.skills.sneakAndHide.value": "+15"
+    },
+    "titles": null
+  }
+}
