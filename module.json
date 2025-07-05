@@ -2,10 +2,11 @@
   "id": "dcc-crawl-classes",
   "title": "DCC Crawl! Sheets",
   "description": "Crawl! Sheets for Dungeon Crawl Classics in FoundryVTT!",
-  "version": "0.0.24",
+  "version": "1.0.0",
   "compatibility": {
     "minimum": "13",
-    "verified": "13"
+    "verified": "13",
+    "maximum": "13"
   },
   "authors": [
     {
@@ -15,6 +16,10 @@
     {
       "name": "Steve Barnett",
       "email": "mooped@gmail.com"
+    },
+    {
+      "name": "Tim White",
+      "email": "tim@cyface.com"
     }
   ],
   "relationships": {

@@ -160,7 +160,6 @@ web_modules/
 .env.local
 
 # parcel-bundler cache (https://parceljs.org/)
-.cache
 .parcel-cache
 
 # Next.js build output
@@ -216,10 +215,10 @@ dist
 *.lock
 
 # Foundry DB Files
-packs/**/*.ldb
-packs/**/*.log
-packs/**/LOCK
-packs/**/LOG*
-packs/**/CURRENT
-packs/**/MANIFEST*
+#packs/**/*.ldb
+#packs/**/*.log
+#packs/**/LOCK
+#packs/**/LOG*
+#packs/**/CURRENT
+#packs/**/MANIFEST*
 
