@@ -1,0 +1,34 @@
+{
+  "img": "modules/dcc-core-book/assets/svg/game-icons-net/up-card.svg",
+  "system": {
+    "class": "paladin",
+    "level": "9",
+    "levelData": "system.details.attackBonus=+5\nsystem.attributes.critical.die=1d16\nsystem.attributes.critical.table=V\nsystem.attributes.actionDice.value=1d20,1d20\nsystem.attributes.hitDice.value=1d8\nsystem.class.smiteDie=1d10+2\nsystem.saves.ref.classBonus=+3\nsystem.saves.frt.classBonus=+5\nsystem.saves.wil.classBonus=+3\nsystem.class.spellsLevel1=5\nsystem.class.spellsLevel2=3\nsystem.class.spellsLevel3=3\nsystem.class.spellsLevel4=-\nsystem.class.spellsLevel5=-\n",
+    "levelDataLawful": "",
+    "levelDataNeutral": "",
+    "levelDataChaotic": ""
+  },
+  "name": "paladin-9",
+  "type": "level",
+  "folder": "2qx73Q3ndOVkY69U",
+  "_id": "z5159S3kXgZUpgUH",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "8RdFMYOeuR7CbiOl": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.346",
+    "systemId": "dcc",
+    "systemVersion": "0.52.0",
+    "createdTime": 1751402982143,
+    "modifiedTime": 1751402982143,
+    "lastModifiedBy": "8RdFMYOeuR7CbiOl"
+  },
+  "_key": "!items!z5159S3kXgZUpgUH"
+}

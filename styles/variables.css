@@ -1,0 +1,31 @@
+/* DCC Crawl Classes CSS Variables for V13 Theming */
+
+:root {
+  /* Table styling variables */
+  --dcc-crawl-table-border: #AAAAAA;
+  --dcc-crawl-table-header-border: #444444;
+  --dcc-crawl-table-row-even-bg: #f2e8d5;
+  --dcc-crawl-table-header-text: #000000;
+  --dcc-crawl-table-cell-padding: 3px 2px;
+  
+  /* General color variables */
+  --dcc-crawl-primary-bg: #ffffff;
+  --dcc-crawl-secondary-bg: #f8f8f8;
+  --dcc-crawl-text-color: #000000;
+  --dcc-crawl-border-color: #cccccc;
+  --dcc-crawl-accent-color: #444444;
+}
+
+/* Dark theme overrides */
+.theme-dark {
+  --dcc-crawl-table-border: #666666;
+  --dcc-crawl-table-header-border: #888888;
+  --dcc-crawl-table-row-even-bg: #3a3a3a;
+  --dcc-crawl-table-header-text: #ffffff;
+  
+  --dcc-crawl-primary-bg: #2d2d2d;
+  --dcc-crawl-secondary-bg: #404040;
+  --dcc-crawl-text-color: #e0e0e0;
+  --dcc-crawl-border-color: #555555;
+  --dcc-crawl-accent-color: #cccccc;
+}

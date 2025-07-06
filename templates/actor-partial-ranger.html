@@ -1,0 +1,93 @@
+{{!-- Ranger Class Tab --}}
+    <section class="tab {{tabs.ranger.id}} {{tabs.ranger.cssClass}}" data-tab="{{tabs.ranger.id}}" data-group="{{tabs.ranger.group}}">
+      <div class="grid-container">
+        <div class="grid-col-span-12 dark-border">
+          <div class="box-title">{{localize "Ranger.RangerAbilities"}}</div>
+          <div class="grid-tpl-two grid-row-gap-8 p-5">
+            <div class="grid-tpl-max-25" data-skill="climb">
+              <label class="skill-check rollable" for="system.skills.climb.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
+                {{localize "Ranger.Climb"}}
+              </label>
+              <input type="text" id="system.skills.climb.value" name="system.skills.climb.value"
+                     value="{{system.skills.climb.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25" data-skill="sneak">
+              <label class="skill-check rollable" for="system.skills.sneak.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
+                {{localize "Ranger.Sneak"}}
+              </label>
+              <input type="text" id="system.skills.sneak.value" name="system.skills.sneak.value"
+                     value="{{system.skills.sneak.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25" data-skill="strider">
+              <label class="skill-check rollable" for="system.skills.strider.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
+                {{localize "Ranger.Strider"}}
+              </label>
+              <input type="text" id="system.skills.strider.value" name="system.skills.strider.value"
+                     value="{{system.skills.strider.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25" data-skill="survival">
+              <label class="skill-check rollable" for="system.skills.survival.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
+                {{localize "Ranger.Survival"}}
+              </label>
+              <input type="text" id="system.skills.survival.value" name="system.skills.survival.value"
+                     value="{{system.skills.survival.value}}" data-dtype="String"/>
+            </div>
+
+            <div class="grid-tpl-max-25" data-skill="findTrap">
+              <label class="skill-check rollable" for="system.skills.findTrap.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
+                {{localize "Ranger.FindTrap"}}
+              </label>
+              <input type="text" id="system.skills.findTrap.value" name="system.skills.findTrap.value"
+                     value="{{system.skills.findTrap.value}}" data-dtype="String"/>
+            </div>
+            <div></div>
+            <div class="grid-tpl-max-auto grid-col-span-2">
+              <label for="system.class.favoredEnemies">{{localize "Ranger.FavoredEnemies"}}:</label>
+              <input id="system.class.favoredEnemies" name="system.class.favoredEnemies"
+                     value="{{system.class.favoredEnemies}}" data-dtype="String" style="width: 360px"/>
+            </div>
+
+            <ul class="class-note data-font grid-col-span-2">
+              <li>
+                {{localize "Ranger.Path"}}
+                <ul>
+                  <li>
+                    {{localize "Ranger.ArcheryExpert"}}
+                    <ul>
+                      <li>{{localize "Ranger.ArcheryExpertDesc"}}</li>
+                    </ul>
+                  <li>{{localize "Ranger.TwoWeaponExpert"}}
+                    <ul>
+                      <li>{{localize "Ranger.TwoWeaponExpertDesc"}}</li>
+                    </ul>
+                  </li>
+                </ul>
+              <li>{{localize "Ranger.Luck"}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
+  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Ranger" data-dtype="String"/>
+  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
+</section>

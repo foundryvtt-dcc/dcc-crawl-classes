@@ -1,0 +1,41 @@
+{{!-- Halfling Champion Class Tab --}}
+<section class="tab {{tabs.halfling-champion.id}} {{tabs.halfling-champion.cssClass}}" data-tab="{{tabs.halfling-champion.id}}" data-group="{{tabs.halfling-champion.group}}">
+  
+  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
+  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="HalflingChampion" data-dtype="String"/>
+  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
+
+  <div class="grid-container">
+    <div class="grid-col-span-12 dark-border">
+      <div class="box-title">{{localize "HalflingChampion.HalflingChampionAbilities"}}</div>
+      <ul class="class-note flexcol">
+        {{#dccPackExists "dcc-core-book.dcc-core-journals"}}
+        <li>{{{localize "DCC.HalflingClassLink"}}}</li>
+        {{/dccPackExists}}
+        <li>{{localize "DCC.InfravisionHalfling"}}</li>
+        <li>{{localize "HalflingChampion.InspirationalLuck"}}</li>
+        <li>{{localize "DCC.TwoWeaponFighting"}}
+          <ul class="class-note flexcol">
+            <li>{{localize "DCC.HalflingTwoWeaponActionDie"}}</li>
+            <li>{{localize "DCC.HalflingTwoWeaponCrit"}}</li>
+            <li>{{localize "DCC.HalflingTwoWeaponFumble"}}</li>
+            <li>{{localize "DCC.HalflingTwoWeaponHighAg"}}</li>
+          </ul>
+        </li>
+        <li>{{localize "DCC.MightyDeedsOfArms"}}
+          <ul class="class-note flexcol">
+            {{#dccPackExists "dcc-core-book.dcc-core-journals"}}
+            <li>{{{localize "DCC.MightyDeedsLink"}}}</li>
+            {{/dccPackExists}}
+            <li>
+              <a class="external-link"
+                 href="https://github.com/foundryvtt-dcc/dcc/wiki/Mighty-Deeds">
+                <i class="fas fa-link"></i> {{localize "DCC.MightyDeedsHowToLink"}}
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

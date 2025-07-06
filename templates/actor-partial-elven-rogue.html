@@ -1,0 +1,195 @@
+{{!-- Elven Rogue Class Tab --}}
+    <section class="tab {{tabs.elven-rogue.id}} {{tabs.elven-rogue.cssClass}}" data-tab="{{tabs.elven-rogue.id}}" data-group="{{tabs.elven-rogue.group}}">
+      <div class="grid-container">
+        <div class="grid-col-span-12 dark-border">
+          <div class="box-title">{{localize "ElvenRogue.ElvenRogueAbilities"}}</div>
+          <div class="grid-tpl-two grid-row-gap-8 p-5">
+            <div class="grid-tpl-max-25" data-ability="int">
+              <label class="spell-check rollable" for="system.class.spellCheck"
+                     data-action="rollSpellCheck" 
+                     data-drag="true" 
+                     data-drag-action="spellCheck"
+                     title="{{localize 'DCC.RollSpellCheckHint'}}">
+                {{localize "DCC.SpellCheck"}}</label>
+              <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
+                     value="{{numberFormat system.class.spellCheck decimals=0 sign=true}}"
+                     data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5 mb-8" data-skill="detectSecretDoors">
+              <label class="skill-check rollable" for="system.skills.detectSecretDoors.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.HeightenedSensesDescription'}}">
+                {{localize "DCC.HeightenedSenses"}}
+              </label>
+              <input type="text" id="system.skills.detectSecretDoors.value" name="system.skills.detectSecretDoors.value"
+                     title="{{localize 'DCC.HeightenedSensesDescription'}}"
+                     value="{{system.skills.detectSecretDoors.value}}" data-dtype="String"/>
+            </div>
+
+            <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="disableTrap">
+              <label class="skill-check rollable" for="system.skills.disableTrap.value" 
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.DisableTrap"}}
+              </label>
+              <input type="text" id="system.skills.disableTrap.value" name="system.skills.disableTrap.value"
+                     value="{{system.skills.disableTrap.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5">
+              <label class="skill-check" for="system.class.backstab" title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.Backstab"}}
+              </label>
+              <input type="text" id="system.class.backstab" name="system.class.backstab" value="{{system.class.backstab}}"
+                     data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="forgeDocument">
+              <label class="skill-check rollable" for="system.skills.forgeDocument.value" 
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.ForgeDocument"}}
+              </label>
+              <input type="text" id="system.skills.forgeDocument.value" name="system.skills.forgeDocument.value"
+                     value="{{system.skills.forgeDocument.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="sneakSilently">
+              <label class="skill-check rollable" for="system.skills.sneakSilently.value" 
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.SneakSilently"}}
+              </label>
+              <input type="text" id="system.skills.sneakSilently.value" name="system.skills.sneakSilently.value"
+                     value="{{system.skills.sneakSilently.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="disguiseSelf">
+              <label class="skill-check rollable" for="system.skills.disguiseSelf.value" 
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.DisguiseSelf"}}
+              </label>
+              <input type="text" id="system.skills.disguiseSelf.value" name="system.skills.disguiseSelf.value"
+                     value="{{system.skills.disguiseSelf.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="hideInShadows">
+              <label class="skill-check rollable" for="system.skills.hideInShadows.value" 
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.HideInShadows"}}
+              </label>
+              <input type="text" id="system.skills.hideInShadows.value" name="system.skills.hideInShadows.value"
+                     value="{{system.skills.hideInShadows.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="readLanguages">
+              <label class="skill-check rollable" for="system.skills.readLanguages.value" 
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.ReadLanguages"}}
+              </label>
+              <input type="text" id="system.skills.readLanguages.value" name="system.skills.readLanguages.value"
+                     value="{{system.skills.readLanguages.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="pickPockets">
+              <label class="skill-check rollable" for="system.skills.pickPockets.value" 
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.PickPocket"}}
+              </label>
+              <input type="text" id="system.skills.pickPockets.value" name="system.skills.pickPockets.value"
+                     value="{{system.skills.pickPockets.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="handlePoison">
+              <label class="skill-check rollable" for="system.skills.handlePoison.value" 
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.HandlePoison"}}
+              </label>
+              <input type="text" id="system.skills.handlePoison.value" name="system.skills.handlePoison.value"
+                     value="{{system.skills.handlePoison.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="climbSheerSurfaces">
+              <label class="skill-check rollable" for="system.skills.climbSheerSurfaces.value" 
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.ClimbSheerSurfaces"}}
+              </label>
+              <input type="text" id="system.skills.climbSheerSurfaces.value" name="system.skills.climbSheerSurfaces.value"
+                     value="{{system.skills.climbSheerSurfaces.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="pickLock">
+              <label class="skill-check rollable" for="system.skills.pickLock.value" 
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.PickLock"}}
+              </label>
+              <input type="text" id="system.skills.pickLock.value" name="system.skills.pickLock.value"
+                     value="{{system.skills.pickLock.value}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25 grid-col-gap-5" data-skill="findTrap">
+              <label class="skill-check rollable" for="system.skills.findTrap.value" 
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.ThiefSkillHint'}}">
+                {{localize "DCC.FindTrap"}}
+              </label>
+              <input type="text" id="system.skills.findTrap.value" name="system.skills.findTrap.value"
+                     value="{{system.skills.findTrap.value}}" data-dtype="String"/>
+            </div>
+            {{#dccPackExists "dcc-core-book.dcc-core-journals"}}
+            <div class="grid-tpl-max-25 mb-5">{{{system.class.classLink}}}</div>
+            {{/dccPackExists}}
+
+            <div class="grid-col-span-2 grid-tpl-max short-editor">
+              <div class="grid-col-span-2 box-title">{{localize "DCC.Corruptions"}}</div>
+              {{#if editable}}
+            <prose-mirror
+              name="system.class.corruption"
+              button="true"
+              editable="{{editable}}"
+              toggled="false"
+              value="{{system.class.corruption}}">
+              {{{corruptionHTML}}}
+            </prose-mirror>
+          {{else}}
+            {{{corruptionHTML}}}
+          {{/if}}
+            </div>
+
+            <ul class="data-font grid-col-span-2">
+              {{#dccPackExists "dcc-core-book.dcc-core-journals"}}
+              <li>{{{localize "DCC.ElfClassLink"}}}</li>
+              {{/dccPackExists}}
+              <li>{{localize "DCC.Infravision"}}</li>
+              <li>{{localize "DCC.HeightenedSensesDescription"}}</li>
+              <li>{{localize "DCC.IronVulnerability"}}</li>
+              <li>{{localize "ElvenRogue.Luck"}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
+  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="ElvenRogue" data-dtype="String"/>
+  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
+  <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="per">
+</section>

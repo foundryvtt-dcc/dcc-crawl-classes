@@ -1,0 +1,13 @@
+Table HC-1 : Halfling Champion
+Level Attack (Deed die) Crit Die /Table
+Action Dice* Ref Fort Will
+1 +1 d3 1 d8/III 1 d20 +1 +1 +1
+2 +1 d4 1 d1 0/III 1 d20 +1 +1 +1
+3 +1 d5 1 d1 2/III 1 d20 +2 +1 +2
+4 +1 d6 1 d1 4/IV 1 d20 +2 +2 +2
+5 +1 d7 1 d1 6/V 1 d20 +3 +3 +2
+6 +1 d8 1 d20/IV 1 d20+1 d1 4 +4 +3 +2
+7 +1 d1 0 1 d24/V 1 d20+1 d1 6 +4 +3 +3
+8 +1 d1 0+1 1 d30/V 1 d20+1 d20 +5 +4 +4
+9 +1 d1 0+2 1 d30/V 1 d20+1 d20 +5 +4 +4
+1 0 +1 d1 0+3 2d20/V 1 d20+1 d20 +6 +5 +4

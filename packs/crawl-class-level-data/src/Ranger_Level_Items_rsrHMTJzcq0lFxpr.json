@@ -1,0 +1,22 @@
+{
+  "name": "Ranger Level Items",
+  "type": "Item",
+  "color": "#a9a9a9",
+  "folder": null,
+  "_id": "rsrHMTJzcq0lFxpr",
+  "description": "",
+  "sorting": "a",
+  "sort": 900000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.346",
+    "systemId": "dcc",
+    "systemVersion": "0.52.0",
+    "lastModifiedBy": "8RdFMYOeuR7CbiOl",
+    "modifiedTime": 1751402983885
+  },
+  "_key": "!folders!rsrHMTJzcq0lFxpr"
+}

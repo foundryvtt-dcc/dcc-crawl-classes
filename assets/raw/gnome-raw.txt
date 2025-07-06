@@ -1,0 +1,7 @@
+Table G-1: Gnome
+Level Attack CritDie/Table Action Dice Trick Dice Known Spells Max Spell Level Ref Fort Will Title
+1 +1 1d6 1d20 d3 3 1 +1 +1 +1 Trickster
+2 +1 1d6 1d20 d4 4 1 +1 +1 +1 Charmer
+3 +2 1d8 1d20 d5 5 2 +2 +2 +1 Illusionist
+4 +2 1d8 1d20 d6 6 3 +2 +2 +2 MasterIllusionist
+5 +3 1d10 1d20+1d14 d7 8 4 +2 +3 +3 Copperfield

@@ -1,11 +1,12 @@
 {
+  "id": "dcc-crawl-classes",
   "title": "DCC Crawl! Sheets",
   "description": "Crawl! Sheets for Dungeon Crawl Classics in FoundryVTT!",
-  "version": "0.0.23",
-  "minimumCoreVersion": "12",
+  "version": "1.0.0",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
   },
   "authors": [
     {
@@ -15,6 +16,10 @@
     {
       "name": "Steve Barnett",
       "email": "mooped@gmail.com"
+    },
+    {
+      "name": "Tim White",
+      "email": "tim@cyface.com"
     }
   ],
   "relationships": {
@@ -30,11 +35,23 @@
   ],
   "flags": {
     "hotReload": {
-      "extensions": ["js", "css", "html", "json"]
+      "extensions": [
+        "js",
+        "css",
+        "html",
+        "json"
+      ]
     }
   },
   "styles": [
-    "styles/crawl.css"
+    {
+      "src": "styles/variables.css",
+      "layer": "variables"
+    },
+    {
+      "src": "styles/crawl.css",
+      "layer": "system"
+    }
   ],
   "languages": [
     {
@@ -48,5 +65,13 @@
   "manifest": "https://raw.githubusercontent.com/algnc/dcc-crawl-classes/main/module.json",
   "download": "https://github.com/algnc/dcc-crawl-classes/archive/refs/heads/main.zip",
   "license": "LICENSE.txt",
-  "id": "dcc-crawl-classes"
+  "packs": [
+    {
+      "name": "crawl-class-level-data",
+      "label": "Crawl! Class Level Data",
+      "path": "packs/crawl-class-level-data",
+      "system": "dcc",
+      "type": "Item"
+    }
+  ]
 }

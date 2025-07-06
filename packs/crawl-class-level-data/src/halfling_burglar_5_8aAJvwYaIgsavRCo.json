@@ -1,0 +1,34 @@
+{
+  "img": "modules/dcc-core-book/assets/svg/game-icons-net/up-card.svg",
+  "system": {
+    "class": "halfling-burglar",
+    "level": "5",
+    "levelData": "system.details.attackBonus=+4\nsystem.attributes.critical.die=1d12\nsystem.attributes.critical.table=III\nsystem.attributes.actionDice.value=1d20\nsystem.attributes.hitDice.value=1d6\nsystem.class.luckDie=d7\nsystem.saves.ref.classBonus=+3\nsystem.saves.frt.classBonus=+2\nsystem.saves.wil.classBonus=+3\n",
+    "levelDataLawful": "system.details.title.value=Wise one\nsystem.class.backstab=+3\nsystem.skills.sneakSilently.value=+9\nsystem.skills.hideInShadows.value=+9\nsystem.skills.pickPocket.value=+8\nsystem.skills.climbSheerSurfaces.value=+9\nsystem.skills.pickLock.value=+4\nsystem.skills.findTrap.value=+8\nsystem.skills.disableTrap.value=+9\nsystem.skills.forgeDocument.value=+3\nsystem.skills.disguiseSelf.value=+4\nsystem.skills.readLanguages.value=+8\nsystem.skills.handlePoison.value=+4\nsystem.skills.castSpellFromScroll.die=d14\n",
+    "levelDataNeutral": "system.details.title.value=Wise one\nsystem.class.backstab=+4\nsystem.skills.sneakSilently.value=+9\nsystem.skills.hideInShadows.value=+9\nsystem.skills.pickPocket.value=+9\nsystem.skills.climbSheerSurfaces.value=+8\nsystem.skills.pickLock.value=+8\nsystem.skills.findTrap.value=+8\nsystem.skills.disableTrap.value=+8\nsystem.skills.forgeDocument.value=+4\nsystem.skills.disguiseSelf.value=+3\nsystem.skills.readLanguages.value=+4\nsystem.skills.handlePoison.value=+3\nsystem.skills.castSpellFromScroll.die=d16\n",
+    "levelDataChaotic": "system.details.title.value=Wise one\nsystem.class.backstab=+9\nsystem.skills.sneakSilently.value=+9\nsystem.skills.hideInShadows.value=+9\nsystem.skills.pickPocket.value=+4\nsystem.skills.climbSheerSurfaces.value=+8\nsystem.skills.pickLock.value=+8\nsystem.skills.findTrap.value=+4\nsystem.skills.disableTrap.value=+4\nsystem.skills.forgeDocument.value=+3\nsystem.skills.disguiseSelf.value=+8\nsystem.skills.readLanguages.value=+3\nsystem.skills.handlePoison.value=+8\nsystem.skills.castSpellFromScroll.die=d14\n"
+  },
+  "name": "halfling-burglar-5",
+  "type": "level",
+  "folder": "4z5m1FqkQZraRnQj",
+  "_id": "8aAJvwYaIgsavRCo",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "8RdFMYOeuR7CbiOl": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.346",
+    "systemId": "dcc",
+    "systemVersion": "0.52.0",
+    "createdTime": 1751402977557,
+    "modifiedTime": 1751402977557,
+    "lastModifiedBy": "8RdFMYOeuR7CbiOl"
+  },
+  "_key": "!items!8aAJvwYaIgsavRCo"
+}

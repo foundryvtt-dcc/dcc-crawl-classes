@@ -1,0 +1,64 @@
+Table ER-1 : Elven Rogue
+Level Attack Crit Die Action /Table Dice Known Spells Max Spell
+Level
+Ref Fort Will
+1 +1 1 d6/II 1 d20 3 1 +1 +1 +1
+2 +1 1 d8/II 1 d20 4 1 +1 +1 +1
+3 +2 1 d8/II 1 d20 5 2 +1 +1 +2
+4 +2 1 d1 0/II 1 d20 6 2 +2 +2 +2
+5 +3 1 d1 0/II 1 d20+1 d1 4 7 3 +2 +2 +3
+6 +3 1 d1 2/II 1 d20+1 d1 6 8 3 +2 +2 +4
+7 +4 1 d1 2/II 1 d20+1 d20 9 4 +3 +3 +4
+8 +4 1 d1 4/II 1 d20+1 d20 1 0 4 +3 +3 +5
+9 +5 1 d1 4/II 1 d20+1 d20 1 2 5 +3 +3 +5
+1 0 +5 1 d1 6/II 1 d20+1 d20+1 d1 4 1 4 5 +4 +4 +6
+
+Table ER-2: Elven Rogue Skills by Level and Alignment
+Skill Bonus for Lawful Elven Rogues
+1 2 3 4 5 6 7 8 9 1 0
+Backstab +0 +0 +1 +2 +3 +4 +5 +6 +7 +8
+Sneak silently* +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+H ide in shadows* +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+Pick pocket* +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+Climb sheer surfaces* +3 +5 +7 +8 +9 +1 1 +1 2 +1 3 +1 4 +1 5
+Pick lock* +0 +1 +2 +3 +4 +5 +6 +7 +8 +9
+Find trap† +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+Disable trap* +3 +5 +7 +8 +9 +1 1 +1 2 +1 3 +1 4 +1 5
+Forge document* +0 +0 +1 +2 +3 +4 +5 +6 +7 +8
+Disguise self‡ +0 +1 +2 +3 +4 +5 +6 +7 +8 +9
+Read languages† +3 +5 +7 +8 +9 +1 1 +1 2 +1 3 +1 4 +1 5
+H andle poison +0 +1 +2 +3 +4 +5 +6 +7 +8 +9
+* The rogue’s Agility modifier, if any, also modifies checks for these skills.
+† The rogue’s Intelligence modifier, if any, also modifies checks for these skills.
+‡ The rogue’s Personality modifier, if any, also modifies checks for these skills.
+Skill Bonus for Chaotic Elven Rogues
+1 2 3 4 5 6 7 8 9 1 0
+Backstab +3 +5 +7 +8 +9 +1 1 +1 2 +1 3 +1 4 +1 5
+Sneak silently* +3 +5 +7 +8 +9 +1 1 +1 2 +1 3 +1 4 +1 5
+H ide in shadows* +3 +5 +7 +8 +9 +1 1 +1 2 +1 3 +1 4 +1 5
+Pick pocket* +0 +1 +2 +3 +4 +5 +6 +7 +8 +9
+Climb sheer surfaces* +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+Pick lock* +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+Find trap† +0 +1 +2 +3 +4 +5 +6 +7 +8 +9
+Disable trap* +0 +1 +2 +3 +4 +5 +6 +7 +8 +9
+Forge document* +0 +0 +1 +2 +3 +4 +5 +6 +7 +8
+Disguise self‡ +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+Read languages† +0 +0 +1 +2 +3 +4 +5 +6 +7 +8
+H andle poison +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+Skill Bonus for Neutral Elven Rogues
+1 2 3 4 5 6 7 8 9 1 0
+Backstab +0 +1 +2 +3 +4 +5 +6 +7 +8 +9
+Sneak silently* +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+H ide in shadows* +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+Pick pocket* +3 +5 +7 +8 +9 +1 1 +1 2 +1 3 +1 4 +1 5
+Climb sheer surfaces* +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+Pick lock* +3 +5 +7 +8 +9 +1 1 +1 2 +1 3 +1 4 +1 5
+Find trap† +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+Disable trap* +3 +5 +7 +8 +9 +1 1 +1 2 +1 3 +1 4 +1 5
+Forge document* +0 +1 +2 +3 +4 +5 +6 +7 +8 +9
+Disguise self‡ +1 +3 +5 +7 +8 +9 +1 0 +1 1 +1 2 +1 3
+Read languages† +0 +1 +2 +3 +4 +5 +6 +7 +8 +9
+H andle poison +0 +0 +1 +2 +3 +4 +5 +6 +7 +8
+* The rogue’s Agility modifier, if any, also modifies checks for these skills.
+† The rogue’s Intelligence modifier, if any, also modifies checks for these skills.
+‡ The rogue’s Personality modifier, if any, also modifies checks for these skills.

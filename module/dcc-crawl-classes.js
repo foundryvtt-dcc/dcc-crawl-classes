@@ -1,4 +1,4 @@
-/* global Actors */
+/* global foundry, game, Hooks */
 
 import * as BardSheets from './actor-sheets-bard.js'
 import * as GnomeSheets from './actor-sheets-gnome.js'
@@ -9,12 +9,21 @@ import * as ElvenRogueSheets from './actor-sheets-elven-rogue.js'
 import * as HalflingBurglarSheets from './actor-sheets-halfling-burglar.js'
 import * as HalflingChampionSheets from './actor-sheets-halfling-champion.js'
 import * as OrcSheets from './actor-sheets-orc.js'
+import { createClassItems, createAllClassItems } from './createClassItems.js'
+
+const { Actors } = foundry.documents.collections
 
 /* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
 /* -------------------------------------------- */
 Hooks.once('init', async function () {
   console.log(`DCC | Initializing Dungeon Crawl Classics System`)
+
+  game.createCrawlClassItems = createClassItems
+  game.createAllCrawlClassItems = createAllClassItems
+
+  Hooks.callAll('dcc.registerLevelDataPack', 'dcc-crawl-classes.crawl-class-level-data')
+
   console.log(`Loading DCC Crawl! Classes`)
 
   // Register sheet application classes

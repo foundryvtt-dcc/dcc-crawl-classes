@@ -1,0 +1,34 @@
+{
+  "img": "modules/dcc-core-book/assets/svg/game-icons-net/up-card.svg",
+  "system": {
+    "class": "elven-rogue",
+    "level": "5",
+    "levelData": "system.details.attackBonus=+3\nsystem.attributes.critical.die=1d10\nsystem.attributes.critical.table=II\nsystem.attributes.actionDice.value=1d20,1d14\nsystem.attributes.hitDice.value=1d6\nsystem.class.luckDie=d7\nsystem.saves.ref.classBonus=+2\nsystem.saves.frt.classBonus=+2\nsystem.saves.wil.classBonus=+3\nsystem.class.knownSpells=7\nsystem.class.maxSpellLevel=3\n",
+    "levelDataLawful": "system.class.backstab=+3\nsystem.skills.sneakSilently.value=+8\nsystem.skills.hideInShadows.value=+8\nsystem.skills.pickPocket.value=+8\nsystem.skills.climbSheerSurfaces.value=+9\nsystem.skills.pickLock.value=+4\nsystem.skills.findTrap.value=+8\nsystem.skills.disableTrap.value=+9\nsystem.skills.forgeDocument.value=+3\nsystem.skills.disguiseSelf.value=+4\nsystem.skills.readLanguages.value=+9\nsystem.skills.handlePoison.value=+4\nsystem.skills.castSpellFromScroll.die=d14\n",
+    "levelDataNeutral": "system.class.backstab=+4\nsystem.skills.sneakSilently.value=+8\nsystem.skills.hideInShadows.value=+8\nsystem.skills.pickPocket.value=+9\nsystem.skills.climbSheerSurfaces.value=+8\nsystem.skills.pickLock.value=+9\nsystem.skills.findTrap.value=+8\nsystem.skills.disableTrap.value=+9\nsystem.skills.forgeDocument.value=+4\nsystem.skills.disguiseSelf.value=+8\nsystem.skills.readLanguages.value=+4\nsystem.skills.handlePoison.value=+3\nsystem.skills.castSpellFromScroll.die=d16\n",
+    "levelDataChaotic": "system.class.backstab=+9\nsystem.skills.sneakSilently.value=+9\nsystem.skills.hideInShadows.value=+9\nsystem.skills.pickPocket.value=+4\nsystem.skills.climbSheerSurfaces.value=+8\nsystem.skills.pickLock.value=+8\nsystem.skills.findTrap.value=+4\nsystem.skills.disableTrap.value=+4\nsystem.skills.forgeDocument.value=+3\nsystem.skills.disguiseSelf.value=+8\nsystem.skills.readLanguages.value=+3\nsystem.skills.handlePoison.value=+8\nsystem.skills.castSpellFromScroll.die=d14\n"
+  },
+  "name": "elven-rogue-5",
+  "type": "level",
+  "folder": "5WETzdTD21vu1FSt",
+  "_id": "Sc998NtTYHjEjKRW",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "8RdFMYOeuR7CbiOl": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.346",
+    "systemId": "dcc",
+    "systemVersion": "0.52.0",
+    "createdTime": 1751401291675,
+    "modifiedTime": 1751401291675,
+    "lastModifiedBy": "8RdFMYOeuR7CbiOl"
+  },
+  "_key": "!items!Sc998NtTYHjEjKRW"
+}

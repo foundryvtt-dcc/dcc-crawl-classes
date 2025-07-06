@@ -1,0 +1,177 @@
+{
+  "1": {
+    "level_info": {
+      "system.details.attackBonus": "+0",
+      "system.attributes.critical.die": "1d6",
+      "system.attributes.critical.table": "I",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.talentDie": "1d14",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+0",
+      "system.saves.wil.classBonus": "+1",
+      "system.class.knownSpells": 1,
+      "system.class.maxSpellLevel": 1
+    },
+    "titles": {
+      "lawful": "Minstrel",
+      "chaotic": "Daredevil",
+      "neutral": "Thespian"
+    }
+  },
+  "2": {
+    "level_info": {
+      "system.details.attackBonus": "+1",
+      "system.attributes.critical.die": "1d8",
+      "system.attributes.critical.table": "I",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.talentDie": "1d14",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+0",
+      "system.saves.wil.classBonus": "+1",
+      "system.class.knownSpells": 2,
+      "system.class.maxSpellLevel": 1
+    },
+    "titles": {
+      "lawful": "Chronicler",
+      "chaotic": "Trickster",
+      "neutral": "Troubadour"
+    }
+  },
+  "3": {
+    "level_info": {
+      "system.details.attackBonus": "+1",
+      "system.attributes.critical.die": "1d8",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.talentDie": "1d16",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+2",
+      "system.class.knownSpells": 2,
+      "system.class.maxSpellLevel": 1
+    },
+    "titles": {
+      "lawful": "Scholar",
+      "chaotic": "Infiltrator",
+      "neutral": "Virtuoso"
+    }
+  },
+  "4": {
+    "level_info": {
+      "system.details.attackBonus": "+2",
+      "system.attributes.critical.die": "1d10",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.talentDie": "1d16",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+2",
+      "system.class.knownSpells": 3,
+      "system.class.maxSpellLevel": 2
+    },
+    "titles": {
+      "lawful": "Herald",
+      "chaotic": "Capo",
+      "neutral": "Spellbind"
+    }
+  },
+  "5": {
+    "level_info": {
+      "system.details.attackBonus": "+2",
+      "system.attributes.critical.die": "1d12",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.talentDie": "1d20",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+3",
+      "system.class.knownSpells": 3,
+      "system.class.maxSpellLevel": 2
+    },
+    "titles": {
+      "lawful": "King's Bard",
+      "chaotic": "King Breaker",
+      "neutral": "King's Man"
+    }
+  },
+  "6": {
+    "level_info": {
+      "system.details.attackBonus": "+3",
+      "system.attributes.critical.die": "1d14",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d14",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.talentDie": "1d24",
+      "system.saves.ref.classBonus": "+3",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+4",
+      "system.class.knownSpells": 4,
+      "system.class.maxSpellLevel": 2
+    }
+  },
+  "7": {
+    "level_info": {
+      "system.details.attackBonus": "+4",
+      "system.attributes.critical.die": "1d16",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d16",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.talentDie": "1d30",
+      "system.saves.ref.classBonus": "+3",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+4",
+      "system.class.knownSpells": 4,
+      "system.class.maxSpellLevel": 3
+    }
+  },
+  "8": {
+    "level_info": {
+      "system.details.attackBonus": "+5",
+      "system.attributes.critical.die": "1d20",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.talentDie": "1d30+1",
+      "system.saves.ref.classBonus": "+3",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+5",
+      "system.class.knownSpells": 5,
+      "system.class.maxSpellLevel": 3
+    }
+  },
+  "9": {
+    "level_info": {
+      "system.details.attackBonus": "+6",
+      "system.attributes.critical.die": "1d24",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.talentDie": "1d30+2",
+      "system.saves.ref.classBonus": "+4",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+5",
+      "system.class.knownSpells": 5,
+      "system.class.maxSpellLevel": 3
+    }
+  },
+  "10": {
+    "level_info": {
+      "system.details.attackBonus": "+7",
+      "system.attributes.critical.die": "1d30",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.talentDie": "1d30+3",
+      "system.saves.ref.classBonus": "+4",
+      "system.saves.frt.classBonus": "+3",
+      "system.saves.wil.classBonus": "+6",
+      "system.class.knownSpells": 6,
+      "system.class.maxSpellLevel": 4
+    }
+  }
+}

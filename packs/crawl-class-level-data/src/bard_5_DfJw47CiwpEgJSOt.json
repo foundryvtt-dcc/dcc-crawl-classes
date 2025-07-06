@@ -1,0 +1,34 @@
+{
+  "img": "modules/dcc-core-book/assets/svg/game-icons-net/up-card.svg",
+  "system": {
+    "class": "bard",
+    "level": "5",
+    "levelData": "system.details.attackBonus=+2\nsystem.attributes.critical.die=1d12\nsystem.attributes.critical.table=II\nsystem.attributes.actionDice.value=1d20\nsystem.attributes.hitDice.value=1d6\nsystem.class.talentDie=1d20\nsystem.saves.ref.classBonus=+2\nsystem.saves.frt.classBonus=+1\nsystem.saves.wil.classBonus=+3\nsystem.class.knownSpells=3\nsystem.class.maxSpellLevel=2\n",
+    "levelDataLawful": "system.details.title.value=King's Bard\n",
+    "levelDataNeutral": "system.details.title.value=King's Man\n",
+    "levelDataChaotic": "system.details.title.value=King Breaker\n"
+  },
+  "name": "bard-5",
+  "type": "level",
+  "folder": "XTeF651Os0xC3quR",
+  "_id": "DfJw47CiwpEgJSOt",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "8RdFMYOeuR7CbiOl": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.346",
+    "systemId": "dcc",
+    "systemVersion": "0.52.0",
+    "createdTime": 1751402972023,
+    "modifiedTime": 1751402972023,
+    "lastModifiedBy": "8RdFMYOeuR7CbiOl"
+  },
+  "_key": "!items!DfJw47CiwpEgJSOt"
+}

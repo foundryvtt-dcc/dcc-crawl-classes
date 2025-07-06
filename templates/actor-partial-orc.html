@@ -1,0 +1,254 @@
+{{!-- Orc Class Tab --}}
+    <section class="tab {{tabs.orc.id}} {{tabs.orc.cssClass}}" data-tab="{{tabs.orc.id}}" data-group="{{tabs.orc.group}}">
+      <div class="grid-container">
+        <div class="grid-col-span-12 dark-border">
+          <div class="box-title">{{localize "Orc.OrcAbilities"}}</div>
+          <div class="grid-tpl-two grid-row-gap-8 p-5">
+            <div class="grid-tpl-max-25" data-skill="rageDie">
+              <label class="skill-check rollable" for="system.skills.rageDie.die"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
+                {{localize "Orc.RageDie"}}
+              </label>
+              <input type="text" id="system.skills.rageDie.die" name="system.skills.rageDie.die"
+                     value="{{system.skills.rageDie.die}}" data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25">
+              <label class="skill-check rollable" for="system.skills.rageDie.value"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">
+                {{localize "Orc.RageBonus"}}
+              </label>
+              <input type="text" id="system.skills.rageDie.value" name="system.skills.rageDie.value"
+                     data-dtype="Number"/>
+            </div>
+            <ul class="class-note grid-col-span-2 data-font">
+              <li> {{localize "Orc.Rage"}}
+                <ul class="class-note flexcol">
+                  <li>{{localize "Orc.RageDesc"}}</li>
+                </ul>
+              </li>
+              <li>{{localize "Orc.NaturalWeapons"}}
+                <ul class="class-note flexcol">
+                  <li>{{localize "Orc.NaturalWeaponsDesc"}}</li>
+                </ul>
+              </li>
+              <li>{{localize "Orc.Initiative"}}
+                <ul class="class-note flexcol">
+                  <li>{{localize "Orc.InitiativeDesc"}}</li>
+                </ul>
+              </li>
+              <li>{{localize "Orc.Intimidating"}}
+                <ul class="class-note flexcol">
+                  <li>{{localize "Orc.IntimidatingDesc"}}</li>
+                </ul>
+              </li>
+              <li>{{localize "DCC.Infravision"}}</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="grid-col-span-12 label-font mt-8"> {{localize "Orc.RageTable"}} </h4>
+        <div class="divTable classTable grid-col-span-12">
+          <div class="divTableHeading">
+            <div class="divTableRow">
+              <div class="divTableHead">Rage</div>
+              <div class="divTableHead">Atk/Dmg</div>
+              <div class="divTableHead">HP</div>
+              <div class="divTableHead">Fort</div>
+              <div class="divTableHead">DR</div>
+              <div class="divTableHead">Speed</div>
+              <div class="divTableHead">Action Dice</div>
+            </div>
+          </div>
+          <div class="divTableBody">
+            <div class="divTableRow">
+              <div class="divTableCell">2</div>
+              <div class="divTableCell">+1</div>
+              <div class="divTableCell">+1</div>
+              <div class="divTableCell">-</div>
+              <div class="divTableCell">-</div>
+              <div class="divTableCell">-</div>
+              <div class="divTableCell">-</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">3</div>
+              <div class="divTableCell">+1</div>
+              <div class="divTableCell">+2</div>
+              <div class="divTableCell">+1</div>
+              <div class="divTableCell">-</div>
+              <div class="divTableCell">-</div>
+              <div class="divTableCell">-</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">4</div>
+              <div class="divTableCell">+2</div>
+              <div class="divTableCell">+3</div>
+              <div class="divTableCell">+1</div>
+              <div class="divTableCell">-</div>
+              <div class="divTableCell">-</div>
+              <div class="divTableCell">-</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">5</div>
+              <div class="divTableCell">+2</div>
+              <div class="divTableCell">+4</div>
+              <div class="divTableCell">+2</div>
+              <div class="divTableCell">-1</div>
+              <div class="divTableCell">-</div>
+              <div class="divTableCell">-</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">6</div>
+              <div class="divTableCell">+3</div>
+              <div class="divTableCell">+5</div>
+              <div class="divTableCell">+2</div>
+              <div class="divTableCell">-1</div>
+              <div class="divTableCell">-</div>
+              <div class="divTableCell">-</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">7</div>
+              <div class="divTableCell">+3</div>
+              <div class="divTableCell">+6</div>
+              <div class="divTableCell">+3</div>
+              <div class="divTableCell">-1</div>
+              <div class="divTableCell">+10 ft.</div>
+              <div class="divTableCell">-</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">8</div>
+              <div class="divTableCell">+4</div>
+              <div class="divTableCell">+7</div>
+              <div class="divTableCell">+3</div>
+              <div class="divTableCell">-1</div>
+              <div class="divTableCell">+10 ft.</div>
+              <div class="divTableCell">-</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">9</div>
+              <div class="divTableCell">+4</div>
+              <div class="divTableCell">+8</div>
+              <div class="divTableCell">+4</div>
+              <div class="divTableCell">-2</div>
+              <div class="divTableCell">+10 ft.</div>
+              <div class="divTableCell">-</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">10</div>
+              <div class="divTableCell">+5</div>
+              <div class="divTableCell">+9</div>
+              <div class="divTableCell">+4</div>
+              <div class="divTableCell">-2</div>
+              <div class="divTableCell">+10 ft.</div>
+              <div class="divTableCell">-</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">11</div>
+              <div class="divTableCell">+5</div>
+              <div class="divTableCell">+10</div>
+              <div class="divTableCell">+5</div>
+              <div class="divTableCell">-2</div>
+              <div class="divTableCell">+10 ft.</div>
+              <div class="divTableCell">+1d14</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">12</div>
+              <div class="divTableCell">+6</div>
+              <div class="divTableCell">+11</div>
+              <div class="divTableCell">+5</div>
+              <div class="divTableCell">-2</div>
+              <div class="divTableCell">+10 ft.</div>
+              <div class="divTableCell">+1d14</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">13</div>
+              <div class="divTableCell">+6</div>
+              <div class="divTableCell">+12</div>
+              <div class="divTableCell">+6</div>
+              <div class="divTableCell">-3</div>
+              <div class="divTableCell">+10 ft.</div>
+              <div class="divTableCell">+1d14</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">14</div>
+              <div class="divTableCell">+7</div>
+              <div class="divTableCell">+13</div>
+              <div class="divTableCell">+6</div>
+              <div class="divTableCell">-3</div>
+              <div class="divTableCell">+20 ft.</div>
+              <div class="divTableCell">+1d14</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">15</div>
+              <div class="divTableCell">+7</div>
+              <div class="divTableCell">+14</div>
+              <div class="divTableCell">+7</div>
+              <div class="divTableCell">-3</div>
+              <div class="divTableCell">+20 ft.</div>
+              <div class="divTableCell">+1d14</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">16</div>
+              <div class="divTableCell">+8</div>
+              <div class="divTableCell">+15</div>
+              <div class="divTableCell">+7</div>
+              <div class="divTableCell">-3</div>
+              <div class="divTableCell">+20 ft.</div>
+              <div class="divTableCell">+1d16</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">17</div>
+              <div class="divTableCell">+8</div>
+              <div class="divTableCell">+16</div>
+              <div class="divTableCell">+8</div>
+              <div class="divTableCell">-4</div>
+              <div class="divTableCell">+20 ft.</div>
+              <div class="divTableCell">+1d16</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">18</div>
+              <div class="divTableCell">+9</div>
+              <div class="divTableCell">+17</div>
+              <div class="divTableCell">+8</div>
+              <div class="divTableCell">-4</div>
+              <div class="divTableCell">+20 ft.</div>
+              <div class="divTableCell">+1d16</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">19</div>
+              <div class="divTableCell">+9</div>
+              <div class="divTableCell">+18</div>
+              <div class="divTableCell">+9</div>
+              <div class="divTableCell">-3</div>
+              <div class="divTableCell">+20 ft.</div>
+              <div class="divTableCell">+1d16</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">20</div>
+              <div class="divTableCell">+10</div>
+              <div class="divTableCell">+19</div>
+              <div class="divTableCell">+9</div>
+              <div class="divTableCell">-4</div>
+              <div class="divTableCell">+20 ft.</div>
+              <div class="divTableCell">+1d16</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">21</div>
+              <div class="divTableCell">+10</div>
+              <div class="divTableCell">+20</div>
+              <div class="divTableCell">+10</div>
+              <div class="divTableCell">-5</div>
+              <div class="divTableCell">+30 ft., 1st Init</div>
+              <div class="divTableCell">+1d20</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
+  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Orc" data-dtype="String"/>
+  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
+</section>

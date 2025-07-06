@@ -1,0 +1,22 @@
+{
+  "name": "Gnome Level Items",
+  "type": "Item",
+  "color": "#a9a9a9",
+  "folder": null,
+  "_id": "XhDlQLDAnbCYEPeQ",
+  "description": "",
+  "sorting": "a",
+  "sort": 500000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.346",
+    "systemId": "dcc",
+    "systemVersion": "0.52.0",
+    "lastModifiedBy": "8RdFMYOeuR7CbiOl",
+    "modifiedTime": 1751402974611
+  },
+  "_key": "!folders!XhDlQLDAnbCYEPeQ"
+}

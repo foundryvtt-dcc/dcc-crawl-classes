@@ -9,21 +9,57 @@ import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
  * @extends {DCCActorSheet}
  */
 class ActorSheetHalflingBurglar extends DCCActorSheet {
-    static height = 635
-
-    /** @override */
-    async getData(options) {
-        const data = await super.getData(options)
-        this.options.template = 'modules/dcc-crawl-classes/templates/actor-sheet-halfling-burglar.html'
-        if (data.system.details.sheetClass !== 'Halfling-Burglar') {
-            this.actor.update({
-                'system.class.className': game.i18n.localize('HalflingBurglar.HalflingBurglar')
-            })
-        }
-        return data
+  /** @inheritDoc */
+  static DEFAULT_OPTIONS = {
+    position: {
+      height: 635,
+      width: 648
     }
+  }
+
+  /** @inheritDoc */
+  static CLASS_TABS = {
+    sheet: {
+      tabs: [
+        { id: 'halfling-burglar', group: 'sheet', label: 'HalflingBurglar.HalflingBurglar' },
+        { id: 'skills', group: 'sheet', label: 'DCC.Skills' }
+      ],
+      initial: 'character'
+    }
+  }
+
+  /** @inheritDoc */
+  static PARTS = {
+    tabs: { template: 'systems/dcc/templates/actor-partial-tabs.html' },
+    character: { template: 'systems/dcc/templates/actor-partial-pc-common.html' },
+    equipment: { template: 'systems/dcc/templates/actor-partial-pc-equipment.html' },
+    'halfling-burglar': { template: 'modules/dcc-crawl-classes/templates/actor-partial-halfling-burglar.html' },
+    skills: { template: 'systems/dcc/templates/actor-partial-skills.html' },
+    notes: { template: 'systems/dcc/templates/actor-partial-pc-notes.html' }
+  }
+
+  /** @inheritDoc */
+  _getTabsConfig (group) {
+    const tabs = foundry.utils.deepClone(super._getTabsConfig(group))
+
+    if (!this.actor.system.config.showSpells) { tabs.tabs = tabs.tabs.filter(tab => tab.id !== 'spells') }
+
+    return tabs
+  }
+
+  /** @override */
+  async _prepareContext (options) {
+    const context = await super._prepareContext(options)
+    if (this.actor.system.details.sheetClass !== 'Halfling-Burglar') {
+      await this.actor.update({
+        'system.class.className': game.i18n.localize('HalflingBurglar.HalflingBurglar'),
+        'system.config.showSkills' : true
+      })
+    }
+    return context
+  }
 }
 
 export {
-    ActorSheetHalflingBurglar
+  ActorSheetHalflingBurglar
 }

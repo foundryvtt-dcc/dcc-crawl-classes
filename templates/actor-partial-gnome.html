@@ -1,0 +1,84 @@
+{{!-- Gnome Class Tab --}}
+    <section class="tab {{tabs.gnome.id}} {{tabs.gnome.cssClass}}" data-tab="{{tabs.gnome.id}}" data-group="{{tabs.gnome.group}}">
+      <div class="grid-container">
+        <div class="grid-col-span-12 dark-border">
+          <div class="box-title">{{localize "Gnome.GnomeAbilities"}}</div>
+          <div class="grid-tpl-two grid-row-gap-8 p-5">
+            <div class="grid-tpl-max-25" data-ability="int">
+              <label class="spell-check rollable" for="system.class.spellCheck"
+                     data-action="rollSpellCheck" 
+                     data-drag="true" 
+                     data-drag-action="spellCheck"
+                     title="{{localize 'DCC.RollSpellCheckHint'}}">
+                {{localize "DCC.SpellCheck"}}</label>
+              <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
+                     value="{{numberFormat system.class.spellCheck decimals=0 sign=true}}"
+                     data-dtype="String"/>
+            </div>
+            <div class="grid-tpl-max-25" data-skill="trickDie">
+              <label class="skill-check rollable" for="system.skills.trickDie.die"
+                     data-action="rollSkillCheck" 
+                     data-drag="true" 
+                     data-drag-action="skill"
+                     title="{{localize 'DCC.RollSkillCheckHint'}}">{{localize
+                "Gnome.TrickDie"}}</label>
+              <input type="text" id="system.skills.trickDie.die" name="system.skills.trickDie.die"
+                     value="{{system.skills.trickDie.die}}" data-dtype="String"/>
+            </div>
+            <div class="grid-col-span-2 grid-tpl-max short-editor">
+              <div class="grid-col-span-2 box-title">{{localize "DCC.Corruptions"}}</div>
+              {{#if editable}}
+            <prose-mirror
+              name="system.class.corruption"
+              button="true"
+              editable="{{editable}}"
+              toggled="false"
+              value="{{system.class.corruption}}">
+              {{{corruptionHTML}}}
+            </prose-mirror>
+          {{else}}
+            {{{corruptionHTML}}}
+          {{/if}}
+            </div>
+            <ul class="class-note grid-col-span-2 data-font">
+              <li>
+                {{localize "Gnome.GnomeSlow"}}
+                <ul>
+                  <li>{{localize "Gnome.GnomeSlowDesc"}}</li>
+                </ul>
+              </li>
+              <li> {{localize "Gnome.GnomeLevelLimit"}}
+                <ul>
+                  <li>{{localize "Gnome.LevelLimitDesc"}}</li>
+                </ul>
+              </li>
+              <li>{{localize "Gnome.MagicResistance"}}
+                <ul>
+                  <li>{{localize "Gnome.MagicResistanceDesc"}}</li>
+                </ul>
+              </li>
+              <li>{{localize "Gnome.AnimalTrick"}}
+                <ul>
+                  <li>{{localize "Gnome.AnimalTrickDesc"}}</li>
+                </ul>
+              </li>
+              <li>{{localize "Gnome.NightVision"}}
+                <ul>
+                  <li>{{localize "Gnome.NightVisionDesc"}}</li>
+                </ul>
+              </li>
+              <li>{{localize "Gnome.GemAffinity"}}
+                <ul>
+                  <li>{{localize "Gnome.GemAffinityDesc"}}</li>
+                </ul>
+              </li>
+              <li>{{localize "Gnome.Luck"}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
+  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Gnome" data-dtype="String"/>
+  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
+  <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="per">
+</section>

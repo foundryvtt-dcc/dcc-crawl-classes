@@ -1,0 +1,44 @@
+{
+  "name": "dcc-crawl-classes",
+  "version": "1.0.0",
+  "description": "Compendium for the Dungeon Crawl Classics Crawl! Fanzine Classes",
+  "scripts": {
+    "format": "standard --fix",
+    "todb": "node module/compilePacks.js",
+    "tojson": "node module/extractPacks.js"
+  },
+  "engines": {
+    "npm": ">=10.0.0",
+    "node": ">=20.0.0"
+  },
+  "standard": {
+    "ignore": [
+      "assets/",
+      "metadata/",
+      "packs/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foundryvtt-dcc/dcc-crawl-classes.git"
+  },
+  "author": "DCC Foundry Volunteer Team (https://discord.gg/2PR9YH9)",
+  "contributors": [
+    {
+      "name": "Steve Barnett"
+    },
+    {
+      "name": "Christian Ovsenik"
+    },
+    {
+      "name": "Tim L. White"
+    }
+  ],
+  "homepage": "https://github.com/foundryvtt-dcc/dcc-content#readme",
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.3",
+    "eslint": "^9.6.0",
+    "standard": "^17.1.0"
+  },
+  "type": "module"
+}

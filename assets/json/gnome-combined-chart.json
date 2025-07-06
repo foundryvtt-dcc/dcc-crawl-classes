@@ -1,0 +1,102 @@
+{
+  "1": {
+    "level_info": {
+      "system.details.attackBonus": "+1",
+      "system.attributes.critical.die": "1d6",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.trickDie": "d3",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+1",
+      "system.class.knownSpells": 3,
+      "system.class.maxSpellLevel": 1
+    },
+    "titles": {
+      "lawful": "Trickster",
+      "chaotic": "Trickster",
+      "neutral": "Trickster"
+    }
+  },
+  "2": {
+    "level_info": {
+      "system.details.attackBonus": "+1",
+      "system.attributes.critical.die": "1d6",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.trickDie": "d4",
+      "system.saves.ref.classBonus": "+1",
+      "system.saves.frt.classBonus": "+1",
+      "system.saves.wil.classBonus": "+1",
+      "system.class.knownSpells": 4,
+      "system.class.maxSpellLevel": 1
+    },
+    "titles": {
+      "lawful": "Charmer",
+      "chaotic": "Charmer",
+      "neutral": "Charmer"
+    }
+  },
+  "3": {
+    "level_info": {
+      "system.details.attackBonus": "+2",
+      "system.attributes.critical.die": "1d8",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.trickDie": "d5",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+1",
+      "system.class.knownSpells": 5,
+      "system.class.maxSpellLevel": 2
+    },
+    "titles": {
+      "lawful": "Illusionist",
+      "chaotic": "Illusionist",
+      "neutral": "Illusionist"
+    }
+  },
+  "4": {
+    "level_info": {
+      "system.details.attackBonus": "+2",
+      "system.attributes.critical.die": "1d8",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.trickDie": "d6",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+2",
+      "system.saves.wil.classBonus": "+2",
+      "system.class.knownSpells": 6,
+      "system.class.maxSpellLevel": 3
+    },
+    "titles": {
+      "lawful": "Master Illusionist",
+      "chaotic": "Master Illusionist",
+      "neutral": "Master Illusionist"
+    }
+  },
+  "5": {
+    "level_info": {
+      "system.details.attackBonus": "+3",
+      "system.attributes.critical.die": "1d10",
+      "system.attributes.critical.table": "II",
+      "system.attributes.actionDice.value": "1d20,1d14",
+      "system.attributes.hitDice.value": "1d6",
+      "system.class.trickDie": "d7",
+      "system.saves.ref.classBonus": "+2",
+      "system.saves.frt.classBonus": "+3",
+      "system.saves.wil.classBonus": "+3",
+      "system.class.knownSpells": 8,
+      "system.class.maxSpellLevel": 4
+    },
+    "titles": {
+      "lawful": "Copperfield",
+      "chaotic": "Copperfield",
+      "neutral": "Copperfield"
+    }
+  }
+}
