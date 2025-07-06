@@ -3,7 +3,7 @@
   "system": {
     "class": "bard",
     "level": "7",
-    "levelData": "system.details.attackBonus=+4\nsystem.attributes.critical.die=1d16\nsystem.attributes.critical.table=II\nsystem.attributes.actionDice.value=1d20,1d16\nsystem.attributes.hitDice.value=1d6\nsystem.skills.talentDie=1d30\nsystem.saves.ref.classBonus=+3\nsystem.saves.frt.classBonus=+2\nsystem.saves.wil.classBonus=+4\nsystem.class.knownSpells=4\nsystem.class.maxSpellLevel=3\n",
+    "levelData": "system.details.attackBonus=+4\nsystem.attributes.critical.die=1d16\nsystem.attributes.critical.table=II\nsystem.attributes.actionDice.value=1d20,1d16\nsystem.attributes.hitDice.value=1d6\nsystem.skills.talentDie.die=1d30\nsystem.saves.ref.classBonus=+3\nsystem.saves.frt.classBonus=+2\nsystem.saves.wil.classBonus=+4\nsystem.class.knownSpells=4\nsystem.class.maxSpellLevel=3\n",
     "levelDataLawful": "",
     "levelDataNeutral": "",
     "levelDataChaotic": ""

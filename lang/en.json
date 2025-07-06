@@ -91,5 +91,6 @@
   "Ranger.Strider": "Strider (Agi)",
   "Ranger.Survival": "Survival (Per)",
   "Ranger.TwoWeaponExpert": "Two-weapon expert",
-  "Ranger.TwoWeaponExpertDesc": "A ranger can fight effectively with 2 equal-sized one-handed weapons as if his Agility was 16. He can also perform Mighty Deeds of Arms as a warrior but only when fighting with two weapons."
+  "Ranger.TwoWeaponExpertDesc": "A ranger can fight effectively with 2 equal-sized one-handed weapons as if his Agility was 16. He can also perform Mighty Deeds of Arms as a warrior but only when fighting with two weapons.",
+  "DCC.system.skills.talentDie.die": "Talent Die"
 }
