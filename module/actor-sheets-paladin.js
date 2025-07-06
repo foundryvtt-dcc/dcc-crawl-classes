@@ -44,7 +44,7 @@ class ActorSheetPaladin extends DCCActorSheet {
     const context = await super._prepareContext(options)
     if (this.actor.system.details.sheetClass !== 'Paladin') {
       await this.actor.update({
-        'system.class.className': game.i18n.localize('paladin.Paladin'),
+        'system.class.className': game.i18n.localize('Paladin.Paladin'),
         'system.config.showSkills': true
       })
     }
@@ -75,7 +75,7 @@ class ActorSheetPaladin extends DCCActorSheet {
     }
     if (this.actor.system.details.sheetClass !== 'Paladin') {
       await this.actor.update({
-        'system.config.rollAttackBonus': 'True',
+        'system.config.rollAttackBonus': 'True'
       })
     }
     return context

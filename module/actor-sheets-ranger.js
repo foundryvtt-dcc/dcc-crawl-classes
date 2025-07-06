@@ -51,7 +51,7 @@ class ActorSheetRanger extends DCCActorSheet {
     const context = await super._prepareContext(options)
     if (this.actor.system.details.sheetClass !== 'Ranger') {
       await this.actor.update({
-        'system.class.className': game.i18n.localize('ranger.Ranger'),
+        'system.class.className': game.i18n.localize('Ranger.Ranger'),
         'system.config.showSkills': true
       })
     }
