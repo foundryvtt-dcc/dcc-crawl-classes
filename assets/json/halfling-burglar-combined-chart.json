@@ -6,7 +6,6 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20",
       "system.attributes.hitDice.value": "1d6",
-      "system.class.luckDie": "d3",
       "system.saves.ref.classBonus": "+1",
       "system.saves.frt.classBonus": "+1",
       "system.saves.wil.classBonus": "+1"
@@ -71,7 +70,6 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20",
       "system.attributes.hitDice.value": "1d6",
-      "system.class.luckDie": "d4",
       "system.saves.ref.classBonus": "+1",
       "system.saves.frt.classBonus": "+1",
       "system.saves.wil.classBonus": "+1"
@@ -136,7 +134,6 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20",
       "system.attributes.hitDice.value": "1d6",
-      "system.class.luckDie": "d5",
       "system.saves.ref.classBonus": "+2",
       "system.saves.frt.classBonus": "+1",
       "system.saves.wil.classBonus": "+2"
@@ -201,7 +198,6 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20",
       "system.attributes.hitDice.value": "1d6",
-      "system.class.luckDie": "d6",
       "system.saves.ref.classBonus": "+2",
       "system.saves.frt.classBonus": "+2",
       "system.saves.wil.classBonus": "+2"
@@ -266,7 +262,6 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20",
       "system.attributes.hitDice.value": "1d6",
-      "system.class.luckDie": "d7",
       "system.saves.ref.classBonus": "+3",
       "system.saves.frt.classBonus": "+2",
       "system.saves.wil.classBonus": "+3"
@@ -331,7 +326,6 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20,1d14",
       "system.attributes.hitDice.value": "1d6",
-      "system.class.luckDie": "d8",
       "system.saves.ref.classBonus": "+4",
       "system.saves.frt.classBonus": "+2",
       "system.saves.wil.classBonus": "+4"
@@ -391,7 +385,6 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20,1d16",
       "system.attributes.hitDice.value": "1d6",
-      "system.class.luckDie": "d10",
       "system.saves.ref.classBonus": "+4",
       "system.saves.frt.classBonus": "+3",
       "system.saves.wil.classBonus": "+4"
@@ -451,7 +444,6 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20,1d20",
       "system.attributes.hitDice.value": "1d6",
-      "system.class.luckDie": "d12",
       "system.saves.ref.classBonus": "+5",
       "system.saves.frt.classBonus": "+3",
       "system.saves.wil.classBonus": "+5"
@@ -511,7 +503,6 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20,1d20",
       "system.attributes.hitDice.value": "1d6",
-      "system.class.luckDie": "d14",
       "system.saves.ref.classBonus": "+5",
       "system.saves.frt.classBonus": "+3",
       "system.saves.wil.classBonus": "+5"
@@ -571,7 +562,6 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20,1d20",
       "system.attributes.hitDice.value": "1d6",
-      "system.class.luckDie": "d16",
       "system.saves.ref.classBonus": "+6",
       "system.saves.frt.classBonus": "+4",
       "system.saves.wil.classBonus": "+6"
