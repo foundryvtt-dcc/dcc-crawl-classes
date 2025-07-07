@@ -3,7 +3,7 @@
   "system": {
     "class": "ranger",
     "level": "8",
-    "levelData": "system.details.attackBonus=+d8\nsystem.attributes.critical.die=1d16\nsystem.attributes.critical.table=II\nsystem.attributes.actionDice.value=1d20,1d20\nsystem.attributes.hitDice.value=1d8\nsystem.saves.ref.classBonus=+3\nsystem.saves.frt.classBonus=+5\nsystem.saves.wil.classBonus=+2\n",
+    "levelData": "system.details.attackBonus=+d8\nsystem.attributes.critical.die=1d16\nsystem.attributes.critical.table=II\nsystem.attributes.actionDice.value=1d20,1d20\nsystem.attributes.hitDice.value=1d10\nsystem.saves.ref.classBonus=+3\nsystem.saves.frt.classBonus=+5\nsystem.saves.wil.classBonus=+2\n",
     "levelDataLawful": "",
     "levelDataNeutral": "",
     "levelDataChaotic": ""
