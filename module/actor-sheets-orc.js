@@ -1,3 +1,4 @@
+/* global game */
 /**
  * DCC Orc character sheet overrides
  */
@@ -42,8 +43,8 @@ class ActorSheetOrc extends DCCActorSheet {
     const context = await super._prepareContext(options)
     if (this.actor.system.details.sheetClass !== 'Orc') {
       await this.actor.update({
-        'system.class.className': game.i18n.localize('orc.Orc'),
-        'system.config.showSkills' : true
+        'system.class.className': game.i18n.localize('Orc.Orc'),
+        'system.config.showSkills': true
       })
     }
 

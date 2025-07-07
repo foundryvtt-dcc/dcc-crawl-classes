@@ -44,7 +44,7 @@ class ActorSheetGnome extends DCCActorSheet {
     const context = await super._prepareContext(options)
     if (this.actor.system.details.sheetClass !== 'Gnome') {
       await this.actor.update({
-        'system.class.className': game.i18n.localize('gnome.Gnome'),
+        'system.class.className': game.i18n.localize('Gnome.Gnome'),
         'system.config.showSkills' : true
       })
     }
