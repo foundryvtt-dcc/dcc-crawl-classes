@@ -61,9 +61,9 @@
       "flags": {}
     }
   ],
-  "url": "https://github.com/algnc/dcc-crawl-classes",
-  "manifest": "https://raw.githubusercontent.com/algnc/dcc-crawl-classes/main/module.json",
-  "download": "https://github.com/algnc/dcc-crawl-classes/archive/refs/heads/main.zip",
+  "url": "https://github.com/foundryvtt-dcc/dcc-crawl-classes",
+  "manifest": "https://raw.githubusercontent.com/foundryvtt-dcc/dcc-crawl-classes/main/module.json",
+  "download": "https://github.com/foundryvtt-dcc/dcc-crawl-classes/archive/refs/heads/main.zip",
   "license": "LICENSE.txt",
   "packs": [
     {
