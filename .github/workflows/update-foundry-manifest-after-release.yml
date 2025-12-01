@@ -1,0 +1,26 @@
+name: Update Foundry Manifest Post-Release
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  update_manifest_post_release:
+    runs-on: ubuntu-latest
+    name: Update Foundry Manifest Post-Release
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
+
+      - name: Update Foundry Manifest Post-Release
+        id: foundry-manifest-update
+        uses: foundryvtt-dcc/foundry-manifest-update-action@main
+        with:
+          actionToken: ${{ secrets.GITHUB_TOKEN }}
+          manifestFileName: 'module.json'
