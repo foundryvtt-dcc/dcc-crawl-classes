@@ -222,3 +222,5 @@ dist
 #packs/**/CURRENT
 #packs/**/MANIFEST*
 
+# Source data
+source/*

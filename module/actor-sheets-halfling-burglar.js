@@ -1,8 +1,11 @@
+/* global foundry, game */
 /**
  * DCC HalflingBurglar character sheet overrides
  */
 
-import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
+import DCCActorSheet from '../../../../../../../systems/dcc/module/actor-sheet.js'
+
+const { TextEditor } = foundry.applications.ux
 
 /**
  * Extend the zero-level/NPC sheet for HalflingBurglar
@@ -53,9 +56,47 @@ class ActorSheetHalflingBurglar extends DCCActorSheet {
     if (this.actor.system.details.sheetClass !== 'Halfling-Burglar') {
       await this.actor.update({
         'system.class.className': game.i18n.localize('HalflingBurglar.HalflingBurglar'),
-        'system.config.showSkills' : true
+        'system.config.showSkills': true,
+        'system.details.sheetClass': 'Halfling-Burglar',
+        'system.details.critRange': 20,
+        'system.class.spellCheckAbility': 'int'
       })
     }
+    // Initialize thief skills if missing
+    const thiefSkills = [
+      { key: 'sneakSilently', label: 'DCC.SneakSilently' },
+      { key: 'hideInShadows', label: 'DCC.HideInShadows' },
+      { key: 'pickPocket', label: 'DCC.PickPocket' },
+      { key: 'climbSheerSurfaces', label: 'DCC.ClimbSheerSurfaces' },
+      { key: 'pickLock', label: 'DCC.PickLock' },
+      { key: 'findTrap', label: 'DCC.FindTrap' },
+      { key: 'disableTrap', label: 'DCC.DisableTrap' },
+      { key: 'forgeDocument', label: 'DCC.ForgeDocument' },
+      { key: 'disguiseSelf', label: 'DCC.DisguiseSelf' },
+      { key: 'readLanguages', label: 'DCC.ReadLanguages' },
+      { key: 'handlePoison', label: 'DCC.HandlePoison' },
+      { key: 'castSpellFromScroll', label: 'DCC.CastSpellFromScroll' }
+    ]
+    for (const skill of thiefSkills) {
+      if (!this.actor.system.skills?.[skill.key]) {
+        await this.actor.update({
+          [`system.skills.${skill.key}`]: {
+            label: skill.label,
+            value: '+0'
+          }
+        })
+      }
+    }
+
+    // Enrich corruption content for display
+    context.corruptionHTML = await TextEditor.implementation.enrichHTML(
+      this.actor.system.class.corruption,
+      {
+        secrets: this.actor.isOwner,
+        relativeTo: this.actor
+      }
+    )
+
     return context
   }
 }

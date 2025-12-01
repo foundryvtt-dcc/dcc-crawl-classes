@@ -3,7 +3,7 @@
  * DCC Orc character sheet overrides
  */
 
-import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
+import DCCActorSheet from '../../../../../../../systems/dcc/module/actor-sheet.js'
 
 /**
  * Extend the zero-level/NPC sheet for Orc
@@ -44,16 +44,18 @@ class ActorSheetOrc extends DCCActorSheet {
     if (this.actor.system.details.sheetClass !== 'Orc') {
       await this.actor.update({
         'system.class.className': game.i18n.localize('Orc.Orc'),
-        'system.config.showSkills': true
+        'system.config.showSkills': true,
+        'system.details.sheetClass': 'Orc',
+        'system.details.critRange': 20
       })
     }
 
-    if (this.actor.system.details.sheetClass !== 'Orc') {
+    // Initialize Orc-specific skills if missing
+    if (!this.actor.system.skills?.rageDie?.die) {
       await this.actor.update({
         'system.skills.rageDie': {
-          label: 'Orc.rageDie',
-          die: '1d3',
-          value: '1'
+          label: 'Orc.RageDie',
+          die: '1d3'
         }
       })
     }

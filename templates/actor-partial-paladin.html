@@ -1,46 +1,52 @@
 {{!-- Paladin Class Tab --}}
-    <section class="tab {{tabs.paladin.id}} {{tabs.paladin.cssClass}}" data-tab="{{tabs.paladin.id}}" data-group="{{tabs.paladin.group}}">
-      <div class="grid-container">
-        <div class="grid-col-span-12 dark-border">
-          <div class="box-title">{{localize "Paladin.PaladinAbilities"}}</div>
-          <div class="grid-tpl-two grid-row-gap-8 p-5">
-            <div class="grid-tpl-max-25" data-skill="smiteDie">
-              <label class="skill-check rollable" for="system.skills.smiteDie.die"
-                     data-action="rollSkillCheck" 
-                     data-drag="true" 
-                     data-drag-action="skill"
-                     title="{{localize 'DCC.RollSkillCheckHint'}}">{{localize
-                "Paladin.SmiteDie"}}</label>
-              <input type="text" id="system.skills.smiteDie.die" name="system.skills.smiteDie.die"
-                     value="{{system.skills.smiteDie.die}}" data-dtype="String"/>
-            </div>
-            <div class="grid-tpl-max-25" data-ability="per">
-              <label class="spell-check rollable" for="system.class.spellCheck"
-                     data-action="rollSpellCheck" 
-                     data-drag="true" 
-                     data-drag-action="spellCheck"
-                     title="{{localize 'DCC.RollSpellCheckHint'}}">{{localize
-                "DCC.SpellCheck"}}</label>
-              <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
-                     value="{{numberFormat system.class.spellCheck decimals=0 sign=true}}"
-                     data-dtype="String"/>
-            </div>
-            <div class="grid-tpl-max-25" data-skill="holyDeeds">
-              <label class="skill-check rollable" for="system.skills.holyDeeds.value"
-                     data-action="rollSkillCheck" 
-                     data-drag="true" 
-                     data-drag-action="skill"
-                     title="{{localize 'DCC.RollSkillCheckHint'}}">{{localize
-                "Paladin.HolyDeedsText"}}</label>
-              <input type="text" id="system.skills.holyDeeds.value" name="system.skills.holyDeeds.value"
-                     value="{{system.skills.holyDeeds.value}}" data-dtype="String"/>
-            </div>
+<section class="tab {{tabs.paladin.id}} {{tabs.paladin.cssClass}}" data-tab="{{tabs.paladin.id}}"
+         data-group="{{tabs.paladin.group}}">
+
+  <div class="grid-container">
+    <div class="grid-col-span-12 dark-border">
+      <div class="box-title">{{localize "Paladin.PaladinAbilities"}}</div>
+      <div class="grid-tpl-two grid-row-gap-8 p-5">
+        <div class="grid-tpl-max-25" data-skill="smiteDie">
+          <label class="skill-check rollable" for="system.skills.smiteDie.die"
+                 data-action="rollSkillCheck"
+                 data-drag="true"
+                 data-drag-action="skill"
+                 title="{{localize 'DCC.RollSkillCheckHint'}}">
+            {{localize "Paladin.SmiteDie"}}
+          </label>
+          <input type="text" id="system.skills.smiteDie.die" name="system.skills.smiteDie.die"
+                 value="{{system.skills.smiteDie.die}}" data-dtype="String"/>
+        </div>
+        <div class="grid-tpl-max-25" data-ability="per">
+          <label class="spell-check rollable" for="system.class.spellCheck"
+                 data-action="rollSpellCheck"
+                 data-drag="true"
+                 data-drag-action="spellCheck"
+                 title="{{localize 'DCC.RollSpellCheckHint'}}">
+            {{localize "DCC.SpellCheck"}}
+          </label>
+          <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
+                 value="{{numberFormat system.class.spellCheck decimals=0 sign=true}}"
+                 data-dtype="String"/>
+        </div>
+        <div class="grid-tpl-max-25" data-skill="holyDeeds">
+          <label class="skill-check rollable" for="system.skills.holyDeeds.value"
+                 data-action="rollSkillCheck"
+                 data-drag="true"
+                 data-drag-action="skill"
+                 title="{{localize 'DCC.RollSkillCheckHint'}}">
+            {{localize "Paladin.HolyDeedsText"}}
+          </label>
+          <input type="text" id="system.skills.holyDeeds.value" name="system.skills.holyDeeds.value"
+                 value="{{system.skills.holyDeeds.value}}" data-dtype="String"/>
+        </div>
             <ul class="class-note grid-col-span-2">
               <li>
                 {{localize "Paladin.Smite"}}
                 <ul>
                   <li>{{localize "Paladin.SmiteDesc"}}</li>
                 </ul>
+              </li>
               <li>
                 {{localize "Paladin.HolyDeedsText"}}
                 <ul>
@@ -63,7 +69,9 @@
                       </li>
                       <li>{{localize "Paladin.Luck"}}</li>
                     </ul>
+                  </li>
                 </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -140,8 +148,4 @@
           </table>
         </div>
       </div>
-  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
-  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Paladin" data-dtype="String"/>
-  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
-  <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="per">
 </section>

@@ -1,13 +1,22 @@
 {{!-- Halfling Champion Class Tab --}}
 <section class="tab {{tabs.halfling-champion.id}} {{tabs.halfling-champion.cssClass}}" data-tab="{{tabs.halfling-champion.id}}" data-group="{{tabs.halfling-champion.group}}">
-  
-  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
-  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="HalflingChampion" data-dtype="String"/>
-  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
 
   <div class="grid-container">
     <div class="grid-col-span-12 dark-border">
       <div class="box-title">{{localize "HalflingChampion.HalflingChampionAbilities"}}</div>
+      <div class="grid-tpl-two grid-row-gap-8 p-5">
+        <div class="grid-tpl-max-25" data-skill="deedDie">
+          <label class="skill-check rollable" for="system.skills.deedDie.die"
+                 data-action="rollSkillCheck"
+                 data-drag="true"
+                 data-drag-action="skill"
+                 title="{{localize 'DCC.RollSkillCheckHint'}}">
+            {{localize "HalflingChampion.DeedDie"}}
+          </label>
+          <input type="text" id="system.skills.deedDie.die" name="system.skills.deedDie.die"
+                 value="{{system.skills.deedDie.die}}" data-dtype="String"/>
+        </div>
+      </div>
       <ul class="class-note flexcol">
         {{#dccPackExists "dcc-core-book.dcc-core-journals"}}
         <li>{{{localize "DCC.HalflingClassLink"}}}</li>

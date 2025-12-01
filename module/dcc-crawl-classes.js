@@ -10,6 +10,7 @@ import * as HalflingBurglarSheets from './actor-sheets-halfling-burglar.js'
 import * as HalflingChampionSheets from './actor-sheets-halfling-champion.js'
 import * as OrcSheets from './actor-sheets-orc.js'
 import { createClassItems, createAllClassItems } from './createClassItems.js'
+import { registerMigrationSettings, runMigrations } from './migrations.js'
 
 const { Actors } = foundry.documents.collections
 
@@ -17,18 +18,21 @@ const { Actors } = foundry.documents.collections
 /*  Foundry VTT Initialization                  */
 /* -------------------------------------------- */
 Hooks.once('init', async function () {
-  console.log(`DCC | Initializing Dungeon Crawl Classics System`)
+  console.log('DCC | Initializing Dungeon Crawl Classics System')
 
   game.createCrawlClassItems = createClassItems
   game.createAllCrawlClassItems = createAllClassItems
 
+  // Register migration settings
+  registerMigrationSettings()
+
   Hooks.callAll('dcc.registerLevelDataPack', 'dcc-crawl-classes.crawl-class-level-data')
 
-  console.log(`Loading DCC Crawl! Classes`)
+  console.log('Loading DCC Crawl! Classes')
 
   // Register sheet application classes
   Actors.registerSheet('dcc-crawl-classes-bard', BardSheets.ActorSheetBard, { types: ['Player'], label: 'Bard.ActorSheetBard' })
-  Actors.registerSheet('dcc-crawl-classes-gnome', GnomeSheets.ActorSheetGnome, { types: ['Player'], label: 'Gnome.ActorSheetGnome'})
+  Actors.registerSheet('dcc-crawl-classes-gnome', GnomeSheets.ActorSheetGnome, { types: ['Player'], label: 'Gnome.ActorSheetGnome' })
   Actors.registerSheet('dcc-crawl-classes-paladin', PaladinSheets.ActorSheetPaladin, { types: ['Player'], label: 'Paladin.ActorSheetPaladin' })
   Actors.registerSheet('dcc-crawl-classes-ranger', RangerSheets.ActorSheetRanger, { types: ['Player'], label: 'Ranger.ActorSheetRanger' })
   Actors.registerSheet('dcc-crawl-classes-dwarven-priest', DwarvenPriestSheets.ActorSheetDwarvenPriest, { types: ['Player'], label: 'DwarvenPriest.ActorSheetDwarvenPriest' })
@@ -38,3 +42,12 @@ Hooks.once('init', async function () {
   Actors.registerSheet('dcc-crawl-classes-orc', OrcSheets.ActorSheetOrc, { types: ['Player'], label: 'Orc.ActorSheetOrc' })
 })
 
+/* -------------------------------------------- */
+/*  Ready Hook - Run Migrations                 */
+/* -------------------------------------------- */
+Hooks.once('ready', async function () {
+  // Only run migrations if user is GM
+  if (game.user.isGM) {
+    await runMigrations()
+  }
+})

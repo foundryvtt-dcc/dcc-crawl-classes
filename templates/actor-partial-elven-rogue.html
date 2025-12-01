@@ -1,21 +1,35 @@
 {{!-- Elven Rogue Class Tab --}}
-    <section class="tab {{tabs.elven-rogue.id}} {{tabs.elven-rogue.cssClass}}" data-tab="{{tabs.elven-rogue.id}}" data-group="{{tabs.elven-rogue.group}}">
-      <div class="grid-container">
-        <div class="grid-col-span-12 dark-border">
-          <div class="box-title">{{localize "ElvenRogue.ElvenRogueAbilities"}}</div>
-          <div class="grid-tpl-two grid-row-gap-8 p-5">
-            <div class="grid-tpl-max-25" data-ability="int">
-              <label class="spell-check rollable" for="system.class.spellCheck"
-                     data-action="rollSpellCheck" 
-                     data-drag="true" 
-                     data-drag-action="spellCheck"
-                     title="{{localize 'DCC.RollSpellCheckHint'}}">
-                {{localize "DCC.SpellCheck"}}</label>
-              <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
-                     value="{{numberFormat system.class.spellCheck decimals=0 sign=true}}"
-                     data-dtype="String"/>
-            </div>
-            <div class="grid-tpl-max-25 grid-col-gap-5 mb-8" data-skill="detectSecretDoors">
+<section class="tab {{tabs.elven-rogue.id}} {{tabs.elven-rogue.cssClass}}" data-tab="{{tabs.elven-rogue.id}}"
+         data-group="{{tabs.elven-rogue.group}}">
+
+  <div class="grid-container">
+    <div class="grid-col-span-12 dark-border">
+      <div class="box-title">{{localize "ElvenRogue.ElvenRogueAbilities"}}</div>
+      <div class="grid-tpl-two grid-row-gap-8 p-5">
+        <div class="grid-tpl-max-25" data-ability="int">
+          <label class="spell-check rollable" for="system.class.spellCheck"
+                 data-action="rollSpellCheck"
+                 data-drag="true"
+                 data-drag-action="spellCheck"
+                 title="{{localize 'DCC.RollSpellCheckHint'}}">
+            {{localize "DCC.SpellCheck"}}
+          </label>
+          <input type="text" id="system.class.spellCheck" name="system.class.spellCheck"
+                 value="{{numberFormat system.class.spellCheck decimals=0 sign=true}}"
+                 data-dtype="String"/>
+        </div>
+        <div class="grid-tpl-max-25" data-skill="luckDie">
+          <label class="skill-check rollable" for="system.skills.luckDie.die"
+                 data-action="rollSkillCheck"
+                 data-drag="true"
+                 data-drag-action="skill"
+                 title="{{localize 'DCC.RollSkillCheckHint'}}">
+            {{localize "ElvenRogue.LuckDie"}}
+          </label>
+          <input type="text" id="system.skills.luckDie.die" name="system.skills.luckDie.die"
+                 value="{{system.skills.luckDie.die}}" data-dtype="String"/>
+        </div>
+        <div class="grid-tpl-max-25 grid-col-gap-5 mb-8" data-skill="detectSecretDoors">
               <label class="skill-check rollable" for="system.skills.detectSecretDoors.value"
                      data-action="rollSkillCheck" 
                      data-drag="true" 
@@ -188,8 +202,4 @@
           </div>
         </div>
       </div>
-  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
-  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="ElvenRogue" data-dtype="String"/>
-  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
-  <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="per">
 </section>

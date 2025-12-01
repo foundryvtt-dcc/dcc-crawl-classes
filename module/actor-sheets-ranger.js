@@ -1,8 +1,9 @@
+/* global foundry, game */
 /**
  * DCC Ranger character sheet overrides
  */
 
-import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
+import DCCActorSheet from '../../../../../../../systems/dcc/module/actor-sheet.js'
 
 /**
  * Extend the zero-level/NPC sheet for Ranger
@@ -12,7 +13,7 @@ class ActorSheetRanger extends DCCActorSheet {
   /** @inheritDoc */
   static DEFAULT_OPTIONS = {
     position: {
-      height: 635
+      height: 640
     }
   }
 
@@ -52,57 +53,90 @@ class ActorSheetRanger extends DCCActorSheet {
     if (this.actor.system.details.sheetClass !== 'Ranger') {
       await this.actor.update({
         'system.class.className': game.i18n.localize('Ranger.Ranger'),
-        'system.config.showSkills': true
-      })
-    }
-
-    if (this.actor.system.details.sheetClass !== 'Ranger') {
-      await this.actor.update({
+        'system.config.showSkills': true,
         'system.config.attackBonusMode': 'manual',
+        'system.details.sheetClass': 'Ranger',
+        'system.details.critRange': 20
       })
     }
-    if (this.actor.system.skills.climb) {
+    // Initialize Ranger skills if missing
+    if (!this.actor.system.skills?.climb) {
       await this.actor.update({
         'system.skills.climb': {
           label: 'Ranger.Climb',
+          ability: 'agl',
+          value: '+0',
+          config: {
+            useAbility: true,
+            applyCheckPenalty: true,
+            useLevel: true
+          }
         }
       })
     }
-    if (this.actor.system.skills.FindTrap) {
+    if (!this.actor.system.skills?.findTrap) {
       await this.actor.update({
         'system.skills.findTrap': {
-          label: 'Ranger.findTrap',
+          label: 'Ranger.FindTrap',
+          ability: 'agl',
+          value: '+0',
+          config: {
+            useAbility: true,
+            useLevel: true
+          }
         }
       })
     }
-    if (this.actor.system.skills.sneak) {
+    if (!this.actor.system.skills?.sneak) {
       await this.actor.update({
         'system.skills.sneak': {
           label: 'Ranger.Sneak',
+          ability: 'agl',
+          value: '+0',
+          config: {
+            useAbility: true,
+            applyCheckPenalty: true,
+            useLevel: true
+          }
         }
       })
     }
-    if (this.actor.system.skills.strider) {
+    if (!this.actor.system.skills?.strider) {
       await this.actor.update({
         'system.skills.strider': {
           label: 'Ranger.Strider',
+          ability: 'agl',
+          value: '+0',
+          config: {
+            useAbility: true,
+            applyCheckPenalty: true,
+            useLevel: true
+          }
         }
       })
     }
-    if (this.actor.system.skills.survival) {
+    if (!this.actor.system.skills?.survival) {
       await this.actor.update({
         'system.skills.survival': {
           label: 'Ranger.Survival',
+          ability: 'per',
+          value: '+0',
+          config: {
+            useAbility: true,
+            useLevel: true
+          }
         }
       })
     }
-    if (this.actor.system.skills.favoredEnemies) {
+    if (!this.actor.system.skills?.favoredEnemies) {
       await this.actor.update({
         'system.skills.favoredEnemies': {
           label: 'Ranger.FavoredEnemies',
+          value: ''
         }
       })
     }
+
     return context
   }
 }
