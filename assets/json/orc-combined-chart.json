@@ -6,7 +6,7 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20",
       "system.attributes.hitDice.value": "1d8",
-      "system.class.rageDie": "1d3",
+      "system.skills.rageDie.die": "1d3",
       "system.saves.ref.classBonus": "+1",
       "system.saves.frt.classBonus": "+1",
       "system.saves.wil.classBonus": "+0"
@@ -24,7 +24,7 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20",
       "system.attributes.hitDice.value": "1d8",
-      "system.class.rageDie": "1d4",
+      "system.skills.rageDie.die": "1d4",
       "system.saves.ref.classBonus": "+1",
       "system.saves.frt.classBonus": "+1",
       "system.saves.wil.classBonus": "+0"
@@ -42,7 +42,7 @@
       "system.attributes.critical.table": "III",
       "system.attributes.actionDice.value": "1d20",
       "system.attributes.hitDice.value": "1d8",
-      "system.class.rageDie": "1d5",
+      "system.skills.rageDie.die": "1d5",
       "system.saves.ref.classBonus": "+1",
       "system.saves.frt.classBonus": "+2",
       "system.saves.wil.classBonus": "+1"
@@ -60,7 +60,7 @@
       "system.attributes.critical.table": "IV",
       "system.attributes.actionDice.value": "1d20",
       "system.attributes.hitDice.value": "1d8",
-      "system.class.rageDie": "1d6",
+      "system.skills.rageDie.die": "1d6",
       "system.saves.ref.classBonus": "+2",
       "system.saves.frt.classBonus": "+2",
       "system.saves.wil.classBonus": "+1"
@@ -78,7 +78,7 @@
       "system.attributes.critical.table": "IV",
       "system.attributes.actionDice.value": "1d20,1d14",
       "system.attributes.hitDice.value": "1d8",
-      "system.class.rageDie": "1d7",
+      "system.skills.rageDie.die": "1d7",
       "system.saves.ref.classBonus": "+2",
       "system.saves.frt.classBonus": "+3",
       "system.saves.wil.classBonus": "+1"
@@ -96,7 +96,7 @@
       "system.attributes.critical.table": "V",
       "system.attributes.actionDice.value": "1d20,1d16",
       "system.attributes.hitDice.value": "1d8",
-      "system.class.rageDie": "1d8",
+      "system.skills.rageDie.die": "1d8",
       "system.saves.ref.classBonus": "+2",
       "system.saves.frt.classBonus": "+4",
       "system.saves.wil.classBonus": "+2"
@@ -109,7 +109,7 @@
       "system.attributes.critical.table": "V",
       "system.attributes.actionDice.value": "1d20,1d20",
       "system.attributes.hitDice.value": "1d8",
-      "system.class.rageDie": "1d10",
+      "system.skills.rageDie.die": "1d10",
       "system.saves.ref.classBonus": "+3",
       "system.saves.frt.classBonus": "+4",
       "system.saves.wil.classBonus": "+2"
@@ -122,7 +122,7 @@
       "system.attributes.critical.table": "V",
       "system.attributes.actionDice.value": "1d20,1d20",
       "system.attributes.hitDice.value": "1d8",
-      "system.class.rageDie": "1d12",
+      "system.skills.rageDie.die": "1d12",
       "system.saves.ref.classBonus": "+3",
       "system.saves.frt.classBonus": "+5",
       "system.saves.wil.classBonus": "+2"
@@ -135,7 +135,7 @@
       "system.attributes.critical.table": "V",
       "system.attributes.actionDice.value": "1d20,1d20",
       "system.attributes.hitDice.value": "1d8",
-      "system.class.rageDie": "1d14",
+      "system.skills.rageDie.die": "1d14",
       "system.saves.ref.classBonus": "+3",
       "system.saves.frt.classBonus": "+5",
       "system.saves.wil.classBonus": "+3"
@@ -148,7 +148,7 @@
       "system.attributes.critical.table": "V",
       "system.attributes.actionDice.value": "1d20,1d20,1d14",
       "system.attributes.hitDice.value": "1d8",
-      "system.class.rageDie": "1d16",
+      "system.skills.rageDie.die": "1d16",
       "system.saves.ref.classBonus": "+4",
       "system.saves.frt.classBonus": "+6",
       "system.saves.wil.classBonus": "+3"

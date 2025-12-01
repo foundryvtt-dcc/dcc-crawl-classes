@@ -1,6 +1,7 @@
 {{!-- Dwarven Priest Class Tab --}}
 <section class="tab {{tabs.dwarven-priest.id}} {{tabs.dwarven-priest.cssClass}}" data-tab="{{tabs.dwarven-priest.id}}"
          data-group="{{tabs.dwarven-priest.group}}">
+
   <div class="grid-container">
     <div class="grid-col-span-12 dark-border">
       <div class="box-title">{{localize "DwarvenPriest.DwarvenPriestAbilities"}}</div>
@@ -140,8 +141,4 @@
       </table>
     </div>
   </div>
-  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
-  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="DwarvenPriest" data-dtype="String"/>
-  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
-  <input type="hidden" id="system.class.spellCheckAbility" name="system.class.spellCheckAbility" value="per">
 </section>

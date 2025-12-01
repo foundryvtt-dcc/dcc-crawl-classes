@@ -1,22 +1,3 @@
-2025/07/05-15:34:06.607556 1724f3000 Recovering log #22
-2025/07/05-15:34:06.609022 1724f3000 Delete type=3 #21
-2025/07/05-15:34:06.609061 1724f3000 Delete type=0 #22
-2025/07/05-15:34:06.611003 17257f000 Level-0 table #26: started
-2025/07/05-15:34:06.611561 17257f000 Level-0 table #26: 38613 bytes OK
-2025/07/05-15:34:06.611639 17257f000 Delete type=0 #24
-2025/07/05-15:34:06.611694 17257f000 Manual compaction at level-0 from '!folders!2qx73Q3ndOVkY69U' @ 72057594037927935 : 1 .. '!items!zyLDnj63sBhaqlzh' @ 0 : 0; will stop at '!items!HQCCFVrLkMuY3Vv4' @ 95 : 1
-2025/07/05-15:34:06.611699 17257f000 Compacting 2@0 + 0@1 files
-2025/07/05-15:34:06.612226 17257f000 Generated table #27@0: 94 keys, 38613 bytes
-2025/07/05-15:34:06.612232 17257f000 Compacted 2@0 + 0@1 files => 38613 bytes
-2025/07/05-15:34:06.612274 17257f000 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/07/05-15:34:06.612299 17257f000 Delete type=2 #26
-2025/07/05-15:34:06.612361 17257f000 Delete type=2 #19
-2025/07/05-15:34:06.612433 17257f000 Manual compaction at level-0 from '!items!HQCCFVrLkMuY3Vv4' @ 95 : 1 .. '!items!zyLDnj63sBhaqlzh' @ 0 : 0; will stop at (end)
-2025/07/05-15:34:06.612445 17257f000 Manual compaction at level-1 from '!folders!2qx73Q3ndOVkY69U' @ 72057594037927935 : 1 .. '!items!zyLDnj63sBhaqlzh' @ 0 : 0; will stop at '!items!zyLDnj63sBhaqlzh' @ 182 : 1
-2025/07/05-15:34:06.612449 17257f000 Compacting 1@1 + 1@2 files
-2025/07/05-15:34:06.613001 17257f000 Generated table #28@1: 94 keys, 38613 bytes
-2025/07/05-15:34:06.613006 17257f000 Compacted 1@1 + 1@2 files => 38613 bytes
-2025/07/05-15:34:06.613045 17257f000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/07/05-15:34:06.613069 17257f000 Delete type=2 #5
-2025/07/05-15:34:06.613651 17257f000 Delete type=2 #27
-2025/07/05-15:34:06.613696 17257f000 Manual compaction at level-1 from '!items!zyLDnj63sBhaqlzh' @ 182 : 1 .. '!items!zyLDnj63sBhaqlzh' @ 0 : 0; will stop at (end)
+2025/12/01-11:42:43.054772 170d07000 Recovering log #99
+2025/12/01-11:42:43.057584 170d07000 Delete type=3 #97
+2025/12/01-11:42:43.057942 170d07000 Delete type=0 #99

@@ -36,9 +36,9 @@
   ],
   "homepage": "https://github.com/foundryvtt-dcc/dcc-content#readme",
   "devDependencies": {
-    "@foundryvtt/foundryvtt-cli": "^1.0.3",
-    "eslint": "^9.6.0",
-    "standard": "^17.1.0"
+    "@foundryvtt/foundryvtt-cli": "^3.0.2",
+    "eslint": "^9.39.1",
+    "standard": "^17.1.2"
   },
   "type": "module"
 }

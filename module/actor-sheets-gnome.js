@@ -1,8 +1,11 @@
+/* global foundry, game */
 /**
  * DCC Gnome character sheet overrides
  */
 
-import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
+import DCCActorSheet from '../../../../../../../systems/dcc/module/actor-sheet.js'
+
+const { TextEditor } = foundry.applications.ux
 
 /**
  * Extend the zero-level/NPC sheet for Gnome
@@ -44,20 +47,33 @@ class ActorSheetGnome extends DCCActorSheet {
     const context = await super._prepareContext(options)
     if (this.actor.system.details.sheetClass !== 'Gnome') {
       await this.actor.update({
-        'system.class.className': game.i18n.localize('gnome.Gnome'),
-        'system.config.showSkills' : true
+        'system.class.className': game.i18n.localize('Gnome.Gnome'),
+        'system.config.showSkills': true,
+        'system.details.sheetClass': 'Gnome',
+        'system.details.critRange': 20,
+        'system.class.spellCheckAbility': 'int'
       })
     }
 
     // Add in Gnome specific data if missing
-    if (!this.actor.system.skills.trickDie) {
+    if (!this.actor.system.skills?.trickDie?.die) {
       await this.actor.update({
         'system.skills.trickDie': {
           label: 'Gnome.TrickDie',
-          die: 'd3'
+          die: '1d3'
         }
       })
     }
+
+    // Enrich corruption content for display
+    context.corruptionHTML = await TextEditor.implementation.enrichHTML(
+      this.actor.system.class.corruption,
+      {
+        secrets: this.actor.isOwner,
+        relativeTo: this.actor
+      }
+    )
+
     return context
   }
 }

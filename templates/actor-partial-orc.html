@@ -1,31 +1,33 @@
 {{!-- Orc Class Tab --}}
-    <section class="tab {{tabs.orc.id}} {{tabs.orc.cssClass}}" data-tab="{{tabs.orc.id}}" data-group="{{tabs.orc.group}}">
-      <div class="grid-container">
-        <div class="grid-col-span-12 dark-border">
-          <div class="box-title">{{localize "Orc.OrcAbilities"}}</div>
-          <div class="grid-tpl-two grid-row-gap-8 p-5">
-            <div class="grid-tpl-max-25" data-skill="rageDie">
-              <label class="skill-check rollable" for="system.skills.rageDie.die"
-                     data-action="rollSkillCheck" 
-                     data-drag="true" 
-                     data-drag-action="skill"
-                     title="{{localize 'DCC.RollSkillCheckHint'}}">
-                {{localize "Orc.RageDie"}}
-              </label>
-              <input type="text" id="system.skills.rageDie.die" name="system.skills.rageDie.die"
-                     value="{{system.skills.rageDie.die}}" data-dtype="String"/>
-            </div>
-            <div class="grid-tpl-max-25">
-              <label class="skill-check rollable" for="system.skills.rageDie.value"
-                     data-action="rollSkillCheck" 
-                     data-drag="true" 
-                     data-drag-action="skill"
-                     title="{{localize 'DCC.RollSkillCheckHint'}}">
-                {{localize "Orc.RageBonus"}}
-              </label>
-              <input type="text" id="system.skills.rageDie.value" name="system.skills.rageDie.value"
-                     data-dtype="Number"/>
-            </div>
+<section class="tab {{tabs.orc.id}} {{tabs.orc.cssClass}}" data-tab="{{tabs.orc.id}}"
+         data-group="{{tabs.orc.group}}">
+
+  <div class="grid-container">
+    <div class="grid-col-span-12 dark-border">
+      <div class="box-title">{{localize "Orc.OrcAbilities"}}</div>
+      <div class="grid-tpl-two grid-row-gap-8 p-5">
+        <div class="grid-tpl-max-25" data-skill="rageDie">
+          <label class="skill-check rollable" for="system.skills.rageDie.die"
+                 data-action="rollSkillCheck"
+                 data-drag="true"
+                 data-drag-action="skill"
+                 title="{{localize 'DCC.RollSkillCheckHint'}}">
+            {{localize "Orc.RageDie"}}
+          </label>
+          <input type="text" id="system.skills.rageDie.die" name="system.skills.rageDie.die"
+                 value="{{system.skills.rageDie.die}}" data-dtype="String"/>
+        </div>
+        <div class="grid-tpl-max-25">
+          <label class="skill-check rollable" for="system.skills.rageDie.value"
+                 data-action="rollSkillCheck"
+                 data-drag="true"
+                 data-drag-action="skill"
+                 title="{{localize 'DCC.RollSkillCheckHint'}}">
+            {{localize "Orc.RageBonus"}}
+          </label>
+          <input type="text" id="system.skills.rageDie.value" name="system.skills.rageDie.value"
+                 data-dtype="Number"/>
+        </div>
             <ul class="class-note grid-col-span-2 data-font">
               <li> {{localize "Orc.Rage"}}
                 <ul class="class-note flexcol">
@@ -248,7 +250,4 @@
           </div>
         </div>
       </div>
-  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
-  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Orc" data-dtype="String"/>
-  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
 </section>

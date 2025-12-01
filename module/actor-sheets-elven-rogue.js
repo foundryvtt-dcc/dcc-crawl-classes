@@ -1,8 +1,11 @@
+/* global foundry, game */
 /**
  * DCC ElvenRogue character sheet overrides
  */
 
-import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
+import DCCActorSheet from '../../../../../../../systems/dcc/module/actor-sheet.js'
+
+const { TextEditor } = foundry.applications.ux
 
 /**
  * Extend the zero-level/NPC sheet for ElvenRogue
@@ -46,9 +49,30 @@ class ActorSheetElvenRogue extends DCCActorSheet {
     if (this.actor.system.details.sheetClass !== 'Elven-Rogue') {
       await this.actor.update({
         'system.class.className': game.i18n.localize('ElvenRogue.ElvenRogue'),
-        'system.config.showSkills' : true
+        'system.config.showSkills': true,
+        'system.details.sheetClass': 'Elven-Rogue',
+        'system.details.critRange': 20,
+        'system.class.spellCheckAbility': 'int'
       })
     }
+    // Initialize Elven Rogue specific skills if missing
+    if (!this.actor.system.skills?.luckDie?.die) {
+      await this.actor.update({
+        'system.skills.luckDie': {
+          label: 'ElvenRogue.LuckDie',
+          die: '1d3'
+        }
+      })
+    }
+
+    // Enrich corruption content for display
+    context.corruptionHTML = await TextEditor.implementation.enrichHTML(
+      this.actor.system.class.corruption,
+      {
+        secrets: this.actor.isOwner,
+        relativeTo: this.actor
+      }
+    )
 
     return context
   }

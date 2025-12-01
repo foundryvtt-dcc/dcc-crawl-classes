@@ -1,8 +1,9 @@
+/* global game */
 /**
  * DCC HalflingChampion character sheet overrides
  */
 
-import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
+import DCCActorSheet from '../../../../../../../systems/dcc/module/actor-sheet.js'
 
 /**
  * Extend the zero-level/NPC sheet for HalflingChampion
@@ -30,24 +31,12 @@ class ActorSheetHalflingChampion extends DCCActorSheet {
 
   /** @inheritDoc */
   static PARTS = {
-    tabs: {
-      template: 'systems/dcc/templates/actor-partial-tabs.html'
-    },
-    character: {
-      template: 'systems/dcc/templates/actor-partial-pc-common.html'
-    },
-    equipment: {
-      template: 'systems/dcc/templates/actor-partial-pc-equipment.html'
-    },
-    'halfling-champion': {
-      template: 'modules/dcc-crawl-classes/templates/actor-partial-halfling-champion.html'
-    },
-    skills: {
-      template: 'systems/dcc/templates/actor-partial-skills.html'
-    },
-    notes: {
-      template: 'systems/dcc/templates/actor-partial-pc-notes.html'
-    }
+    tabs: { template: 'systems/dcc/templates/actor-partial-tabs.html' },
+    character: { template: 'systems/dcc/templates/actor-partial-pc-common.html' },
+    equipment: { template: 'systems/dcc/templates/actor-partial-pc-equipment.html' },
+    'halfling-champion': { template: 'modules/dcc-crawl-classes/templates/actor-partial-halfling-champion.html' },
+    skills: { template: 'systems/dcc/templates/actor-partial-skills.html' },
+    notes: { template: 'systems/dcc/templates/actor-partial-pc-notes.html' }
   }
 
   /** @override */
@@ -56,12 +45,19 @@ class ActorSheetHalflingChampion extends DCCActorSheet {
     if (this.actor.system.details.sheetClass !== 'Halfling-Champion') {
       await this.actor.update({
         'system.class.className': game.i18n.localize('HalflingChampion.HalflingChampion'),
-        'system.config.showSkills': true
+        'system.config.showSkills': true,
+        'system.details.sheetClass': 'Halfling-Champion',
+        'system.details.critRange': 20,
+        'system.config.attackBonusMode': 'manual'
       })
     }
-    if (this.actor.system.details.sheetClass !== 'HalflingChampion') {
+    // Initialize Halfling Champion specific skills if missing
+    if (!this.actor.system.skills?.deedDie?.die) {
       await this.actor.update({
-        'system.config.attackBonusMode': 'manual',
+        'system.skills.deedDie': {
+          label: 'HalflingChampion.DeedDie',
+          die: '1d3'
+        }
       })
     }
 

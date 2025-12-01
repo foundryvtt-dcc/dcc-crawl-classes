@@ -1,20 +1,22 @@
 {{!-- Ranger Class Tab --}}
-    <section class="tab {{tabs.ranger.id}} {{tabs.ranger.cssClass}}" data-tab="{{tabs.ranger.id}}" data-group="{{tabs.ranger.group}}">
-      <div class="grid-container">
-        <div class="grid-col-span-12 dark-border">
-          <div class="box-title">{{localize "Ranger.RangerAbilities"}}</div>
-          <div class="grid-tpl-two grid-row-gap-8 p-5">
-            <div class="grid-tpl-max-25" data-skill="climb">
-              <label class="skill-check rollable" for="system.skills.climb.value"
-                     data-action="rollSkillCheck" 
-                     data-drag="true" 
-                     data-drag-action="skill"
-                     title="{{localize 'DCC.RollSkillCheckHint'}}">
-                {{localize "Ranger.Climb"}}
-              </label>
-              <input type="text" id="system.skills.climb.value" name="system.skills.climb.value"
-                     value="{{system.skills.climb.value}}" data-dtype="String"/>
-            </div>
+<section class="tab {{tabs.ranger.id}} {{tabs.ranger.cssClass}}" data-tab="{{tabs.ranger.id}}"
+         data-group="{{tabs.ranger.group}}">
+
+  <div class="grid-container">
+    <div class="grid-col-span-12 dark-border">
+      <div class="box-title">{{localize "Ranger.RangerAbilities"}}</div>
+      <div class="grid-tpl-two grid-row-gap-8 p-5">
+        <div class="grid-tpl-max-25" data-skill="climb">
+          <label class="skill-check rollable" for="system.skills.climb.value"
+                 data-action="rollSkillCheck"
+                 data-drag="true"
+                 data-drag-action="skill"
+                 title="{{localize 'DCC.RollSkillCheckHint'}}">
+            {{localize "Ranger.Climb"}}
+          </label>
+          <input type="text" id="system.skills.climb.value" name="system.skills.climb.value"
+                 value="{{system.skills.climb.value}}" data-dtype="String"/>
+        </div>
             <div class="grid-tpl-max-25" data-skill="sneak">
               <label class="skill-check rollable" for="system.skills.sneak.value"
                      data-action="rollSkillCheck" 
@@ -87,7 +89,4 @@
           </div>
         </div>
       </div>
-  {{!-- Hidden inputs to reflect the sheet class and force standard crit range --}}
-  <input type="hidden" id="system.details.sheetClass" name="system.details.sheetClass" value="Ranger" data-dtype="String"/>
-  <input type="hidden" id="system.details.critRange" name="system.details.critRange" value="20" data-dtype="Number"/>
 </section>

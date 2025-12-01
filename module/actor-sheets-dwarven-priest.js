@@ -1,8 +1,9 @@
-/*
+/* global foundry, game */
+/**
  * DCC DwarvenPriest character sheet overrides
  */
 
-import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
+import DCCActorSheet from '../../../../../../../systems/dcc/module/actor-sheet.js'
 const { TextEditor } = foundry.applications.ux
 
 /**
@@ -48,28 +49,20 @@ class ActorSheetDwarvenPriest extends DCCActorSheet {
       await this.actor.update({
         'system.class.className': game.i18n.localize('DwarvenPriest.DwarvenPriest'),
         'system.class.mightyDeedsLink': await TextEditor.enrichHTML(game.i18n.localize('DCC.MightyDeedsLink')),
-        'system.config.showSkills' : true
+        'system.config.showSkills': true,
+        'system.details.sheetClass': 'Dwarven-Priest',
+        'system.details.critRange': 20,
+        'system.class.spellCheckAbility': 'per',
+        'system.config.attackBonusMode': 'manual'
       })
     }
     // Add in DwarvenPriest specific data if missing
-    if (!this.actor.system.skills.deedDie) {
+    if (!this.actor.system.skills?.deedDie?.die) {
       await this.actor.update({
         'system.skills.deedDie': {
           label: 'DwarvenPriest.DeedDie',
-          die: ''
+          die: '1d3'
         }
-      })
-    }
-    if (this.actor.system.details.sheetClass !== 'DwarvenPriest') {
-      await this.actor.update({
-        'system.details.sheetClass': 'Dwarven Priest',
-        'system.class.spellCheckAbility': 'per',
-        'system.details.critRange': 20
-      })
-    }
-    if (this.actor.system.details.sheetClass !== 'DwarvenPriest') {
-      await this.actor.update({
-        'system.config.attackBonusMode': 'manual',
       })
     }
     return context

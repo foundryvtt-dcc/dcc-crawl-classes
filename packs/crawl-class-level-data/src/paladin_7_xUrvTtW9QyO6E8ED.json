@@ -3,7 +3,7 @@
   "system": {
     "class": "paladin",
     "level": "7",
-    "levelData": "system.details.attackBonus=+4\nsystem.attributes.critical.die=1d14\nsystem.attributes.critical.table=IV\nsystem.attributes.actionDice.value=1d20,1d20\nsystem.attributes.hitDice.value=1d8\nsystem.class.smiteDie=1d10\nsystem.saves.ref.classBonus=+3\nsystem.saves.frt.classBonus=+4\nsystem.saves.wil.classBonus=+3\nsystem.class.spellsLevel1=4\nsystem.class.spellsLevel2=3\nsystem.class.spellsLevel3=3\nsystem.class.spellsLevel4=-\nsystem.class.spellsLevel5=-\n",
+    "levelData": "system.details.attackBonus=+4\nsystem.attributes.critical.die=1d14\nsystem.attributes.critical.table=IV\nsystem.attributes.actionDice.value=1d20,1d20\nsystem.attributes.hitDice.value=1d10\nsystem.class.smiteDie=1d10\nsystem.saves.ref.classBonus=+3\nsystem.saves.frt.classBonus=+4\nsystem.saves.wil.classBonus=+3\nsystem.class.spellsLevel1=4\nsystem.class.spellsLevel2=3\nsystem.class.spellsLevel3=3\nsystem.class.spellsLevel4=-\nsystem.class.spellsLevel5=-\n",
     "levelDataLawful": "",
     "levelDataNeutral": "",
     "levelDataChaotic": ""

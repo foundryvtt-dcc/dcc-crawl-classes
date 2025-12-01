@@ -1,8 +1,9 @@
+/* global game */
 /**
  * DCC Paladin character sheet overrides
  */
 
-import DCCActorSheet from '/systems/dcc/module/actor-sheet.js'
+import DCCActorSheet from '../../../../../../../systems/dcc/module/actor-sheet.js'
 
 /**
  * Extend the zero-level/NPC sheet for Paladin
@@ -44,13 +45,17 @@ class ActorSheetPaladin extends DCCActorSheet {
     const context = await super._prepareContext(options)
     if (this.actor.system.details.sheetClass !== 'Paladin') {
       await this.actor.update({
-        'system.class.className': game.i18n.localize('paladin.Paladin'),
-        'system.config.showSkills': true
+        'system.class.className': game.i18n.localize('Paladin.Paladin'),
+        'system.config.showSkills': true,
+        'system.details.sheetClass': 'Paladin',
+        'system.details.critRange': 20,
+        'system.class.spellCheckAbility': 'per',
+        'system.config.attackBonusMode': 'manual'
       })
     }
 
     // Add in Paladin specific data if missing
-    if (!this.actor.system.skills.smiteDie) {
+    if (!this.actor.system.skills?.smiteDie?.die) {
       await this.actor.update({
         'system.skills.smiteDie': {
           label: 'Paladin.SmiteDie',
@@ -58,24 +63,12 @@ class ActorSheetPaladin extends DCCActorSheet {
         }
       })
     }
-    if (!this.actor.system.skills.holyDeeds) {
+    if (!this.actor.system.skills?.holyDeeds) {
       await this.actor.update({
         'system.skills.holyDeeds': {
           label: 'Paladin.HolyDeeds',
           value: '+1'
         }
-      })
-    }
-    if (this.actor.system.details.sheetClass !== 'Paladin') {
-      await this.actor.update({
-        'system.details.sheetClass': 'Paladin',
-        'system.class.spellCheckAbility': 'per',
-        'system.details.critRange': 20
-      })
-    }
-    if (this.actor.system.details.sheetClass !== 'Paladin') {
-      await this.actor.update({
-        'system.config.rollAttackBonus': 'True',
       })
     }
     return context
