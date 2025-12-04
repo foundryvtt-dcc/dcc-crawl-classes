@@ -23,5 +23,6 @@ Crawl! Magazine: http://crawlfanzine.com/
 * Elven Rogue, Halfling Burglar, Halfling Champion: Rev. Dak J. Ultimak
 
 ##### Maintainers
+* Tim L. White (@cyface)
 * Christian Ovsenik (@algnc) 
 
