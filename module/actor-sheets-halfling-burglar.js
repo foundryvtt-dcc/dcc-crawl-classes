@@ -58,7 +58,7 @@ class ActorSheetHalflingBurglar extends DCCActorSheet {
         'system.class.className': game.i18n.localize('HalflingBurglar.HalflingBurglar'),
         'system.config.showSkills': true,
         'system.details.sheetClass': 'Halfling-Burglar',
-        'system.details.critRange': 20,
+        'system.details.critRange': '20',
         'system.class.spellCheckAbility': 'int'
       })
     }

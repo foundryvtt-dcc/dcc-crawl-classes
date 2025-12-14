@@ -51,7 +51,7 @@ class ActorSheetDwarvenPriest extends DCCActorSheet {
         'system.class.mightyDeedsLink': await TextEditor.enrichHTML(game.i18n.localize('DCC.MightyDeedsLink')),
         'system.config.showSkills': true,
         'system.details.sheetClass': 'Dwarven-Priest',
-        'system.details.critRange': 20,
+        'system.details.critRange': '20',
         'system.class.spellCheckAbility': 'per',
         'system.config.attackBonusMode': 'manual'
       })

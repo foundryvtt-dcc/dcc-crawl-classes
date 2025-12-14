@@ -46,7 +46,7 @@ class ActorSheetOrc extends DCCActorSheet {
         'system.class.className': game.i18n.localize('Orc.Orc'),
         'system.config.showSkills': true,
         'system.details.sheetClass': 'Orc',
-        'system.details.critRange': 20
+        'system.details.critRange': '20'
       })
     }
 

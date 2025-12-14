@@ -50,7 +50,7 @@ class ActorSheetBard extends DCCActorSheet {
         'system.class.className': game.i18n.localize('Bard.Bard'),
         'system.config.showSkills': true,
         'system.details.sheetClass': 'Bard',
-        'system.details.critRange': 20,
+        'system.details.critRange': '20',
         'system.class.spellCheckAbility': 'int'
       })
     }

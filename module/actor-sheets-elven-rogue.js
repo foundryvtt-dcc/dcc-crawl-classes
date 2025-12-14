@@ -51,7 +51,7 @@ class ActorSheetElvenRogue extends DCCActorSheet {
         'system.class.className': game.i18n.localize('ElvenRogue.ElvenRogue'),
         'system.config.showSkills': true,
         'system.details.sheetClass': 'Elven-Rogue',
-        'system.details.critRange': 20,
+        'system.details.critRange': '20',
         'system.class.spellCheckAbility': 'int'
       })
     }

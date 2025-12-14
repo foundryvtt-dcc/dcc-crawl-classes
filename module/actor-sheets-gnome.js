@@ -50,7 +50,7 @@ class ActorSheetGnome extends DCCActorSheet {
         'system.class.className': game.i18n.localize('Gnome.Gnome'),
         'system.config.showSkills': true,
         'system.details.sheetClass': 'Gnome',
-        'system.details.critRange': 20,
+        'system.details.critRange': '20',
         'system.class.spellCheckAbility': 'int'
       })
     }
