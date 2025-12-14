@@ -56,7 +56,7 @@ class ActorSheetRanger extends DCCActorSheet {
         'system.config.showSkills': true,
         'system.config.attackBonusMode': 'manual',
         'system.details.sheetClass': 'Ranger',
-        'system.details.critRange': '20'
+        'system.details.critRange': 20
       })
     }
     // Initialize Ranger skills if missing

@@ -47,7 +47,7 @@ class ActorSheetHalflingChampion extends DCCActorSheet {
         'system.class.className': game.i18n.localize('HalflingChampion.HalflingChampion'),
         'system.config.showSkills': true,
         'system.details.sheetClass': 'Halfling-Champion',
-        'system.details.critRange': '20',
+        'system.details.critRange': 20,
         'system.config.attackBonusMode': 'manual'
       })
     }

@@ -1,6 +1,16 @@
 /* global foundry, game, Hooks */
 
 import * as BardSheets from './actor-sheets-bard.js'
+import * as GnomeSheets from './actor-sheets-gnome.js'
+import * as PaladinSheets from './actor-sheets-paladin.js'
+import * as RangerSheets from './actor-sheets-ranger.js'
+import * as DwarvenPriestSheets from './actor-sheets-dwarven-priest.js'
+import * as ElvenRogueSheets from './actor-sheets-elven-rogue.js'
+import * as HalflingBurglarSheets from './actor-sheets-halfling-burglar.js'
+import * as HalflingChampionSheets from './actor-sheets-halfling-champion.js'
+import * as OrcSheets from './actor-sheets-orc.js'
+import { createClassItems, createAllClassItems } from './createClassItems.js'
+import { registerMigrationSettings, runMigrations } from './migrations.js'
 
 const { SchemaField, StringField, BooleanField } = foundry.data.fields
 
@@ -103,16 +113,6 @@ Hooks.on('dcc.definePlayerSchema', (schema) => {
     value: new StringField({ initial: '' })
   })
 })
-import * as GnomeSheets from './actor-sheets-gnome.js'
-import * as PaladinSheets from './actor-sheets-paladin.js'
-import * as RangerSheets from './actor-sheets-ranger.js'
-import * as DwarvenPriestSheets from './actor-sheets-dwarven-priest.js'
-import * as ElvenRogueSheets from './actor-sheets-elven-rogue.js'
-import * as HalflingBurglarSheets from './actor-sheets-halfling-burglar.js'
-import * as HalflingChampionSheets from './actor-sheets-halfling-champion.js'
-import * as OrcSheets from './actor-sheets-orc.js'
-import { createClassItems, createAllClassItems } from './createClassItems.js'
-import { registerMigrationSettings, runMigrations } from './migrations.js'
 
 const { Actors } = foundry.documents.collections
 

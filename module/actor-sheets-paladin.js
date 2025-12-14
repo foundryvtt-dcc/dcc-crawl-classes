@@ -48,7 +48,7 @@ class ActorSheetPaladin extends DCCActorSheet {
         'system.class.className': game.i18n.localize('Paladin.Paladin'),
         'system.config.showSkills': true,
         'system.details.sheetClass': 'Paladin',
-        'system.details.critRange': '20',
+        'system.details.critRange': 20,
         'system.class.spellCheckAbility': 'per',
         'system.config.attackBonusMode': 'manual'
       })
