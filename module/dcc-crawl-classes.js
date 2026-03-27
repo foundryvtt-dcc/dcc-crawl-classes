@@ -88,7 +88,8 @@ Hooks.on('dcc.definePlayerSchema', (schema) => {
   // Orc skills
   schema.skills.fields.rageDie = new SchemaField({
     label: new StringField({ initial: 'Orc.RageDie' }),
-    die: new StringField({ initial: '' })
+    die: new StringField({ initial: '' }),
+    value: new StringField({ initial: '' })
   })
 
   // Dwarven Priest / Halfling Champion skills
