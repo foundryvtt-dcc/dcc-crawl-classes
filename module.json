@@ -4,9 +4,9 @@
   "description": "Crawl! Sheets for Dungeon Crawl Classics in FoundryVTT!",
   "version": "0.9.4",
   "compatibility": {
-    "minimum": "13",
-    "verified": "13",
-    "maximum": "13"
+    "minimum": "14",
+    "verified": "14",
+    "maximum": "14"
   },
   "authors": [
     {

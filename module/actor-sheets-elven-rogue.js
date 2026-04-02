@@ -66,7 +66,7 @@ class ActorSheetElvenRogue extends DCCActorSheet {
     }
 
     // Enrich corruption content for display
-    context.corruptionHTML = await TextEditor.implementation.enrichHTML(
+    context.corruptionHTML = await TextEditor.enrichHTML(
       this.actor.system.class.corruption,
       {
         secrets: this.actor.isOwner,
