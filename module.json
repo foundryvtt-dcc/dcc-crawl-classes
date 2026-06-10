@@ -26,7 +26,11 @@
     "systems": [
       {
         "id": "dcc",
-        "type": "system"
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.70.0",
+          "verified": "0.70.0"
+        }
       }
     ]
   },
