@@ -1,6 +1,6 @@
 {
   "name": "dcc-crawl-classes",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "Compendium for the Dungeon Crawl Classics Crawl! Fanzine Classes",
   "scripts": {
     "format": "standard --fix",
