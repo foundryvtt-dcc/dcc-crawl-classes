@@ -17,6 +17,10 @@
  *     parts + tab labels. Replaces the per-sheet static `PARTS` /
  *     `CLASS_TABS`. The class sheets are now 5-line stubs extending the
  *     DCC `DCCSheet` base (see `actor-sheets-*.js`).
+ *   - `registerClassTraits(classId, traits)` — opts the class in to a
+ *     core-class rule it borrows (halfling two-weapon fighting, cleric
+ *     idol magic, elf secret doors, thief/halfling Luck recovery). Needs
+ *     DCC 0.70.61+.
  *   - `registerHomebrewClassForProgressionLoad(classId, itemPrefix)` —
  *     teaches the DCC level-data-pack loader to assemble a lib
  *     `ClassProgression` from the `{itemPrefix}-{level}` items in the
@@ -185,6 +189,9 @@ export const CRAWL_CLASSES = {
         'skills.findTrap.label': 'Ranger.FindTrap'
       }
     },
+    // Two-weapon expert: fights as if Agility were 16 (#42). Not the
+    // halfling crit or fumble rules.
+    traits: { twoWeaponMinAgility: 16 },
     sheetPart: {
       parts: { ...commonParts(), ranger: { id: 'ranger', template: classPartial('ranger') } },
       tabs: { sheet: { tabs: [{ id: 'ranger', group: 'sheet', label: 'Ranger.Ranger' }] } }
@@ -215,6 +222,8 @@ export const CRAWL_CLASSES = {
         'skills.deedDie.label': 'DwarvenPriest.DeedDie'
       }
     },
+    // Casts as a cleric: disapproval, no spell loss (#43).
+    traits: { idolMagic: true },
     sheetPart: {
       parts: {
         ...commonParts(),
@@ -253,6 +262,9 @@ export const CRAWL_CLASSES = {
         'class.spellCheckAbility': 'int'
       }
     },
+    // Heightened senses: +4 to detect secret doors (#44). The class text
+    // doesn't give it thief-style Luck recovery.
+    traits: { detectSecretDoorsBonus: '+4' },
     sheetPart: {
       parts: { ...commonParts(), 'elven-rogue': { id: 'elven-rogue', template: classPartial('elven-rogue') } },
       tabs: { sheet: { tabs: [{ id: 'elven-rogue', group: 'sheet', label: 'ElvenRogue.ElvenRogue' }] } }
@@ -306,6 +318,13 @@ export const CRAWL_CLASSES = {
         'skills.deedDie.label': 'HalflingChampion.DeedDie'
       }
     },
+    // Halfling two-weapon fighting and Luck (#41).
+    traits: {
+      twoWeaponMinAgility: 16,
+      twoWeaponCritOnMax: true,
+      twoWeaponFumbleBothOnes: true,
+      luckRecovers: true
+    },
     sheetPart: {
       parts: { ...commonParts(), 'halfling-champion': { id: 'halfling-champion', template: classPartial('halfling-champion') } },
       tabs: { sheet: { tabs: [{ id: 'halfling-champion', group: 'sheet', label: 'HalflingChampion.HalflingChampion' }] } }
@@ -334,6 +353,13 @@ export const CRAWL_CLASSES = {
         'class.spellCheckAbility': 'int'
       }
     },
+    // Halfling two-weapon fighting and Luck (#41).
+    traits: {
+      twoWeaponMinAgility: 16,
+      twoWeaponCritOnMax: true,
+      twoWeaponFumbleBothOnes: true,
+      luckRecovers: true
+    },
     sheetPart: {
       parts: { ...commonParts(), 'halfling-burglar': { id: 'halfling-burglar', template: classPartial('halfling-burglar') } },
       tabs: { sheet: { tabs: [{ id: 'halfling-burglar', group: 'sheet', label: 'HalflingBurglar.HalflingBurglar' }] } }
@@ -357,5 +383,9 @@ export function registerCrawlClasses (api) {
     api.registerClassDefaults(classId, def.defaults)
     api.registerSheetPart(classId, def.sheetPart)
     api.registerHomebrewClassForProgressionLoad(classId, classId)
+    // registerClassTraits is new in DCC 0.70.61; skip it on older systems.
+    if (def.traits && typeof api.registerClassTraits === 'function') {
+      api.registerClassTraits(classId, def.traits)
+    }
   }
 }
