@@ -259,7 +259,13 @@ export const CRAWL_CLASSES = {
         'details.critRange': 20,
         'config.showSkills': true,
         'config.showSpells': true,
-        'class.spellCheckAbility': 'int'
+        'class.spellCheckAbility': 'int',
+        // Heightened senses roll with Int. The DCC system's elf mixin used
+        // to supply this for every Player (dcc#1000); the +4 comes from the
+        // detectSecretDoorsBonus trait below.
+        'skills.detectSecretDoors.label': 'DCC.HeightenedSenses',
+        'skills.detectSecretDoors.ability': 'int',
+        'skills.detectSecretDoors.value': '+4'
       }
     },
     // Heightened senses: +4 to detect secret doors (#44). The class text
