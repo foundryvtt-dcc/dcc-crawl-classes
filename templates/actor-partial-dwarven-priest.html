@@ -20,10 +20,10 @@
         </div>
         <div class="grid-tpl-max-auto">
           <label class="disapproval-range rollable" for="system.class.disapproval"
-                 data-action="rollDisapproval"
+                 data-action="applyDisapproval"
                  data-drag="true"
-                 data-drag-action="disapproval"
-                 title="{{localize 'DCC.RollDisapprovalHint'}}">
+                 data-drag-action="disapprovalRange"
+                 title="{{localize 'DCC.DisapprovalRangeHint'}}">
             {{localize "DCC.DisapprovalRange"}}
           </label>
           <select class="number" name="system.class.disapproval" id="system.class.disapproval">
@@ -33,14 +33,14 @@
         <div>&nbsp;</div>
         <div class="grid-tpl-max-auto">
           <label class="disapproval-table rollable" for="system.class.disapprovalTable"
-                 data-action="rollOnTable"
+                 data-action="rollDisapproval"
                  data-drag="true"
-                 data-drag-action="table"
-                 title="{{localize 'DCC.RollOnTableHint'}}">
+                 data-drag-action="disapprovalTable"
+                 title="{{localize 'DCC.DisapprovalTableHint'}}">
             {{localize "DCC.DisapprovalTable"}}
           </label>
           <select id="system.class.disapprovalTable" name="system.class.disapprovalTable">
-            {{selectOptions config.disapprovalTables selected=system.class.disapprovalTable localize=true labelAttr="name"}}
+            {{selectOptions config.disapprovalTables selected=system.class.disapprovalTable localize=true labelAttr="name" valueAttr="path"}}
           </select>
         </div>
 
