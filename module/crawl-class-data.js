@@ -135,6 +135,8 @@ export const CRAWL_CLASSES = {
         'config.attackBonusMode': 'manual'
       }
     },
+    // Casts as a cleric: disapproval, no spell loss (#21).
+    traits: { idolMagic: true },
     sheetPart: {
       parts: {
         ...commonParts(),
